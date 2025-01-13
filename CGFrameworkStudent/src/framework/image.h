@@ -94,9 +94,9 @@ public:
 		return *this;
 	}
 	void DrawLineDDA(int x0, int y0, int x1, int y1, const Color& c);
-	void DrawRect(int x, int y, int w, int h, const Color& borderColor,
-	int borderWidth, bool isFilled, const Color& fillColor);
+	void DrawRect(int x, int y, int w, int h, const Color& borderColor, int borderWidth, bool isFilled, const Color& fillColor);
 	void DrawTriangle(const Vector2& p0, const Vector2& p1, const Vector2& p2, const Color& borderColor, bool isFilled, const Color& fillColor);
+	void ScanLineDDA(int x0, int y0, int x1, int y1, std::vector<int>& minX, std::vector<int>& maxX);
 
 	#endif
 

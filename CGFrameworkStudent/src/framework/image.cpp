@@ -434,6 +434,18 @@ int borderWidth, bool isFilled, const Color& fillColor){
 		}
 	}
 }
+void Image::ScanLineDDA(int x0, int y0, int x1, int y1, std::vector<int>& minX, std::vector<int>& maxX){
+	float d = std::max(abs(x1-x0), abs(y1-y0));
+	Vector2 v(((x1-x0)/d), ((y1-y0)/d));
+	Vector2 p((float)x0, (float)y0);
+	for(int i = 0; i<d; i++){
+		SetPixel((int)floor(p.x), (int)floor(p.y), Color::RED);
+		int a = p.y;
+		minX[a] = std::min(minX[a], (int)p.x);
+		maxX[a] = std::max(maxX[a], (int)p.x);
+		p+=v;
+	}
+}
 
 void Image::DrawTriangle(const Vector2& p0, const Vector2& p1, const Vector2& p2, const Color& borderColor, bool isFilled, const Color& fillColor){
 	int mxy = std::max(p2.y, std::max(p1.y, p0.y));
@@ -441,46 +453,17 @@ void Image::DrawTriangle(const Vector2& p0, const Vector2& p1, const Vector2& p2
 	int mxx = std::max(p2.x, std::max(p1.x, p0.x));
 	int mnx = std::min(p2.x, std::min(p1.x, p0.x));
 	
-	int minX[mxy];
-	int maxX[mxy];
+	std::vector<int> minX;
+	std::vector<int> maxX;
 
-	for(int i = 0; i<mxy; i++){
-		minX[i]=mxx;
-		maxX[i]=mnx;
-	}
+	printf("%d\n", mxy);
+	minX.assign(mxy+1, mxx);
+	maxX.assign(mxy+1, mnx);
 
-	float d = std::max(abs(p1.x-p0.x), abs(p1.y-p0.y));
-	Vector2 v(((p1.x-p0.x)/d), ((p1.y-p0.y)/d));
-	Vector2 p((float)p0.x, (float)p0.y);
-	for(int i = 0; i<d; i++){
-		SetPixel((int)floor(p.x), (int)floor(p.y), Color::RED);
-		int a = mny+p.y;
-		minX[a] = std::min(minX[a], (int)p.x);
-		maxX[a] = std::max(maxX[a], (int)p.x);
-		p+=v;
-	}
+	ScanLineDDA(p0.x, p0.y, p1.x, p1.y, minX, maxX);
+	ScanLineDDA(p1.x, p1.y, p2.x, p2.y, minX, maxX);
+	ScanLineDDA(p2.x, p2.y, p0.x, p0.y, minX, maxX);
 
-	d = std::max(abs(p2.x-p1.x), abs(p2.y-p1.y));
-	v=Vector2(((p2.x-p1.x)/d), ((p2.y-p1.y)/d));
-	p=Vector2((float)p1.x, (float)p1.y);
-	for(int i = 0; i<d; i++){
-		SetPixel((int)floor(p.x), (int)floor(p.y), Color::RED);
-		int a = mny+p.y;
-		minX[a] = std::min(minX[a], (int)p.x);
-		maxX[a] = std::max(maxX[a], (int)p.x);
-		p+=v;
-	}
-
-	d = std::max(abs(p0.x-p2.x), abs(p0.y-p2.y));
-	v=Vector2(((p0.x-p2.x)/d), ((p0.y-p2.y)/d));
-	p=Vector2((float)p2.x, (float)p2.y);
-	for(int i = 0; i<d; i++){
-		SetPixel((int)floor(p.x), (int)floor(p.y), Color::RED);
-		int a = mny+p.y;
-		minX[a] = std::min(minX[a], (int)p.x);
-		maxX[a] = std::max(maxX[a], (int)p.x);
-		p+=v;
-	}
 	int a = 0;
 	for(int i = mny; i<mxy; i++){
 		for(int j = minX[a];j<maxX[a]; j++){
@@ -488,10 +471,4 @@ void Image::DrawTriangle(const Vector2& p0, const Vector2& p1, const Vector2& p2
 		}
 		a++;
 	}
-	for(int j = minX[300];j<maxX[300]; j++){
-		SetPixel(j, 300, Color::WHITE);
-	}
-	
-
-
 }
