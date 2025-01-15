@@ -456,7 +456,6 @@ void Image::DrawTriangle(const Vector2& p0, const Vector2& p1, const Vector2& p2
 	std::vector<int> minX;
 	std::vector<int> maxX;
 
-	printf("%d\n", mxy);
 	minX.assign(mxy+1, mxx);
 	maxX.assign(mxy+1, mnx);
 
@@ -470,5 +469,38 @@ void Image::DrawTriangle(const Vector2& p0, const Vector2& p1, const Vector2& p2
 			SetPixel(j, i, Color::WHITE);
 		}
 		a++;
+	}
+}
+void Image::DrawQuarter(int x, int y, int a, int b, const Color& borderColor){
+		SetPixel(x+a, y+b, borderColor);		
+		SetPixel(x-a, y-b, borderColor);		
+		SetPixel(x-a, y+b, borderColor);		
+		SetPixel(x+a, y-b, borderColor);
+}
+
+void Image::DrawCircle(int x, int y, int r, const Color& borderColor, int borderWidth, bool isFilled, const Color& fillColor){
+	for(int j = r; j<borderWidth+r; j++){
+		float t1 = (j / 16.0);
+		float x0 = (float)j;
+		float y0 = 0.0;
+		while(x0>y0){
+			int a = (int)x0;
+			int b = (int)y0;
+			if(isFilled&&(r==j)){
+				for(int i = 0; i<a; i++){
+					DrawQuarter(x, y, i, b, fillColor);
+					DrawQuarter(x, y, b, i, fillColor);
+				}
+			}
+			DrawQuarter(x, y, a, b, borderColor);
+			DrawQuarter(x, y, b, a, borderColor);
+			y0++;
+			t1 = t1+y0;
+			float t2 = t1-x0;
+			if(t2>=0){
+				t1 = t2;
+				x0--;
+			}
+		}		
 	}
 }
