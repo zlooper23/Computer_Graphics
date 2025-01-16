@@ -95,7 +95,7 @@ void Application::OnMouseMove(SDL_MouseButtonEvent event)
 {
 	if (event.button == SDL_BUTTON_LEFT) {
 		switch(mode){
-			case 1: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 10, Color::RED, commonWidth, true,Color::BLUE);break;
+			case 1: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 1, Color::RED, commonWidth, true,Color::RED);break;
 			case 2: framebuffer.Fill(Color::BLACK); framebuffer.DrawRect(100, 100, mouse_position.x-100, mouse_position.y-100, Color::RED, commonWidth, true, Color::WHITE);break;
 		}
 		
