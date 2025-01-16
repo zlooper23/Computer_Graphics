@@ -18,6 +18,9 @@ public:
 	int window_width;
 	int window_height;
 
+	int commonWidth;
+	int mode;
+
 	float time;
 
 	// Input

@@ -17,6 +17,9 @@ Application::Application(const char* caption, int width, int height)
 	this->keystate = SDL_GetKeyboardState(nullptr);
 
 	this->framebuffer.Resize(w, h);
+
+	this->commonWidth=1;
+	this->mode=1;
 }
 
 Application::~Application()
@@ -35,11 +38,16 @@ void Application::Render(void)
 
 	/////////////////////////
 
-	framebuffer.Fill(Color::BLACK);
+	//framebuffer.Fill(Color::BLACK);
 	//framebuffer.DrawRect(100, 100, mouse_position.x-100, mouse_position.y-100, Color::RED, 10, true, Color::WHITE);
+	//framebuffer.DrawRect(100, 100, mouse_position.x-100, mouse_position.y-100, Color::RED);
+
 	//framebuffer.DrawLineDDA(mouse_position.x, mouse_position.y, mouse_position.x + 100 * cos(time), mouse_position.y + 100 * sin(time), Color::WHITE);
 	//framebuffer.DrawTriangle(Vector2(0, 0), Vector2(500, 250), Vector2(mouse_position.x, mouse_position.y), Color::WHITE, true, Color::BLUE);
-	framebuffer.DrawCircle(mouse_position.x, mouse_position.y, abs(100*sin(time)), Color::RED, 10, true,Color::WHITE);
+	//framebuffer.DrawCircle(mouse_position.x, mouse_position.y, abs(100*sin(time)), Color::RED, 10, false,Color::WHITE);
+	//framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 10, Color::RED, 1, true,Color::RED);
+
+
 
 
 	/////////////////////////
@@ -59,6 +67,13 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 	// KEY CODES: https://wiki.libsdl.org/SDL2/SDL_Keycode
 	switch(event.keysym.sym) {
 		case SDLK_ESCAPE: exit(0); break; // ESC key, kill the app
+		case SDLK_e: framebuffer.Fill(Color::BLACK); break; 
+		case SDLK_PLUS: commonWidth++;printf("Width: %d\n", commonWidth); break; 
+		case SDLK_MINUS: if(commonWidth>1){commonWidth--;printf("Width: %d\n", commonWidth);} break; 
+		case SDLK_1: mode = 1; break;
+		case SDLK_2: mode = 2; break;
+
+
 	}
 }
 
@@ -78,7 +93,13 @@ void Application::OnMouseButtonUp( SDL_MouseButtonEvent event )
 
 void Application::OnMouseMove(SDL_MouseButtonEvent event)
 {
-
+	if (event.button == SDL_BUTTON_LEFT) {
+		switch(mode){
+			case 1: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 10, Color::RED, commonWidth, true,Color::BLUE);break;
+			case 2: framebuffer.Fill(Color::BLACK); framebuffer.DrawRect(100, 100, mouse_position.x-100, mouse_position.y-100, Color::RED, commonWidth, true, Color::WHITE);break;
+		}
+		
+	}
 }
 
 void Application::OnWheel(SDL_MouseWheelEvent event)
