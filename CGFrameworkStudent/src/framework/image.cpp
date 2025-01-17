@@ -490,13 +490,16 @@ void Image::DrawTriangle(const Vector2& p0, const Vector2& p1, const Vector2& p2
 	ScanLineDDA(p1.x, p1.y, p2.x, p2.y, minX, maxX);
 	ScanLineDDA(p2.x, p2.y, p0.x, p0.y, minX, maxX);
 
-	int a = 0;
-	for(int i = mny; i<mxy; i++){
-		for(int j = minX[a];j<maxX[a]; j++){
-			SetPixel(j, i, Color::WHITE);
+	if(isFilled){
+		int a = 0;
+		for(int i = 0; i<mxy; i++){
+			for(int j = minX[a];j<maxX[a]; j++){
+				SetPixel(j, i, Color::WHITE);
+			}
+			a++;
 		}
-		a++;
 	}
+	
 }
 void Image::DrawQuarter(int x, int y, int a, int b, const Color& borderColor){
 		SetPixel(x+a, y+b, borderColor);		
