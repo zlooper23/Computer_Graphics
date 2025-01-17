@@ -99,7 +99,7 @@ public:
 	void ScanLineDDA(int x0, int y0, int x1, int y1, std::vector<int>& minX, std::vector<int>& maxX);
 	void DrawQuarter(int x, int y, int a, int b, const Color& borderColor);
 	void DrawCircle(int x, int y, int r, const Color& borderColor, int borderWidth, bool isFilled, const Color& fillColor);
-
+	void DrawImage(const Image& image, int x, int y);
 	#endif
 
 };

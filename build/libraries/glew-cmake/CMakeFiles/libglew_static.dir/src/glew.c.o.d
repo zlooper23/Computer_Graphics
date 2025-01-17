@@ -1,7 +1,7 @@
 libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o: \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c \
  /usr/include/stdc-predef.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/glew-cmake/include/GL/glew.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/include/GL/glew.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -19,7 +19,7 @@ libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/glew-cmake/include/GL/glxew.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/include/GL/glxew.h \
  /usr/include/X11/Xlib.h /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \

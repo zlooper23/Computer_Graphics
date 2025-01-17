@@ -1,15 +1,15 @@
 libraries/sdl2/CMakeFiles/SDL2.dir/src/haptic/linux/SDL_syshaptic.c.o: \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/SDL_syshaptic.c \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/SDL_syshaptic.c \
  /usr/include/stdc-predef.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../SDL_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../dynapi/SDL_dynapi.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../dynapi/SDL_dynapi_overrides.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_platform.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/begin_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/close_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_assert.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../SDL_internal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../dynapi/SDL_dynapi.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../dynapi/SDL_dynapi_overrides.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/begin_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/close_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_assert.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -78,21 +78,21 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/haptic/linux/SDL_syshaptic.c.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_log.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_haptic.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_error.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_joystick.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_guid.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../SDL_syshaptic.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../SDL_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_joystick.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../joystick/SDL_sysjoystick.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../joystick/../SDL_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../joystick/SDL_joystick_c.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_gamecontroller.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_rwops.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_sensor.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../joystick/linux/SDL_sysjoystick_c.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_log.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_haptic.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_error.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_joystick.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_guid.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../SDL_syshaptic.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../SDL_internal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_joystick.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../joystick/SDL_sysjoystick.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../joystick/../SDL_internal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../joystick/SDL_joystick_c.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_gamecontroller.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_rwops.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_sensor.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../joystick/linux/SDL_sysjoystick_c.h \
  /usr/include/linux/input.h /usr/include/x86_64-linux-gnu/sys/time.h \
  /usr/include/x86_64-linux-gnu/sys/ioctl.h \
  /usr/include/x86_64-linux-gnu/bits/ioctls.h \
@@ -111,9 +111,9 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/haptic/linux/SDL_syshaptic.c.o: \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
  /usr/include/linux/input-event-codes.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../core/linux/SDL_evdev_capabilities.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../core/linux/../../SDL_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../core/linux/SDL_udev.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../core/linux/SDL_evdev_capabilities.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../core/linux/../../SDL_internal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/haptic/linux/../../core/linux/SDL_udev.h \
  /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
  /usr/include/x86_64-linux-gnu/bits/confname.h \

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/gcc
 C_DEFINES = -DGLEW_NO_GLU -DGLEW_STATIC
 
-C_INCLUDES = -I/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/glew-cmake/include
+C_INCLUDES = -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/include
 
 C_FLAGS = -g
 

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/gcc
 C_DEFINES = -DSDL2_EXPORTS -DUSING_GENERATED_CONFIG_H
 
-C_INCLUDES = -I/home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include -I/home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include-config-debug
+C_INCLUDES = -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug
 
-C_FLAGS =  -idirafter "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/khronos" -DHAVE_LINUX_VERSION_H  -Wall -fno-strict-aliasing -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -mmmx -m3dnow -msse -msse2 -msse3 -I/usr/include -D_REENTRANT  -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MINOR_VERSION=26 -DSDL_BUILD_MICRO_VERSION=2 -g -fPIC
+C_FLAGS =  -idirafter "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/khronos" -DHAVE_LINUX_VERSION_H  -Wall -fno-strict-aliasing -Wdeclaration-after-statement -fvisibility=hidden -Wshadow -mmmx -m3dnow -msse -msse2 -msse3 -I/usr/include -D_REENTRANT  -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MINOR_VERSION=26 -DSDL_BUILD_MICRO_VERSION=2 -g -fPIC
 

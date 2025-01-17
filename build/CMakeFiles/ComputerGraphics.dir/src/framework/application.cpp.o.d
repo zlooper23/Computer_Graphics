@@ -1,16 +1,16 @@
 CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o: \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/application.cpp \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.cpp \
  /usr/include/stdc-predef.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/application.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/main/includes.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_main.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_stdinc.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_config.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_platform.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/begin_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/close_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_config_minimal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/main/includes.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_main.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_stdinc.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_config.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_platform.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/begin_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/close_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_config_minimal.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -29,20 +29,20 @@ CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_assert.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_atomic.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_audio.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_error.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_endian.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_assert.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_atomic.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_audio.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_error.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_endian.h \
  /usr/include/endian.h /usr/include/x86_64-linux-gnu/bits/endian.h \
  /usr/include/x86_64-linux-gnu/bits/endianness.h \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_mutex.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_thread.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_rwops.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_clipboard.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_cpuinfo.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_mutex.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_thread.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_rwops.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_clipboard.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_cpuinfo.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
@@ -76,43 +76,43 @@ CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/c++/13/bits/std_abs.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_events.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_video.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_pixels.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_rect.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_surface.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_blendmode.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_keyboard.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_keycode.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_scancode.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_mouse.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_joystick.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_guid.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_gamecontroller.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_sensor.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_quit.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_gesture.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_touch.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_filesystem.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_haptic.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_hidapi.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_hints.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_loadso.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_log.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_messagebox.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_metal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_power.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_render.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_shape.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_system.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_timer.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_version.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_locale.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_misc.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_syswm.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/glew-cmake/include/GL/glew.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_events.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_video.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_pixels.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_rect.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_surface.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_blendmode.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_keyboard.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_keycode.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_scancode.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_mouse.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_joystick.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_guid.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_gamecontroller.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_sensor.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_quit.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_gesture.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_touch.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_filesystem.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_haptic.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_hidapi.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_hints.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_loadso.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_log.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_messagebox.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_metal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_power.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_render.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_shape.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_system.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_timer.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_version.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_locale.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_misc.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_syswm.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/include/GL/glew.h \
  /usr/include/c++/13/cstddef /usr/include/c++/13/cstdint \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_opengl.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_opengl.h \
  /usr/include/GL/glu.h /usr/include/GL/gl.h /usr/include/c++/13/iostream \
  /usr/include/c++/13/bits/requires_hosted.h /usr/include/c++/13/ostream \
  /usr/include/c++/13/ios /usr/include/c++/13/iosfwd \
@@ -223,7 +223,7 @@ CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/include/c++/13/cassert /usr/include/assert.h /usr/include/string.h \
  /usr/include/strings.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/framework.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
@@ -233,15 +233,15 @@ CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/image.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/mesh.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/camera.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/shader.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/texture.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.h \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
  /usr/include/c++/13/ext/aligned_buffer.h \
  /usr/include/c++/13/bits/stl_map.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/stl_multimap.h \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/cstring \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/utils.h
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.h

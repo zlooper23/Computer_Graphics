@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent
+CMAKE_SOURCE_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zlooper23/Desktop/UPF/2n/Graphics/build
+CMAKE_BINARY_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build
 
 # Include any dependencies generated for this target.
 include libraries/glew-cmake/CMakeFiles/libglew_static.dir/depend.make
@@ -70,18 +70,18 @@ include libraries/glew-cmake/CMakeFiles/libglew_static.dir/progress.make
 include libraries/glew-cmake/CMakeFiles/libglew_static.dir/flags.make
 
 libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o: libraries/glew-cmake/CMakeFiles/libglew_static.dir/flags.make
-libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c
+libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c
 libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o: libraries/glew-cmake/CMakeFiles/libglew_static.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o -MF CMakeFiles/libglew_static.dir/src/glew.c.o.d -o CMakeFiles/libglew_static.dir/src/glew.c.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o -MF CMakeFiles/libglew_static.dir/src/glew.c.o.d -o CMakeFiles/libglew_static.dir/src/glew.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c
 
 libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libglew_static.dir/src/glew.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c > CMakeFiles/libglew_static.dir/src/glew.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c > CMakeFiles/libglew_static.dir/src/glew.c.i
 
 libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libglew_static.dir/src/glew.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c -o CMakeFiles/libglew_static.dir/src/glew.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c -o CMakeFiles/libglew_static.dir/src/glew.c.s
 
 # Object files for target libglew_static
 libglew_static_OBJECTS = \
@@ -93,21 +93,21 @@ libglew_static_EXTERNAL_OBJECTS =
 libraries/glew-cmake/lib/libglewd.a: libraries/glew-cmake/CMakeFiles/libglew_static.dir/src/glew.c.o
 libraries/glew-cmake/lib/libglewd.a: libraries/glew-cmake/CMakeFiles/libglew_static.dir/build.make
 libraries/glew-cmake/lib/libglewd.a: libraries/glew-cmake/CMakeFiles/libglew_static.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library lib/libglewd.a"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -P CMakeFiles/libglew_static.dir/cmake_clean_target.cmake
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libglew_static.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library lib/libglewd.a"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -P CMakeFiles/libglew_static.dir/cmake_clean_target.cmake
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libglew_static.dir/link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold "create libGLEW symbolic link"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/glew-cmake/lib && /usr/bin/cmake -E create_symlink libglew.a libGLEW.a
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake/lib && /usr/bin/cmake -E create_symlink libglew.a libGLEW.a
 
 # Rule to build all files generated by this target.
 libraries/glew-cmake/CMakeFiles/libglew_static.dir/build: libraries/glew-cmake/lib/libglewd.a
 .PHONY : libraries/glew-cmake/CMakeFiles/libglew_static.dir/build
 
 libraries/glew-cmake/CMakeFiles/libglew_static.dir/clean:
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -P CMakeFiles/libglew_static.dir/cmake_clean.cmake
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -P CMakeFiles/libglew_static.dir/cmake_clean.cmake
 .PHONY : libraries/glew-cmake/CMakeFiles/libglew_static.dir/clean
 
 libraries/glew-cmake/CMakeFiles/libglew_static.dir/depend:
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/glew-cmake /home/zlooper23/Desktop/UPF/2n/Graphics/build /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/glew-cmake /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/glew-cmake/CMakeFiles/libglew_static.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake/CMakeFiles/libglew_static.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libraries/glew-cmake/CMakeFiles/libglew_static.dir/depend
 

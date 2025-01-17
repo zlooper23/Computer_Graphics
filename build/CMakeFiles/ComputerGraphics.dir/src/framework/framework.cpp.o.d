@@ -1,7 +1,7 @@
 CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o: \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/framework.cpp \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.cpp \
  /usr/include/stdc-predef.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/framework.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

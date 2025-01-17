@@ -3,76 +3,76 @@
 cmake_policy(SET CMP0009 NEW)
 
 # FILES_APPEND at CMakeLists.txt:56 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/extra/*.cpp")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/extra/*.cpp")
 set(OLD_GLOB
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/extra/picopng.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/extra/picopng.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # FILES_APPEND at CMakeLists.txt:56 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/extra/*.h")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/extra/*.h")
 set(OLD_GLOB
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/extra/directory_watcher.h"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/extra/picopng.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/extra/directory_watcher.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/extra/picopng.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # FILES_APPEND at CMakeLists.txt:56 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/*.cpp")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/*.cpp")
 set(OLD_GLOB
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/application.cpp"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/camera.cpp"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/framework.cpp"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/image.cpp"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/mesh.cpp"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/shader.cpp"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/texture.cpp"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/utils.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # FILES_APPEND at CMakeLists.txt:56 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/*.h")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/*.h")
 set(OLD_GLOB
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/application.h"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/camera.h"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/framework.h"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/image.h"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/mesh.h"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/shader.h"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/texture.h"
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/utils.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # FILES_APPEND at CMakeLists.txt:56 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/main/*.cpp")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/main/*.cpp")
 set(OLD_GLOB
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/main/main.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/main/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles/cmake.verify_globs")
 endif()
 
 # FILES_APPEND at CMakeLists.txt:56 (file)
-file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/main/*.h")
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/main/*.h")
 set(OLD_GLOB
-  "/home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/main/includes.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/main/includes.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
-  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles/cmake.verify_globs")
+  file(TOUCH_NOCREATE "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles/cmake.verify_globs")
 endif()

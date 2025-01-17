@@ -39,10 +39,23 @@ std::string absResPath( const std::string& p_sFile )
 	sFileName = '\\' + sFixedPath;
 	sFullPath = result;
 #elif defined(__linux__)
+	std::string sFixedPathLin = std::string("../CGFrameworkStudent/res/") + p_sFile;
 	char result[PATH_MAX];
 	ssize_t count = readlink( "/proc/self/exe", result, PATH_MAX );
 	sFullPath = std::string( result, ( count > 0 ) ? count : 0 );
-	sFileName = '/' + sFixedPath;
+	printf("%s\n", sFullPath.c_str());
+	sFileName = '/' + sFixedPathLin;
+
+	/*char resolvedPath[PATH_MAX];
+    // Use realpath to resolve the full absolute path
+    if (realpath(sFixedPathLin.c_str(), resolvedPath) != NULL) {
+        return std::string(resolvedPath);  // Return the resolved absolute path
+    } else {
+        std::cerr << "Error resolving path: " << strerror(errno) << std::endl;
+        return "";  // Return an empty string if the path could not be resolved
+    }*/
+
+
 #elif defined(__APPLE__)
 	char result[PATH_MAX];
 	uint32_t bufsize = PATH_MAX;

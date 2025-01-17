@@ -1,15 +1,15 @@
 libraries/sdl2/CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.o: \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/SDL_hidapi_rumble.c \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/SDL_hidapi_rumble.c \
  /usr/include/stdc-predef.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../SDL_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../dynapi/SDL_dynapi.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../dynapi/SDL_dynapi_overrides.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_platform.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/begin_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/close_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_assert.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../SDL_internal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../dynapi/SDL_dynapi.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../dynapi/SDL_dynapi_overrides.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/begin_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/close_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_assert.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -78,31 +78,31 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_log.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_thread.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_error.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_atomic.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_platform.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_mutex.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_timer.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/SDL_hidapijoystick_c.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_atomic.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_hints.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_mutex.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_joystick.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_guid.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_gamecontroller.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_rwops.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_sensor.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_joystick.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_hidapi.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../usb_ids.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/SDL_hidapi_rumble.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/SDL_systhread.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/../SDL_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/SDL_thread_c.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/pthread/SDL_systhread_c.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/pthread/../../SDL_internal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_log.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_thread.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_error.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_atomic.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_mutex.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_timer.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/SDL_hidapijoystick_c.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_atomic.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_hints.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_mutex.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_joystick.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_guid.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_gamecontroller.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_rwops.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_sensor.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_joystick.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_hidapi.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../usb_ids.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/SDL_hidapi_rumble.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/SDL_systhread.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/../SDL_internal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/SDL_thread_c.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/pthread/SDL_systhread_c.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/pthread/../../SDL_internal.h \
  /usr/include/pthread.h /usr/include/sched.h \
  /usr/include/x86_64-linux-gnu/bits/sched.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
@@ -114,5 +114,5 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/joystick/hidapi/SDL_hidapi_rumble.c.o: \
  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/../SDL_error_c.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/.././SDL_internal.h
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/../SDL_error_c.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/hidapi/../../thread/.././SDL_internal.h

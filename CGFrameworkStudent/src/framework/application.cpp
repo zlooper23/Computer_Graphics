@@ -49,7 +49,6 @@ void Application::Render(void)
 
 
 
-
 	/////////////////////////
  
 	framebuffer.Render();
@@ -80,7 +79,13 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 {
 	if (event.button == SDL_BUTTON_LEFT) {
+		Image im;
+		if(!im.LoadPNG("images/line.png")){
+			printf("Fail opening file\n");
+			exit(1);
+		}
 
+		framebuffer.DrawImage(im, mouse_position.x, mouse_position.y);
 	}
 }
 

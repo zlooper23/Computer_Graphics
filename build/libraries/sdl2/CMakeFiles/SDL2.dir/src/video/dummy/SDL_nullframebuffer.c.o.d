@@ -1,15 +1,15 @@
 libraries/sdl2/CMakeFiles/SDL2.dir/src/video/dummy/SDL_nullframebuffer.c.o: \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/SDL_nullframebuffer.c \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/SDL_nullframebuffer.c \
  /usr/include/stdc-predef.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../../SDL_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../../dynapi/SDL_dynapi.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../../dynapi/SDL_dynapi_overrides.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_platform.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/begin_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/close_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_assert.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../../SDL_internal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../../dynapi/SDL_dynapi.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../../dynapi/SDL_dynapi_overrides.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/begin_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/close_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_assert.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -78,29 +78,29 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/video/dummy/SDL_nullframebuffer.c.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_log.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../SDL_sysvideo.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../../SDL_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_messagebox.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_video.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_pixels.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_endian.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_rect.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_error.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_rwops.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_surface.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_blendmode.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_shape.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_thread.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_atomic.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_platform.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_mutex.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_metal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../SDL_vulkan_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/.././khronos/vulkan/vulkan.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/.././khronos/vulkan/vk_platform.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/.././khronos/vulkan/vulkan_core.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_log.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../SDL_sysvideo.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../../SDL_internal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_messagebox.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_video.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_pixels.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_endian.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_rect.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_error.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_rwops.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_surface.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_blendmode.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_shape.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_thread.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_atomic.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_mutex.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_metal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/../SDL_vulkan_internal.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/.././khronos/vulkan/vulkan.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/.././khronos/vulkan/vk_platform.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/.././khronos/vulkan/vulkan_core.h \
  /usr/include/xcb/xcb.h /usr/include/x86_64-linux-gnu/sys/uio.h \
  /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
@@ -116,9 +116,9 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/video/dummy/SDL_nullframebuffer.c.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
  /usr/include/xcb/xproto.h /usr/include/xcb/xcb.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/.././khronos/vulkan/vulkan_xcb.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/.././khronos/vulkan/vulkan_xcb.h \
  /usr/include/X11/Xlib.h /usr/include/X11/X.h \
  /usr/include/X11/Xfuncproto.h /usr/include/X11/Xosdefs.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/.././khronos/vulkan/vulkan_xlib.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/build/libraries/sdl2/include/SDL_vulkan.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/SDL_nullframebuffer_c.h
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/.././khronos/vulkan/vulkan_xlib.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_vulkan.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/video/dummy/SDL_nullframebuffer_c.h

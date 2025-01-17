@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent
+CMAKE_SOURCE_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zlooper23/Desktop/UPF/2n/Graphics/build
+CMAKE_BINARY_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ComputerGraphics.dir/depend.make
@@ -70,144 +70,144 @@ include CMakeFiles/ComputerGraphics.dir/progress.make
 include CMakeFiles/ComputerGraphics.dir/flags.make
 
 CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o: CMakeFiles/ComputerGraphics.dir/flags.make
-CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/extra/picopng.cpp
+CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/extra/picopng.cpp
 CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o: CMakeFiles/ComputerGraphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/extra/picopng.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/extra/picopng.cpp
 
 CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/extra/picopng.cpp > CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/extra/picopng.cpp > CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.i
 
 CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/extra/picopng.cpp -o CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/extra/picopng.cpp -o CMakeFiles/ComputerGraphics.dir/src/extra/picopng.cpp.s
 
 CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o: CMakeFiles/ComputerGraphics.dir/flags.make
-CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/application.cpp
+CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.cpp
 CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o: CMakeFiles/ComputerGraphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/application.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.cpp
 
 CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/application.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.i
 
 CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/application.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.s
 
 CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o: CMakeFiles/ComputerGraphics.dir/flags.make
-CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/camera.cpp
+CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.cpp
 CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o: CMakeFiles/ComputerGraphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.cpp
 
 CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/camera.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.i
 
 CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/camera.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.s
 
 CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o: CMakeFiles/ComputerGraphics.dir/flags.make
-CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/framework.cpp
+CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.cpp
 CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o: CMakeFiles/ComputerGraphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/framework.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.cpp
 
 CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/framework.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.i
 
 CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/framework.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.s
 
 CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o: CMakeFiles/ComputerGraphics.dir/flags.make
-CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/image.cpp
+CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.cpp
 CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o: CMakeFiles/ComputerGraphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.cpp
 
 CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/image.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.i
 
 CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/image.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.s
 
 CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o: CMakeFiles/ComputerGraphics.dir/flags.make
-CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/mesh.cpp
+CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.cpp
 CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o: CMakeFiles/ComputerGraphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.cpp
 
 CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/mesh.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.i
 
 CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/mesh.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.s
 
 CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o: CMakeFiles/ComputerGraphics.dir/flags.make
-CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/shader.cpp
+CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.cpp
 CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o: CMakeFiles/ComputerGraphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/shader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.cpp
 
 CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/shader.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.i
 
 CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/shader.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/shader.cpp.s
 
 CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o: CMakeFiles/ComputerGraphics.dir/flags.make
-CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/texture.cpp
+CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.cpp
 CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o: CMakeFiles/ComputerGraphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/texture.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.cpp
 
 CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/texture.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.i
 
 CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/texture.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.s
 
 CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o: CMakeFiles/ComputerGraphics.dir/flags.make
-CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/utils.cpp
+CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.cpp
 CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o: CMakeFiles/ComputerGraphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.cpp
 
 CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/utils.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.cpp > CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.i
 
 CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/framework/utils.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.cpp -o CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.s
 
 CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o: CMakeFiles/ComputerGraphics.dir/flags.make
-CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/main/main.cpp
+CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/main/main.cpp
 CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o: CMakeFiles/ComputerGraphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o -c /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/main/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o -MF CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o.d -o CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/main/main.cpp
 
 CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/main/main.cpp > CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/main/main.cpp > CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.i
 
 CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/src/main/main.cpp -o CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/main/main.cpp -o CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.s
 
 # Object files for target ComputerGraphics
 ComputerGraphics_OBJECTS = \
@@ -245,7 +245,7 @@ ComputerGraphics: /usr/lib/x86_64-linux-gnu/libX11.so
 ComputerGraphics: /usr/lib/x86_64-linux-gnu/libGLX.so
 ComputerGraphics: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 ComputerGraphics: CMakeFiles/ComputerGraphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ComputerGraphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ComputerGraphics"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ComputerGraphics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -257,6 +257,6 @@ CMakeFiles/ComputerGraphics.dir/clean:
 .PHONY : CMakeFiles/ComputerGraphics.dir/clean
 
 CMakeFiles/ComputerGraphics.dir/depend:
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent /home/zlooper23/Desktop/UPF/2n/Graphics/build /home/zlooper23/Desktop/UPF/2n/Graphics/build /home/zlooper23/Desktop/UPF/2n/Graphics/build/CMakeFiles/ComputerGraphics.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles/ComputerGraphics.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/ComputerGraphics.dir/depend
 

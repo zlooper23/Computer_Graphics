@@ -1,4 +1,4 @@
-# Install script for directory: /home/zlooper23/Desktop/UPF/2n/Graphics/CGFrameworkStudent/libraries/sdl2
+# Install script for directory: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

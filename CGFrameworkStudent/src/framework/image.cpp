@@ -128,17 +128,26 @@ void Image::FlipY()
 }
 
 bool Image::LoadPNG(const char* filename, bool flip_y)
-{
+{	
 	std::string sfullPath = absResPath(filename);
+	//std::ifstream file("/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/res/images/clear.png", std::ios::in | std::ios::binary | std::ios::ate);
 	std::ifstream file(sfullPath, std::ios::in | std::ios::binary | std::ios::ate);
+
+	if (!file.is_open()) {
+		printf("Failed to open file: %s\n", sfullPath.c_str());
+		return false;
+	}
 
 	// Get filesize
 	std::streamsize size = 0;
 	if (file.seekg(0, std::ios::end).good()) size = file.tellg();
 	if (file.seekg(0, std::ios::beg).good()) size -= file.tellg();
 
-	if (!size)
+	if (!size){
+		printf("Fail size\n");
 		return false;
+	}
+		
 
 	std::vector<unsigned char> buffer;
 
@@ -153,8 +162,11 @@ bool Image::LoadPNG(const char* filename, bool flip_y)
 
 	std::vector<unsigned char> out_image;
 
-	if (decodePNG(out_image, width, height, buffer.empty() ? 0 : &buffer[0], (unsigned long)buffer.size(), true) != 0)
+	if (decodePNG(out_image, width, height, buffer.empty() ? 0 : &buffer[0], (unsigned long)buffer.size(), true) != 0){
+		printf("Fail decoding\n");
 		return false;
+	}
+		
 
 	size_t bufferSize = out_image.size();
 	unsigned int originalBytesPerPixel = (unsigned int)bufferSize / (width * height);
@@ -195,6 +207,7 @@ bool Image::LoadTGA(const char* filename, bool flip_y)
 	unsigned int bytesPerPixel;
 
     std::string sfullPath = absResPath( filename );
+	
 
 	FILE * file = fopen( sfullPath.c_str(), "rb");
    	if ( file == NULL || fread(TGAcompare, 1, sizeof(TGAcompare), file) != sizeof(TGAcompare) ||
@@ -504,4 +517,28 @@ void Image::DrawCircle(int x, int y, int r, const Color& borderColor, int border
 			x0--;
 		}
 	}
+}
+
+void Image::DrawImage(const Image& image, int x, int y){
+	for(int i = 0; i<image.width; i++){
+		for(int j = 0; j<image.height; j++)
+			if(i < 0 || i > width-1){}
+			else if(j < 0 || j > height-1){}
+			else{
+				SetPixel(i+x, j+y, image.pixels[ j * image.width + i]);
+			}
+	}
+	
+	
+	//image.pixels
+
+
+
+
+
+	/*void SetPixel(unsigned int x, unsigned int y, const Color& c) { 
+		if(x < 0 || x > width-1) return; 
+		if(y < 0 || y > height-1) return; 
+		pixels[ y * width + x ] = c; }*/
+
 }
