@@ -20,6 +20,13 @@ public:
 
 	int commonWidth;
 	int mode;
+	Color backgroundColor;
+	Color primaryColor;
+	Color borderColor;
+	bool isFilled;
+	Vector2 pos1;
+	Image prevIm;
+	bool creating;
 
 	float time;
 

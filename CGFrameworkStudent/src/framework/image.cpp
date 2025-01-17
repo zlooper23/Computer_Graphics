@@ -424,29 +424,43 @@ void Image::DrawLineDDA(int x0, int y0, int x1, int y1, const Color& c){
 void Image::DrawRect(int x, int y, int w, int h, const Color& borderColor,
 int borderWidth, bool isFilled, const Color& fillColor){
 	if(isFilled){
-		for( int xi = x; xi < (x + w); ++xi){
-			for( int yi = y; yi < (y + h); ++yi)
+		for( int xi = 0; xi < abs(w); ++xi){
+			for( int yi = 0; yi < abs(h); ++yi)
 			{
-				SetPixel(xi, yi, fillColor);
+				SetPixel(x+xi*(w/abs(w)), y+yi*(h/abs(h)), fillColor);
 			}
 		}
 	}
 	
 	// Draw only the border
 	for(int i = 0; i<borderWidth; i++){
-		for( int xi = x-borderWidth+1; xi < (x + w)+borderWidth-1; ++xi)
-		{
-		SetPixel(xi, y-i, borderColor);
-		SetPixel(xi, y + h - 1+i, borderColor);
+		if(w<0){
+			for( int xi = 0; xi < abs(w)+1; ++xi)
+			{
+				SetPixel(x+xi*(w/abs(w)), y-i, borderColor);
+				SetPixel(x+xi*(w/abs(w)), y + h+i, borderColor);
+			}
+		}else{
+			for( int xi = 1-borderWidth; xi < abs(w)+borderWidth; ++xi)
+			{
+				SetPixel(x+xi*(w/abs(w)), y-i, borderColor);
+				SetPixel(x+xi*(w/abs(w)), y + h+i, borderColor);
+			}
 		}
-
-		for( int yi = y + 1; yi < (y + h - 1); ++yi)
+		for( int yi = 0; yi < abs(h)+1; ++yi)
 		{
-		SetPixel(x-i, yi, borderColor);
-		SetPixel(x + w - 1+i, yi, borderColor);
+			SetPixel(x-i, y+yi*(h/abs(h)), borderColor);
+			SetPixel(x + w+i, y+yi*(h/abs(h)), borderColor);
 		}
 	}
 }
+
+
+
+
+
+
+
 void Image::ScanLineDDA(int x0, int y0, int x1, int y1, std::vector<int>& minX, std::vector<int>& maxX){
 	float d = std::max(abs(x1-x0), abs(y1-y0));
 	Vector2 v(((x1-x0)/d), ((y1-y0)/d));
@@ -528,17 +542,4 @@ void Image::DrawImage(const Image& image, int x, int y){
 				SetPixel(i+x, j+y, image.pixels[ j * image.width + i]);
 			}
 	}
-	
-	
-	//image.pixels
-
-
-
-
-
-	/*void SetPixel(unsigned int x, unsigned int y, const Color& c) { 
-		if(x < 0 || x > width-1) return; 
-		if(y < 0 || y > height-1) return; 
-		pixels[ y * width + x ] = c; }*/
-
 }
