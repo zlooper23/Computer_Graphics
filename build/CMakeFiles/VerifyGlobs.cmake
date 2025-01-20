@@ -27,10 +27,12 @@ endif()
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/*.cpp")
 set(OLD_GLOB
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/button.cpp"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.cpp"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.cpp"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.cpp"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.cpp"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/particleSystem.cpp"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.cpp"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.cpp"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.cpp"
@@ -44,10 +46,12 @@ endif()
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/*.h")
 set(OLD_GLOB
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/button.h"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.h"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.h"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.h"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.h"
+  "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/particleSystem.h"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.h"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.h"
   "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.h"

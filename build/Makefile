@@ -327,6 +327,30 @@ src/framework/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.s
 .PHONY : src/framework/application.cpp.s
 
+src/framework/button.o: src/framework/button.cpp.o
+.PHONY : src/framework/button.o
+
+# target to build an object file
+src/framework/button.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/button.cpp.o
+.PHONY : src/framework/button.cpp.o
+
+src/framework/button.i: src/framework/button.cpp.i
+.PHONY : src/framework/button.i
+
+# target to preprocess a source file
+src/framework/button.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/button.cpp.i
+.PHONY : src/framework/button.cpp.i
+
+src/framework/button.s: src/framework/button.cpp.s
+.PHONY : src/framework/button.s
+
+# target to generate assembly for a file
+src/framework/button.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/button.cpp.s
+.PHONY : src/framework/button.cpp.s
+
 src/framework/camera.o: src/framework/camera.cpp.o
 .PHONY : src/framework/camera.o
 
@@ -422,6 +446,30 @@ src/framework/mesh.s: src/framework/mesh.cpp.s
 src/framework/mesh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.s
 .PHONY : src/framework/mesh.cpp.s
+
+src/framework/particleSystem.o: src/framework/particleSystem.cpp.o
+.PHONY : src/framework/particleSystem.o
+
+# target to build an object file
+src/framework/particleSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/particleSystem.cpp.o
+.PHONY : src/framework/particleSystem.cpp.o
+
+src/framework/particleSystem.i: src/framework/particleSystem.cpp.i
+.PHONY : src/framework/particleSystem.i
+
+# target to preprocess a source file
+src/framework/particleSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/particleSystem.cpp.i
+.PHONY : src/framework/particleSystem.cpp.i
+
+src/framework/particleSystem.s: src/framework/particleSystem.cpp.s
+.PHONY : src/framework/particleSystem.s
+
+# target to generate assembly for a file
+src/framework/particleSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/particleSystem.cpp.s
+.PHONY : src/framework/particleSystem.cpp.s
 
 src/framework/shader.o: src/framework/shader.cpp.o
 .PHONY : src/framework/shader.o
@@ -546,6 +594,9 @@ help:
 	@echo "... src/framework/application.o"
 	@echo "... src/framework/application.i"
 	@echo "... src/framework/application.s"
+	@echo "... src/framework/button.o"
+	@echo "... src/framework/button.i"
+	@echo "... src/framework/button.s"
 	@echo "... src/framework/camera.o"
 	@echo "... src/framework/camera.i"
 	@echo "... src/framework/camera.s"
@@ -558,6 +609,9 @@ help:
 	@echo "... src/framework/mesh.o"
 	@echo "... src/framework/mesh.i"
 	@echo "... src/framework/mesh.s"
+	@echo "... src/framework/particleSystem.o"
+	@echo "... src/framework/particleSystem.i"
+	@echo "... src/framework/particleSystem.s"
 	@echo "... src/framework/shader.o"
 	@echo "... src/framework/shader.i"
 	@echo "... src/framework/shader.s"

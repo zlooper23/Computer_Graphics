@@ -13,6 +13,12 @@
 },
 {
   "directory": "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build",
+  "command": "/usr/bin/g++ -DGLEW_NO_GLU -DGLEW_STATIC -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/ComputerGraphics -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/include -g -std=gnu++11 -o CMakeFiles/ComputerGraphics.dir/src/framework/button.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/button.cpp",
+  "file": "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/button.cpp",
+  "output": "CMakeFiles/ComputerGraphics.dir/src/framework/button.cpp.o"
+},
+{
+  "directory": "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build",
   "command": "/usr/bin/g++ -DGLEW_NO_GLU -DGLEW_STATIC -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/ComputerGraphics -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/include -g -std=gnu++11 -o CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.cpp",
   "file": "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.cpp",
   "output": "CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o"
@@ -34,6 +40,12 @@
   "command": "/usr/bin/g++ -DGLEW_NO_GLU -DGLEW_STATIC -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/ComputerGraphics -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/include -g -std=gnu++11 -o CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.cpp",
   "file": "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.cpp",
   "output": "CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o"
+},
+{
+  "directory": "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build",
+  "command": "/usr/bin/g++ -DGLEW_NO_GLU -DGLEW_STATIC -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/ComputerGraphics -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/include -g -std=gnu++11 -o CMakeFiles/ComputerGraphics.dir/src/framework/particleSystem.cpp.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/particleSystem.cpp",
+  "file": "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/particleSystem.cpp",
+  "output": "CMakeFiles/ComputerGraphics.dir/src/framework/particleSystem.cpp.o"
 },
 {
   "directory": "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build",

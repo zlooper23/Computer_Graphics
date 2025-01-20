@@ -2,6 +2,7 @@
 #include "mesh.h"
 #include "shader.h"
 #include "utils.h" 
+#include "button.h"
 
 Application::Application(const char* caption, int width, int height)
 {
@@ -40,6 +41,8 @@ Application::~Application()
 void Application::Init(void)
 {
 	std::cout << "Initiating app..." << std::endl;
+	Button::InitToolbar();
+	Button::RenderToolbar(framebuffer);
 }
 
 // Render one frame
@@ -103,6 +106,8 @@ void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 			exit(1);
 		}
 		framebuffer.DrawImage(im, mouse_position.x, mouse_position.y);*/
+
+
 		creating = false;
 		switch(mode) {
 			case 0: prevIm = framebuffer;printf("Copied	\n");break;
