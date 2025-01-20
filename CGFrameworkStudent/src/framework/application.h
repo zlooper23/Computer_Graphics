@@ -28,6 +28,7 @@ public:
 	Image prevIm;
 	bool creating;
 
+
 	float time;
 
 	// Input

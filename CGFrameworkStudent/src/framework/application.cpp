@@ -24,7 +24,7 @@ Application::Application(const char* caption, int width, int height)
 	this->primaryColor = Color::WHITE;
 	this->borderColor = Color::RED;
 	this->isFilled = true;
-	this->creating = false;
+	this->creating = true;
 
 
 
@@ -49,13 +49,13 @@ void Application::Render(void)
 
 	/////////////////////////
 
-	framebuffer.Fill(Color::BLACK);
+	//framebuffer.Fill(Color::BLACK);
 	//framebuffer.DrawRect(100, 100, mouse_position.x-100, mouse_position.y-100, Color::RED, 10, true, Color::WHITE);
 	//framebuffer.DrawRect(100, 100, mouse_position.x-100, mouse_position.y-100, Color::RED);
 
 	//framebuffer.DrawLineDDA(mouse_position.x, mouse_position.y, mouse_position.x + 100 * cos(time), mouse_position.y + 100 * sin(time), Color::WHITE);
 	//framebuffer.DrawTriangle(Vector2(0, 0), Vector2(500, 250), Vector2(mouse_position.x, mouse_position.y), Color::WHITE, true, Color::BLUE);
-	framebuffer.DrawTriangle(Vector2(100+mouse_position.x, 100+mouse_position.x), Vector2(500+mouse_position.x, 250+mouse_position.x), Vector2(mouse_position.x, mouse_position.y), Color::RED, isFilled, Color::WHITE);
+	//framebuffer.DrawTriangle(Vector2(100+mouse_position.x, 100+mouse_position.x), Vector2(500+mouse_position.x, 250+mouse_position.x), Vector2(mouse_position.x, mouse_position.y), Color::RED, isFilled, Color::WHITE);
 
 	//framebuffer.DrawCircle(mouse_position.x, mouse_position.y, abs(100*sin(time)), Color::RED, 10, false,Color::WHITE);
 	//framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 10, Color::RED, 1, true,Color::RED);
@@ -63,10 +63,9 @@ void Application::Render(void)
 
 
 	/////////////////////////
-	if(!creating){
+	if(creating){
 		prevIm = framebuffer;
 	}
-	
 	framebuffer.Render();
 }
 
@@ -104,9 +103,9 @@ void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 			exit(1);
 		}
 		framebuffer.DrawImage(im, mouse_position.x, mouse_position.y);*/
-		creating = true;
+		creating = false;
 		switch(mode) {
-			case 0: prevIm = framebuffer;
+			case 0: prevIm = framebuffer;printf("Copied	\n");break;
 			case 1: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
 			case 2: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
 			case 3: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
@@ -119,13 +118,13 @@ void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 void Application::OnMouseButtonUp( SDL_MouseButtonEvent event )
 {
 	if (event.button == SDL_BUTTON_LEFT) {
-		creating = false;
+		creating = true;
 		switch(mode) {
 			case 0: break;
 			case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, primaryColor); break;
 			case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, primaryColor, commonWidth, isFilled, borderColor); break;
 			case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), primaryColor, commonWidth, isFilled, borderColor); break;
-			case 4: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawTriangle(pos1,  mouse_position, Vector2(100, 100), primaryColor, isFilled, borderColor); break;
+			case 4: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawTriangle(pos1,  Vector2(2*pos1.x-mouse_position.x, mouse_position.y), mouse_position, borderColor, isFilled, primaryColor); break;
 			case 5: break;
 		}
 	}
@@ -139,7 +138,7 @@ void Application::OnMouseMove(SDL_MouseButtonEvent event)
 			case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, primaryColor);break;
 			case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, primaryColor, commonWidth, isFilled, borderColor); break;
 			case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), primaryColor, commonWidth, isFilled, borderColor); break;
-			case 4: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawTriangle(pos1,  mouse_position, Vector2(100, 100), primaryColor, isFilled, borderColor); break;
+			case 4: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawTriangle(pos1, Vector2(2*pos1.x-mouse_position.x, mouse_position.y), mouse_position, primaryColor, isFilled, borderColor); break;
 			case 5: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 1, primaryColor, commonWidth, isFilled, primaryColor); break;
 		}
 		

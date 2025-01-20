@@ -538,11 +538,12 @@ void Image::DrawCircle(int x, int y, int r, const Color& borderColor, int border
 
 void Image::DrawImage(const Image& image, int x, int y){
 	for(int i = 0; i<image.width; i++){
-		for(int j = 0; j<image.height; j++)
+		for(int j = 0; j<image.height; j++){
 			if(i < 0 || i > width-1){}
 			else if(j < 0 || j > height-1){}
 			else{
-				SetPixel(i+x, j+y, image.pixels[ j * image.width + i]);
+				pixels[ (j+y) * width + i+x] = image.pixels[ j * image.width + i];
 			}
+		}
 	}
 }
