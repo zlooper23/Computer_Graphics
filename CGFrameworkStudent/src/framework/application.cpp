@@ -41,8 +41,9 @@ Application::~Application()
 void Application::Init(void)
 {
 	std::cout << "Initiating app..." << std::endl;
-	Button::InitToolbar();
-	Button::RenderToolbar(framebuffer);
+	DrawToolbar();
+
+
 }
 
 // Render one frame
@@ -69,7 +70,9 @@ void Application::Render(void)
 	if(creating){
 		prevIm = framebuffer;
 	}
+
 	framebuffer.Render();
+	
 }
 
 // Called after render
@@ -110,7 +113,7 @@ void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 
 		creating = false;
 		switch(mode) {
-			case 0: prevIm = framebuffer;printf("Copied	\n");break;
+			case 0: break;
 			case 1: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
 			case 2: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
 			case 3: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
@@ -139,7 +142,7 @@ void Application::OnMouseMove(SDL_MouseButtonEvent event)
 {
 	if (event.button == SDL_BUTTON_LEFT) {
 		switch(mode){
-			case 0: break;
+			case 0: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 1, backgroundColor, commonWidth, isFilled, backgroundColor); break;
 			case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, primaryColor);break;
 			case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, primaryColor, commonWidth, isFilled, borderColor); break;
 			case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), primaryColor, commonWidth, isFilled, borderColor); break;
@@ -160,4 +163,21 @@ void Application::OnWheel(SDL_MouseWheelEvent event)
 void Application::OnFileChanged(const char* filename)
 { 
 	Shader::ReloadSingleShader(filename);
+}
+
+
+void Application::DrawToolbar(){
+	const char *s[17] = {"images/clear.png","images/load.png", "images/save.png", "images/eraser.png", 
+	"images/line.png", "images/rectangle.png", "images/circle.png", "images/triangle.png", "images/pencil.png", "images/black.png", "images/white.png", "images/blue.png"
+	, "images/cyan.png", "images/green.png", "images/pink.png", "images/red.png", "images/yellow.png"};
+
+	framebuffer.DrawRect(0, 0, framebuffer.width, 52, Color::GRAY, 1, true, Color::GRAY);
+    // Printing Strings stored in 2D array
+	for(int i = 0; i<17; i++){
+		Image im;
+		im.LoadPNG(s[i]);
+		Button b = Button(Vector2(10+(i*(42)), 10), im, i);
+		framebuffer.DrawImage(b.image, b.position.x, b.position.y);
+
+	}
 }

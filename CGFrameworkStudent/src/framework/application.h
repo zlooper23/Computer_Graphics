@@ -54,6 +54,9 @@ public:
 	void Init( void );
 	void Render( void );
 	void Update( float dt );
+	
+	void DrawToolbar();
+
 
 	// Other methods to control the app
 	void SetWindowSize(int width, int height) {

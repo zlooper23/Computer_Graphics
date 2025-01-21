@@ -43,7 +43,6 @@ std::string absResPath( const std::string& p_sFile )
 	char result[PATH_MAX];
 	ssize_t count = readlink( "/proc/self/exe", result, PATH_MAX );
 	sFullPath = std::string( result, ( count > 0 ) ? count : 0 );
-	printf("%s\n", sFullPath.c_str());
 	sFileName = '/' + sFixedPathLin;
 
 	/*char resolvedPath[PATH_MAX];

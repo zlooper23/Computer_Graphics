@@ -100,6 +100,8 @@ public:
 	void DrawQuarter(int x, int y, int a, int b, const Color& borderColor);
 	void DrawCircle(int x, int y, int r, const Color& borderColor, int borderWidth, bool isFilled, const Color& fillColor);
 	void DrawImage(const Image& image, int x, int y);
+
+
 	#endif
 
 };

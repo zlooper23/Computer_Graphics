@@ -8,6 +8,7 @@
 #include "utils.h"
 #include "camera.h"
 #include "mesh.h"
+#include "button.h"
 
 
 Image::Image() {
@@ -130,7 +131,6 @@ void Image::FlipY()
 bool Image::LoadPNG(const char* filename, bool flip_y)
 {	
 	std::string sfullPath = absResPath(filename);
-	//std::ifstream file("/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/res/images/clear.png", std::ios::in | std::ios::binary | std::ios::ate);
 	std::ifstream file(sfullPath, std::ios::in | std::ios::binary | std::ios::ate);
 
 	if (!file.is_open()) {
@@ -547,3 +547,7 @@ void Image::DrawImage(const Image& image, int x, int y){
 		}
 	}
 }
+
+
+
+
