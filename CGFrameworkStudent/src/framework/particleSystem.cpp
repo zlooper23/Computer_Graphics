@@ -9,7 +9,7 @@ void ParticleSystem::Init() {
     srand(static_cast<unsigned>(time(0)));
     for (int i = 0; i < MAX_PARTICLES; ++i) { 
         Color fixedColor = Color::WHITE;
-        particles[i].position = Vector2(RandomInt(0, 1200), RandomInt(0, 800)); 
+        particles[i].position = Vector2(RandomInt(0, 1200), RandomInt(80, 800)); 
         particles[i].velocity = Vector2(RandomInt(2, 5), RandomInt(-50, -100)); //Negative because they are going down
         particles[i].color = fixedColor;
         particles[i].acceleration = RandomInt(1, 4); 
@@ -32,6 +32,12 @@ void ParticleSystem::Render(Image* framebuffer) {
 void ParticleSystem::Update(float dt, Image* framebuffer) {
     for (int i = 0; i < MAX_PARTICLES; ++i) {
         Particle& p = particles[i];
+        if(p.position.y < 65){
+            p.inactive = true;
+            framebuffer->DrawCircle(particles[i].position.x, particles[i].position.y, 3, Color::BLACK, 2, false, Color::BLACK);
+
+        }
+
         if (!p.inactive) {
             //After each update the previous position is filled with the same shape but with the background color
             framebuffer->DrawCircle(particles[i].position.x, particles[i].position.y, 3, Color::BLACK, 2, false, Color::BLACK);
