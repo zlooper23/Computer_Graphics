@@ -12,6 +12,9 @@ class Application
 {
 public:
 
+	//Particle System
+	ParticleSystem particleSystem;
+
 	// Window
 
 	SDL_Window* window = nullptr;
