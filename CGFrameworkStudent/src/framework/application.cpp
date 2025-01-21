@@ -42,6 +42,7 @@ void Application::Init(void)
 {
 	std::cout << "Initiating app..." << std::endl;
 	DrawToolbar();
+	particleSystem.Init();
 
 
 }
@@ -49,6 +50,8 @@ void Application::Init(void)
 // Render one frame
 void Application::Render(void)
 {
+
+	particleSystem.Render(&framebuffer);
 	// ...
 
 	/////////////////////////
@@ -78,7 +81,7 @@ void Application::Render(void)
 // Called after render
 void Application::Update(float seconds_elapsed)
 {
-
+	particleSystem.Update(seconds_elapsed, &framebuffer);
 }
 
 //keyboard press event 
