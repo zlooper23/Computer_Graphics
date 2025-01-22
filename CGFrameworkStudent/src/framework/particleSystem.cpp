@@ -33,8 +33,8 @@ void ParticleSystem::Update(float dt, Image* framebuffer) {
     for (int i = 0; i < MAX_PARTICLES; ++i) {
         Particle& p = particles[i];
         if(p.position.y < 65){ //To avoid any contact with the toolbar
-            p.inactive = true;
             framebuffer->DrawCircle(particles[i].position.x, particles[i].position.y, 3, Color::BLACK, 2, false, Color::BLACK);
+            p.position = Vector2(p.position.x, 800);
 
         }
 
