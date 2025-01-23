@@ -8,7 +8,6 @@
 #include "utils.h"
 #include "camera.h"
 #include "mesh.h"
-#include "button.h"
 
 
 Image::Image() {
@@ -416,7 +415,7 @@ void Image::DrawLineDDA(int x0, int y0, int x1, int y1, const Color& c){
 	Vector2 p((float)x0, (float)y0);
 
 	for(int i = 0; i<d; i++){
-		SetPixel((int)floor(p.x), (int)floor(p.y), Color::RED);
+		SetPixel((int)floor(p.x), (int)floor(p.y), c);
 		p+=v;
 	}
 }
@@ -492,8 +491,8 @@ void Image::DrawTriangle(const Vector2& p0, const Vector2& p1, const Vector2& p2
 
 	if(isFilled){
 		int a = 0;
-		for(int i = 0; i<mxy; i++){
-			for(int j = minX[a];j<maxX[a]; j++){
+		for(int i = 1; i<mxy; i++){
+			for(int j = minX[a]+1;j<maxX[a]; j++){
 				SetPixel(j, i, Color::WHITE);
 			}
 			a++;
@@ -509,41 +508,81 @@ void Image::DrawQuarter(int x, int y, int a, int b, const Color& borderColor){
 }
 
 void Image::DrawCircle(int x, int y, int r, const Color& borderColor, int borderWidth, bool isFilled, const Color& fillColor){
-	if(borderWidth!=1){
-		DrawCircle(x, y, r+borderWidth, borderColor, 1, true, borderColor);
-	}
+	std::vector<int> min;
+	std::vector<int> max;
+
+	min.assign(r+borderWidth+1, 0);
+	max.assign(r+borderWidth+1, 0);
+	
 	float t1 = (r / 16.0);
 	float x0 = (float)r;
 	float y0 = 0.0;
-	while(x0>y0){
+	int r1=r;
+
+
+	for(int z = 0; z<2; z++){
+
 		int a = (int)x0;
 		int b = (int)y0;
-		if(isFilled){
-			for(int i = 0; i<a; i++){
-				DrawQuarter(x, y, i, b, fillColor);
-				DrawQuarter(x, y, b, i, fillColor);
+		if(z == 0){
+			min[b] = a;
+			min[a] = b;	
+			
+		}else{
+			max[b] = a;
+			max[a] = b;	
+		}
+
+		while(x0>y0){
+			if(isFilled&&z==0){
+				for(int i = 0; i<a; i++){
+					DrawQuarter(x, y, i, b, fillColor);
+					DrawQuarter(x, y, b, i, fillColor);
+				}
 			}
-		}else{DrawCircle(x, y, r-1, Color::BLACK, 1, true, Color::BLACK);}
-		DrawQuarter(x, y, a, b, borderColor);
-		DrawQuarter(x, y, b, a, borderColor);
-		y0++;
-		t1 = t1+y0;
-		float t2 = t1-x0;
-		if(t2>=0){
-			t1 = t2;
-			x0--;
+			DrawQuarter(x, y, a, b, borderColor);
+			DrawQuarter(x, y, b, a, borderColor);
+			y0++;
+			t1 = t1+y0;
+			float t2 = t1-x0;
+			if(t2>=0){
+				t1 = t2;
+				x0--;
+			}
+
+			a = (int)x0;
+			b = (int)y0;
+			if(z == 0){
+				min[b] = a;
+				min[a] = b;	
+				
+			}else{
+				max[b] = a;
+				max[a] = b;	
+			}
+		}
+		r1 = r+borderWidth;
+		t1 = (r1 / 16.0);
+		x0 = (float)r1;
+		y0 = 0.0; 
+	}
+	for(int i = 0; i<r1; i++){
+		for(int j = min[i]; j<max[i]; j++){
+			DrawQuarter(x, y, j, i, borderColor);
 		}
 	}
+		
 }
 
 void Image::DrawImage(const Image& image, int x, int y){
 	for(int i = 0; i<image.width; i++){
 		for(int j = 0; j<image.height; j++){
-			if(i < 0 || i > width-1){}
+			SetPixel(i+x, j+y, image.pixels[ j * image.width + i]);
+			/*if(i < 0 || i > width-1){}
 			else if(j < 0 || j > height-1){}
 			else{
 				pixels[ (j+y) * width + i+x] = image.pixels[ j * image.width + i];
-			}
+			}*/
 		}
 	}
 }
