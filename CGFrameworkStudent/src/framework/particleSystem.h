@@ -21,7 +21,7 @@ class ParticleSystem{
         Particle particles[MAX_PARTICLES];
         
         
-        void Init();
+        void Init(Image* framebuffer);
         void Render(Image *framebuffer);
         void Update(float dt, Image *framebuffer);
         static int RandomInt(int min, int max);

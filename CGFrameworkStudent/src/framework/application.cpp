@@ -45,7 +45,7 @@ void Application::Init(void)
 {
 	std::cout << "Initiating app..." << std::endl;
 	initToolbar();
-	//particleSystem.Init();
+	particleSystem.Init(&framebuffer);
 
 
 }
@@ -53,30 +53,17 @@ void Application::Init(void)
 // Render one frame
 void Application::Render(void)
 {
-
-	//particleSystem.Render(&framebuffer);
+	if(mode == 6){
+		particleSystem.Render(&framebuffer);
+	}else{
+		DrawToolbar();
+		if(creating){
+			prevIm = framebuffer;
+		}
+	}
+	
 	// ...
 
-	/////////////////////////
-
-	//framebuffer.Fill(Color::BLACK);
-	//framebuffer.DrawRect(100, 100, mouse_position.x-100, mouse_position.y-100, Color::RED, 10, true, Color::WHITE);
-	//framebuffer.DrawRect(100, 100, mouse_position.x-100, mouse_position.y-100, Color::RED);
-
-	//framebuffer.DrawLineDDA(mouse_position.x, mouse_position.y, mouse_position.x + 100 * cos(time), mouse_position.y + 100 * sin(time), Color::WHITE);
-	//framebuffer.DrawTriangle(Vector2(0, 0), Vector2(500, 250), Vector2(mouse_position.x, mouse_position.y), Color::WHITE, true, Color::BLUE);
-	//framebuffer.DrawTriangle(Vector2(100+mouse_position.x, 100+mouse_position.x), Vector2(500+mouse_position.x, 250+mouse_position.x), Vector2(mouse_position.x, mouse_position.y), Color::RED, isFilled, Color::WHITE);
-
-	//framebuffer.DrawCircle(mouse_position.x, mouse_position.y, abs(100*sin(time)), Color::RED, 10, false,Color::WHITE);
-	//framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 10, Color::RED, 1, true,Color::RED);
-
-
-
-	/////////////////////////
-	if(creating){
-		prevIm = framebuffer;
-	}
-	DrawToolbar();
 	
 	framebuffer.Render();
 	
@@ -84,14 +71,23 @@ void Application::Render(void)
 
 // Called after render
 void Application::Update(float seconds_elapsed)
-{
-	//particleSystem.Update(seconds_elapsed, &framebuffer);
+{	
+	if(mode == 6){
+		framebuffer.Fill(backgroundColor);
+		particleSystem.Update(seconds_elapsed, &framebuffer);
+	}
+	
 }
 
 //keyboard press event 
 void Application::OnKeyPressed( SDL_KeyboardEvent event )
 {
 	// KEY CODES: https://wiki.libsdl.org/SDL2/SDL_Keycode
+	if(mode == 6 && event.keysym.sym != 6){
+		framebuffer.Fill(backgroundColor);
+	}
+
+
 	switch(event.keysym.sym) {
 		case SDLK_ESCAPE: exit(0); break; // ESC key, kill the app
 		case SDLK_e: framebuffer.Fill(backgroundColor); break; 
@@ -103,6 +99,7 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 		case SDLK_3: mode = 3; break;
 		case SDLK_4: mode = 4; break;
 		case SDLK_5: mode = 5; break;
+		case SDLK_6: mode = 6; framebuffer.Fill(backgroundColor); break;
 		case SDLK_f: isFilled = !isFilled;break;
 	}
 }
