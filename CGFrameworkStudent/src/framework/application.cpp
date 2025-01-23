@@ -45,7 +45,7 @@ void Application::Init(void)
 {
 	std::cout << "Initiating app..." << std::endl;
 	initToolbar();
-	particleSystem.Init();
+	//particleSystem.Init();
 
 
 }
@@ -77,6 +77,7 @@ void Application::Render(void)
 		prevIm = framebuffer;
 	}
 	DrawToolbar();
+	
 	framebuffer.Render();
 	
 }

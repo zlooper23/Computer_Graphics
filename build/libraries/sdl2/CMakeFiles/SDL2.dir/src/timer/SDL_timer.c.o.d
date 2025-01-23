@@ -4,12 +4,12 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/timer/SDL_timer.c.o: \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/timer/../SDL_internal.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/timer/../dynapi/SDL_dynapi.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/timer/../dynapi/SDL_dynapi_overrides.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/begin_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/close_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_assert.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/begin_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/close_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_assert.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -78,13 +78,13 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/timer/SDL_timer.c.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_log.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_timer.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_error.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_log.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_timer.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_error.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/timer/SDL_timer_c.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_atomic.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_cpuinfo.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_atomic.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_cpuinfo.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mm3dnow.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/prfchwintrin.h \
@@ -182,9 +182,9 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/timer/SDL_timer.c.o: \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/amxfp16intrin.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/timer/../thread/SDL_systhread.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/timer/../thread/../SDL_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_thread.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_atomic.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_mutex.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_thread.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_atomic.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_mutex.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/timer/../thread/SDL_thread_c.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/timer/../thread/pthread/SDL_systhread_c.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/timer/../thread/pthread/../../SDL_internal.h \

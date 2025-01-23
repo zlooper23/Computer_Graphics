@@ -246,5 +246,4 @@ CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o: \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_syswm.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_opengl.h \
  /usr/include/GL/glu.h /usr/include/GL/gl.h /usr/include/c++/13/cassert \
- /usr/include/assert.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/button.h
+ /usr/include/assert.h

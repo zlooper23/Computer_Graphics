@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build
+CMAKE_BINARY_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build
 
 # Include any dependencies generated for this target.
 include libraries/sdl2/CMakeFiles/SDL2main.dir/depend.make
@@ -72,16 +72,16 @@ include libraries/sdl2/CMakeFiles/SDL2main.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o: libraries/sdl2/CMakeFiles/SDL2main.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/main/dummy/SDL_dummy_main.c
 libraries/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o: libraries/sdl2/CMakeFiles/SDL2main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libraries/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o -MF CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o.d -o CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/main/dummy/SDL_dummy_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libraries/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o -MF CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o.d -o CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/main/dummy/SDL_dummy_main.c
 
 libraries/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/main/dummy/SDL_dummy_main.c > CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/main/dummy/SDL_dummy_main.c > CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.i
 
 libraries/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/main/dummy/SDL_dummy_main.c -o CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/main/dummy/SDL_dummy_main.c -o CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.s
 
 # Object files for target SDL2main
 SDL2main_OBJECTS = \
@@ -93,19 +93,19 @@ SDL2main_EXTERNAL_OBJECTS =
 libSDL2maind.a: libraries/sdl2/CMakeFiles/SDL2main.dir/src/main/dummy/SDL_dummy_main.c.o
 libSDL2maind.a: libraries/sdl2/CMakeFiles/SDL2main.dir/build.make
 libSDL2maind.a: libraries/sdl2/CMakeFiles/SDL2main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../../libSDL2maind.a"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -P CMakeFiles/SDL2main.dir/cmake_clean_target.cmake
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2main.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library ../../libSDL2maind.a"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -P CMakeFiles/SDL2main.dir/cmake_clean_target.cmake
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libraries/sdl2/CMakeFiles/SDL2main.dir/build: libSDL2maind.a
 .PHONY : libraries/sdl2/CMakeFiles/SDL2main.dir/build
 
 libraries/sdl2/CMakeFiles/SDL2main.dir/clean:
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -P CMakeFiles/SDL2main.dir/cmake_clean.cmake
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -P CMakeFiles/SDL2main.dir/cmake_clean.cmake
 .PHONY : libraries/sdl2/CMakeFiles/SDL2main.dir/clean
 
 libraries/sdl2/CMakeFiles/SDL2main.dir/depend:
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2 /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/CMakeFiles/SDL2main.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2 /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/CMakeFiles/SDL2main.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libraries/sdl2/CMakeFiles/SDL2main.dir/depend
 

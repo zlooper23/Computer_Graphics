@@ -4,12 +4,12 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/joystick/steam/SDL_steamcontroller.c.o: \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/steam/../../SDL_internal.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/steam/../../dynapi/SDL_dynapi.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/steam/../../dynapi/SDL_dynapi_overrides.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/begin_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/close_code.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_assert.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/begin_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/close_code.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_assert.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -78,16 +78,16 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/joystick/steam/SDL_steamcontroller.c.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_log.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_log.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/steam/../SDL_sysjoystick.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/steam/../../SDL_internal.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_joystick.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_error.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_guid.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_joystick.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_error.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_guid.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/steam/../SDL_joystick_c.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_gamecontroller.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_rwops.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_sensor.h \
- /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_joystick.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_gamecontroller.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_rwops.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_sensor.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_joystick.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/steam/../SDL_joystick_c.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/joystick/steam/SDL_steamcontroller.h

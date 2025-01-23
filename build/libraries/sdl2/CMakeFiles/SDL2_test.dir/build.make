@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build
+CMAKE_BINARY_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build
 
 # Include any dependencies generated for this target.
 include libraries/sdl2/CMakeFiles/SDL2_test.dir/depend.make
@@ -72,226 +72,226 @@ include libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_assert.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_assert.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_assert.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_assert.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_assert.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_assert.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_assert.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_assert.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_common.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_common.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_common.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_common.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_common.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_common.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_common.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_compare.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_compare.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_compare.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_compare.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_compare.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_compare.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_compare.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_compare.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_crc32.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_crc32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_crc32.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_crc32.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_crc32.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_crc32.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_crc32.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_crc32.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_font.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_font.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_font.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_font.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_font.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_font.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_font.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_font.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_fuzzer.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_fuzzer.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_fuzzer.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_fuzzer.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_fuzzer.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_fuzzer.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_fuzzer.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_fuzzer.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_harness.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_harness.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_harness.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_harness.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_harness.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_harness.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_harness.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_harness.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlit.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlit.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlit.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlit.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlit.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlit.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlit.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlit.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlitBlend.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlitBlend.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlitBlend.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlitBlend.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlitBlend.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlitBlend.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageBlitBlend.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageBlitBlend.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageFace.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageFace.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageFace.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageFace.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageFace.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageFace.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imageFace.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imageFace.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitives.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitives.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitives.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitives.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitives.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitives.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitives.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitives.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitivesBlend.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitivesBlend.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitivesBlend.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitivesBlend.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitivesBlend.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitivesBlend.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_imagePrimitivesBlend.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_imagePrimitivesBlend.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_log.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_log.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_log.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_log.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_log.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_log.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_log.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_log.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_md5.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_md5.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_md5.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_md5.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_md5.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_md5.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_md5.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_md5.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_memory.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_memory.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_memory.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_memory.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_memory.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_memory.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_memory.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory.c.s
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/flags.make
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_random.c
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o: libraries/sdl2/CMakeFiles/SDL2_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_random.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o -MF CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o.d -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_random.c
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_random.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_random.c > CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.i
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_random.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/test/SDL_test_random.c -o CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.s
 
 # Object files for target SDL2_test
 SDL2_test_OBJECTS = \
@@ -333,19 +333,19 @@ libSDL2_test.a: libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_memory
 libSDL2_test.a: libraries/sdl2/CMakeFiles/SDL2_test.dir/src/test/SDL_test_random.c.o
 libSDL2_test.a: libraries/sdl2/CMakeFiles/SDL2_test.dir/build.make
 libSDL2_test.a: libraries/sdl2/CMakeFiles/SDL2_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C static library ../../libSDL2_test.a"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -P CMakeFiles/SDL2_test.dir/cmake_clean_target.cmake
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C static library ../../libSDL2_test.a"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -P CMakeFiles/SDL2_test.dir/cmake_clean_target.cmake
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 libraries/sdl2/CMakeFiles/SDL2_test.dir/build: libSDL2_test.a
 .PHONY : libraries/sdl2/CMakeFiles/SDL2_test.dir/build
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/clean:
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -P CMakeFiles/SDL2_test.dir/cmake_clean.cmake
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -P CMakeFiles/SDL2_test.dir/cmake_clean.cmake
 .PHONY : libraries/sdl2/CMakeFiles/SDL2_test.dir/clean
 
 libraries/sdl2/CMakeFiles/SDL2_test.dir/depend:
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2 /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/CMakeFiles/SDL2_test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2 /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/CMakeFiles/SDL2_test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libraries/sdl2/CMakeFiles/SDL2_test.dir/depend
 

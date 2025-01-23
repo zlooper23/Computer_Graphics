@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build
+CMAKE_BINARY_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build
 
 # Include any dependencies generated for this target.
 include libraries/glew-cmake/CMakeFiles/libglew_shared.dir/depend.make
@@ -72,16 +72,16 @@ include libraries/glew-cmake/CMakeFiles/libglew_shared.dir/flags.make
 libraries/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.o: libraries/glew-cmake/CMakeFiles/libglew_shared.dir/flags.make
 libraries/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c
 libraries/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.o: libraries/glew-cmake/CMakeFiles/libglew_shared.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libraries/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.o"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.o -MF CMakeFiles/libglew_shared.dir/src/glew.c.o.d -o CMakeFiles/libglew_shared.dir/src/glew.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object libraries/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.o"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT libraries/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.o -MF CMakeFiles/libglew_shared.dir/src/glew.c.o.d -o CMakeFiles/libglew_shared.dir/src/glew.c.o -c /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c
 
 libraries/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/libglew_shared.dir/src/glew.c.i"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c > CMakeFiles/libglew_shared.dir/src/glew.c.i
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c > CMakeFiles/libglew_shared.dir/src/glew.c.i
 
 libraries/glew-cmake/CMakeFiles/libglew_shared.dir/src/glew.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/libglew_shared.dir/src/glew.c.s"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c -o CMakeFiles/libglew_shared.dir/src/glew.c.s
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && /usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/src/glew.c -o CMakeFiles/libglew_shared.dir/src/glew.c.s
 
 # Object files for target libglew_shared
 libglew_shared_OBJECTS = \
@@ -99,9 +99,9 @@ libraries/glew-cmake/lib/libglew-sharedd.so.2.2.0: /usr/lib/x86_64-linux-gnu/lib
 libraries/glew-cmake/lib/libglew-sharedd.so.2.2.0: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 libraries/glew-cmake/lib/libglew-sharedd.so.2.2.0: /usr/lib/x86_64-linux-gnu/libX11.so
 libraries/glew-cmake/lib/libglew-sharedd.so.2.2.0: libraries/glew-cmake/CMakeFiles/libglew_shared.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library lib/libglew-sharedd.so"
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libglew_shared.dir/link.txt --verbose=$(VERBOSE)
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -E cmake_symlink_library lib/libglew-sharedd.so.2.2.0 lib/libglew-sharedd.so.2.2.0 lib/libglew-sharedd.so
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library lib/libglew-sharedd.so"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/libglew_shared.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -E cmake_symlink_library lib/libglew-sharedd.so.2.2.0 lib/libglew-sharedd.so.2.2.0 lib/libglew-sharedd.so
 
 libraries/glew-cmake/lib/libglew-sharedd.so: libraries/glew-cmake/lib/libglew-sharedd.so.2.2.0
 	@$(CMAKE_COMMAND) -E touch_nocreate libraries/glew-cmake/lib/libglew-sharedd.so
@@ -111,10 +111,10 @@ libraries/glew-cmake/CMakeFiles/libglew_shared.dir/build: libraries/glew-cmake/l
 .PHONY : libraries/glew-cmake/CMakeFiles/libglew_shared.dir/build
 
 libraries/glew-cmake/CMakeFiles/libglew_shared.dir/clean:
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -P CMakeFiles/libglew_shared.dir/cmake_clean.cmake
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake && $(CMAKE_COMMAND) -P CMakeFiles/libglew_shared.dir/cmake_clean.cmake
 .PHONY : libraries/glew-cmake/CMakeFiles/libglew_shared.dir/clean
 
 libraries/glew-cmake/CMakeFiles/libglew_shared.dir/depend:
-	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/glew-cmake /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/glew-cmake/CMakeFiles/libglew_shared.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/glew-cmake/CMakeFiles/libglew_shared.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libraries/glew-cmake/CMakeFiles/libglew_shared.dir/depend
 

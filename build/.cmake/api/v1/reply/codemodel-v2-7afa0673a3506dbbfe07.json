@@ -1,0 +1,194 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "libraries/sdl2",
+					"jsonFile" : "directory-libraries.sdl2-Debug-87ec34b84433f09ec8b0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "libraries/sdl2",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						7,
+						8
+					]
+				},
+				{
+					"build" : "libraries/glew-cmake",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libraries.glew-cmake-Debug-943a877f816fea6c88f1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "libraries/glew-cmake",
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ComputerGraphics",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "SDL2",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						7,
+						8
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "glew",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						5,
+						6
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ComputerGraphics::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ComputerGraphics-Debug-8bde18169ee0767a3f11.json",
+					"name" : "ComputerGraphics",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL2::@3de5d2500518c283a5f9",
+					"jsonFile" : "target-SDL2-Debug-2d608bc9ec8aeafad191.json",
+					"name" : "SDL2",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL2-static::@3de5d2500518c283a5f9",
+					"jsonFile" : "target-SDL2-static-Debug-eb6769c7a38b9cb099a2.json",
+					"name" : "SDL2-static",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL2_test::@3de5d2500518c283a5f9",
+					"jsonFile" : "target-SDL2_test-Debug-c5fc7317edb562046033.json",
+					"name" : "SDL2_test",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "SDL2main::@3de5d2500518c283a5f9",
+					"jsonFile" : "target-SDL2main-Debug-9bb136415cdac8881c78.json",
+					"name" : "SDL2main",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "libglew_shared::@c91b4f570a1fcddf2341",
+					"jsonFile" : "target-libglew_shared-Debug-4d533c95872edd009955.json",
+					"name" : "libglew_shared",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "libglew_static::@c91b4f570a1fcddf2341",
+					"jsonFile" : "target-libglew_static-Debug-baaff372b59b74f667a1.json",
+					"name" : "libglew_static",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sdl_headers_copy::@3de5d2500518c283a5f9",
+					"jsonFile" : "target-sdl_headers_copy-Debug-3c33f0a4d66448abdde0.json",
+					"name" : "sdl_headers_copy",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "uninstall::@3de5d2500518c283a5f9",
+					"jsonFile" : "target-uninstall-Debug-22d9fef7e00c147a2089.json",
+					"name" : "uninstall",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build",
+		"source" : "/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
