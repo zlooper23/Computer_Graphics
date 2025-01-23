@@ -45,7 +45,7 @@ void Application::Init(void)
 {
 	std::cout << "Initiating app..." << std::endl;
 	initToolbar();
-	particleSystem.Init(&framebuffer);
+	particleSystem.Init(&framebuffer, 1);
 
 
 }
@@ -73,7 +73,6 @@ void Application::Render(void)
 void Application::Update(float seconds_elapsed)
 {	
 	if(mode == 6){
-		framebuffer.Fill(backgroundColor);
 		particleSystem.Update(seconds_elapsed, &framebuffer);
 	}
 	
@@ -85,6 +84,8 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 	// KEY CODES: https://wiki.libsdl.org/SDL2/SDL_Keycode
 	if(mode == 6 && event.keysym.sym != 6){
 		framebuffer.Fill(backgroundColor);
+		particleSystem.Init(&framebuffer, !particleSystem.type);
+
 	}
 
 
@@ -107,12 +108,6 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 {
 	if (event.button == SDL_BUTTON_LEFT) {
-		/*Image im;
-		if(!im.LoadPNG("images/line.png")){
-			printf("Fail opening file\n");
-			exit(1);
-		}
-		framebuffer.DrawImage(im, mouse_position.x, mouse_position.y);*/
 		for(int i = 0; i<17; i++){
 			if(toolBar[i].IsMouseInside(mouse_position)){
 				switch(toolBar[i].id) {
@@ -192,9 +187,9 @@ void Application::OnFileChanged(const char* filename)
 }
 
 void Application::initToolbar(){
-	const char *s[17] = {"images/clear.png","images/load.png", "images/save.png", "images/eraser.png", 
-	"images/line.png", "images/rectangle.png", "images/circle.png", "images/triangle.png", "images/pencil.png", "images/black.png", "images/white.png", "images/blue.png"
-	, "images/cyan.png", "images/green.png", "images/pink.png", "images/red.png", "images/yellow.png"};
+	const char *s[17] = {"./images/clear.png","./images/load.png", "./images/save.png", "./images/eraser.png", 
+	"./images/line.png", "./images/rectangle.png", "./images/circle.png", "./images/triangle.png", "./images/pencil.png", "./images/black.png", "./images/white.png", "./images/blue.png"
+	, "./images/cyan.png", "./images/green.png", "./images/pink.png", "./images/red.png", "./images/yellow.png"};
 
     // Printing Strings stored in 2D array
 	for(int i = 0; i<17; i++){

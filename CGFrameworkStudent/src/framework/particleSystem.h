@@ -19,9 +19,10 @@ class ParticleSystem{
             bool inactive; //Particle is not used/expired, so it can be recreated
         };
         Particle particles[MAX_PARTICLES];
+        int type;
         
         
-        void Init(Image* framebuffer);
+        void Init(Image* framebuffer, int t);
         void Render(Image *framebuffer);
         void Update(float dt, Image *framebuffer);
         static int RandomInt(int min, int max);
