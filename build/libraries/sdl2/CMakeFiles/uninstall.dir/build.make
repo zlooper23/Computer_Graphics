@@ -56,7 +56,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build
+CMAKE_BINARY_DIR = /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include libraries/sdl2/CMakeFiles/uninstall.dir/compiler_depend.make
 include libraries/sdl2/CMakeFiles/uninstall.dir/progress.make
 
 libraries/sdl2/CMakeFiles/uninstall:
-	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && /usr/bin/cmake -P /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/cmake_uninstall.cmake
+	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && /usr/bin/cmake -P /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/cmake_uninstall.cmake
 
 uninstall: libraries/sdl2/CMakeFiles/uninstall
 uninstall: libraries/sdl2/CMakeFiles/uninstall.dir/build.make
@@ -78,10 +78,10 @@ libraries/sdl2/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : libraries/sdl2/CMakeFiles/uninstall.dir/build
 
 libraries/sdl2/CMakeFiles/uninstall.dir/clean:
-	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : libraries/sdl2/CMakeFiles/uninstall.dir/clean
 
 libraries/sdl2/CMakeFiles/uninstall.dir/depend:
-	cd /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2 /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2 /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2 /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2 /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : libraries/sdl2/CMakeFiles/uninstall.dir/depend
 

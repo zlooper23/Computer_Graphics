@@ -1,7 +1,9 @@
+#pragma once
+
 #include "main/includes.h"
 #include "framework.h"
 #include "image.h"
-
+#include "utils.h"
 #include <fstream>
 #include <string>
 
@@ -14,7 +16,8 @@ class Button {
         //Vector to store all the buttons of the toolbar
 
         // Constructor
-        Button(Vector2 position, Image im, int id);
+        Button(int x, int y, Image im, int id);
+        Button();
 
         // Renders the button on the framebuffer
         void Render(Image &c);

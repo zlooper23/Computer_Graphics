@@ -4,12 +4,15 @@
 
 
 // Button constructor 
-Button::Button(Vector2 position, Image image, int id){
-    this->position = position;
-    this->image = image;
+Button::Button(int x, int y, Image im, int id){
+    this->position = Vector2(x, y);
+    this->image = im;
     this->id = id;
 }
+Button::Button(){
     
+}
+
 
 void Button::Render(Image &c) {
     // Ensure the image is loaded properly before rendering

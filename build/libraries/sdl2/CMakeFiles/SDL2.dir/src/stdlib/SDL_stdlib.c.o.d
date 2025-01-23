@@ -4,12 +4,12 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/stdlib/SDL_stdlib.c.o: \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/stdlib/../SDL_internal.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/stdlib/../dynapi/SDL_dynapi.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/stdlib/../dynapi/SDL_dynapi_overrides.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/begin_code.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/close_code.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_assert.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
+ /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include-config-debug/SDL_config.h \
+ /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_platform.h \
+ /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/begin_code.h \
+ /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/close_code.h \
+ /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_assert.h \
+ /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -78,7 +78,7 @@ libraries/sdl2/CMakeFiles/SDL2.dir/src/stdlib/SDL_stdlib.c.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_log.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
+ /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_log.h \
+ /home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include/SDL_stdinc.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/stdlib/../libm/math_libm.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/src/stdlib/../libm/../SDL_internal.h

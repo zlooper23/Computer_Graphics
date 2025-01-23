@@ -508,6 +508,7 @@ void Image::DrawQuarter(int x, int y, int a, int b, const Color& borderColor){
 }
 
 void Image::DrawCircle(int x, int y, int r, const Color& borderColor, int borderWidth, bool isFilled, const Color& fillColor){
+
 	std::vector<int> min;
 	std::vector<int> max;
 
@@ -578,11 +579,6 @@ void Image::DrawImage(const Image& image, int x, int y){
 	for(int i = 0; i<image.width; i++){
 		for(int j = 0; j<image.height; j++){
 			SetPixel(i+x, j+y, image.pixels[ j * image.width + i]);
-			/*if(i < 0 || i > width-1){}
-			else if(j < 0 || j > height-1){}
-			else{
-				pixels[ (j+y) * width + i+x] = image.pixels[ j * image.width + i];
-			}*/
 		}
 	}
 }

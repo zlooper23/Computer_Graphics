@@ -249,4 +249,6 @@ CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o: \
  /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/cassert \
  /usr/include/assert.h /usr/include/string.h /usr/include/strings.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.h
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/particleSystem.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/stdbool.h

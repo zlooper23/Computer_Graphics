@@ -2,7 +2,9 @@
 #include "mesh.h"
 #include "shader.h"
 #include "utils.h" 
+#include "particleSystem.h"
 #include "button.h"
+
 
 Application::Application(const char* caption, int width, int height)
 {
@@ -26,6 +28,7 @@ Application::Application(const char* caption, int width, int height)
 	this->borderColor = Color::RED;
 	this->isFilled = true;
 	this->creating = true;
+	this->savedImage.LoadPNG("images/fruits.png");
 
 
 
@@ -41,7 +44,7 @@ Application::~Application()
 void Application::Init(void)
 {
 	std::cout << "Initiating app..." << std::endl;
-	DrawToolbar();
+	initToolbar();
 	particleSystem.Init();
 
 
@@ -51,7 +54,7 @@ void Application::Init(void)
 void Application::Render(void)
 {
 
-	particleSystem.Render(&framebuffer);
+	//particleSystem.Render(&framebuffer);
 	// ...
 
 	/////////////////////////
@@ -73,7 +76,7 @@ void Application::Render(void)
 	if(creating){
 		prevIm = framebuffer;
 	}
-
+	DrawToolbar();
 	framebuffer.Render();
 	
 }
@@ -81,7 +84,7 @@ void Application::Render(void)
 // Called after render
 void Application::Update(float seconds_elapsed)
 {
-	particleSystem.Update(seconds_elapsed, &framebuffer);
+	//particleSystem.Update(seconds_elapsed, &framebuffer);
 }
 
 //keyboard press event 
@@ -112,7 +115,29 @@ void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 			exit(1);
 		}
 		framebuffer.DrawImage(im, mouse_position.x, mouse_position.y);*/
-
+		for(int i = 0; i<17; i++){
+			if(toolBar[i].IsMouseInside(mouse_position)){
+				switch(toolBar[i].id) {
+					case 0: framebuffer.Fill(backgroundColor); prevIm = framebuffer; break;
+					case 1: framebuffer.DrawImage(savedImage, 0, 0); prevIm = framebuffer; break;
+					case 2: savedImage = framebuffer; break;
+					case 3: mode = 0; break;
+					case 4: mode = 1; break;
+					case 5: mode = 2; break;
+					case 6: mode = 3; break;
+					case 7: mode = 4; break;
+					case 8: mode = 5; break;
+					case 9: if(isFilled){primaryColor=Color::BLACK;}else{borderColor=Color::BLACK;}; break;
+					case 10: if(isFilled){primaryColor=Color::WHITE;}else{borderColor=Color::WHITE;};break;
+					case 11: if(isFilled){primaryColor=Color::BLUE;}else{borderColor=Color::BLUE;};break;
+					case 12: if(isFilled){primaryColor=Color::CYAN;}else{borderColor=Color::CYAN;};break;
+					case 13: if(isFilled){primaryColor=Color::GREEN;}else{borderColor=Color::GREEN;};break;
+					case 14: if(isFilled){primaryColor=Color::PURPLE;}else{borderColor=Color::PURPLE;};break;
+					case 15: if(isFilled){primaryColor=Color::RED;}else{borderColor=Color::RED;};break;
+					case 16: if(isFilled){primaryColor=Color::YELLOW;}else{borderColor=Color::YELLOW;};break;
+				}
+			}
+		}
 
 		creating = false;
 		switch(mode) {
@@ -132,9 +157,9 @@ void Application::OnMouseButtonUp( SDL_MouseButtonEvent event )
 		creating = true;
 		switch(mode) {
 			case 0: break;
-			case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, primaryColor); break;
-			case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, primaryColor, commonWidth, isFilled, borderColor); break;
-			case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), primaryColor, commonWidth, isFilled, borderColor); break;
+			case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, borderColor); break;
+			case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, borderColor, commonWidth, isFilled, primaryColor); break;
+			case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), borderColor, commonWidth, isFilled, primaryColor); break;
 			case 4: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawTriangle(pos1,  Vector2(2*pos1.x-mouse_position.x, mouse_position.y), mouse_position, borderColor, isFilled, primaryColor); break;
 			case 5: break;
 		}
@@ -146,9 +171,9 @@ void Application::OnMouseMove(SDL_MouseButtonEvent event)
 	if (event.button == SDL_BUTTON_LEFT) {
 		switch(mode){
 			case 0: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 1, backgroundColor, commonWidth, isFilled, backgroundColor); break;
-			case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, primaryColor);break;
-			case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, primaryColor, commonWidth, isFilled, borderColor); break;
-			case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), primaryColor, commonWidth, isFilled, borderColor); break;
+			case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, borderColor);break;
+			case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, borderColor, commonWidth, isFilled, primaryColor); break;
+			case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), borderColor, commonWidth, isFilled, primaryColor); break;
 			case 4: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawTriangle(pos1, Vector2(2*pos1.x-mouse_position.x, mouse_position.y), mouse_position, primaryColor, isFilled, borderColor); break;
 			case 5: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 1, primaryColor, commonWidth, isFilled, primaryColor); break;
 		}
@@ -168,19 +193,27 @@ void Application::OnFileChanged(const char* filename)
 	Shader::ReloadSingleShader(filename);
 }
 
-
-void Application::DrawToolbar(){
+void Application::initToolbar(){
 	const char *s[17] = {"images/clear.png","images/load.png", "images/save.png", "images/eraser.png", 
 	"images/line.png", "images/rectangle.png", "images/circle.png", "images/triangle.png", "images/pencil.png", "images/black.png", "images/white.png", "images/blue.png"
 	, "images/cyan.png", "images/green.png", "images/pink.png", "images/red.png", "images/yellow.png"};
 
-	framebuffer.DrawRect(0, 0, framebuffer.width, 52, Color::GRAY, 1, true, Color::GRAY);
     // Printing Strings stored in 2D array
 	for(int i = 0; i<17; i++){
 		Image im;
 		im.LoadPNG(s[i]);
-		Button b = Button(Vector2(10+(i*(42)), 10), im, i);
-		framebuffer.DrawImage(b.image, b.position.x, b.position.y);
+		Button b = Button(10+(i*(42)), 10, im, i);
+		toolBar[i] = b;
 
+
+	}
+}
+
+
+void Application::DrawToolbar(){
+	framebuffer.DrawRect(0, 0, framebuffer.width, 52, Color::GRAY, 1, true, Color::GRAY);
+    // Printing Strings stored in 2D array
+	for(int i = 0; i<17; i++){
+		toolBar[i].Render(framebuffer);
 	}
 }

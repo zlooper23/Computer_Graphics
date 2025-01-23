@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/g++
 CXX_DEFINES = -DGLEW_NO_GLU -DGLEW_STATIC
 
-CXX_INCLUDES = -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/ComputerGraphics -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/build/libraries/sdl2/include-config-debug -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/include
+CXX_INCLUDES = -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/ComputerGraphics -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include -I/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include -I/home/zlooper23/Desktop/UPF/2n/Graphics/Computer_Graphics/build/libraries/sdl2/include-config-debug -I/home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/glew-cmake/include
 
 CXX_FLAGS = -g -std=gnu++11
 
