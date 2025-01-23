@@ -27,7 +27,7 @@ Application::Application(const char* caption, int width, int height)
 	this->primaryColor = Color::WHITE;
 	this->borderColor = Color::RED;
 	this->isFilled = true;
-	this->creating = true;
+	this->creating = false;
 	this->savedImage.LoadPNG("images/fruits.png");
 
 
@@ -53,19 +53,130 @@ void Application::Init(void)
 // Render one frame
 void Application::Render(void)
 {
+	
+	framebuffer.Render();
+	SDL_Event sdlEvent;
 	if(mode == 6){
 		particleSystem.Render(&framebuffer);
+		framebuffer.Render();
 	}else{
 		DrawToolbar();
-		if(creating){
+		if(!creating){
 			prevIm = framebuffer;
 		}
 	}
-	
-	// ...
+	while(SDL_PollEvent(&sdlEvent))
+	{
+	switch(sdlEvent.type)
+	{
+	case SDL_QUIT: return; break;
 
+	case SDL_MOUSEBUTTONDOWN: 
+		if (sdlEvent.button.button == SDL_BUTTON_LEFT) {
+		for(int i = 0; i<17; i++){
+			if(toolBar[i].IsMouseInside(mouse_position)){
+				creating = false;
+				switch(toolBar[i].id) {
+					case 0: framebuffer.Fill(backgroundColor); prevIm = framebuffer; break;
+					case 1: framebuffer.DrawImage(savedImage, 0, 0); prevIm = framebuffer; break;
+					case 2: savedImage = framebuffer; break;
+					case 3: mode = 0; break;
+					case 4: mode = 1; break;
+					case 5: mode = 2; break;
+					case 6: mode = 3; break;
+					case 7: mode = 4; break;
+					case 8: mode = 5; break;
+					case 9: if((isFilled&&(mode!=5))&&(mode!=1)){primaryColor=Color::BLACK;}else{borderColor=Color::BLACK;}; break;
+					case 10: if((isFilled&&(mode!=5))&&(mode!=1)){primaryColor=Color::WHITE;}else{borderColor=Color::WHITE;};break;
+					case 11: if((isFilled&&(mode!=5))&&(mode!=1)){primaryColor=Color::BLUE;}else{borderColor=Color::BLUE;};break;
+					case 12: if((isFilled&&(mode!=5))&&(mode!=1)){primaryColor=Color::CYAN;}else{borderColor=Color::CYAN;};break;
+					case 13: if((isFilled&&(mode!=5))&&(mode!=1)){primaryColor=Color::GREEN;}else{borderColor=Color::GREEN;};break;
+					case 14: if((isFilled&&(mode!=5))&&(mode!=1)){primaryColor=Color::PURPLE;}else{borderColor=Color::PURPLE;};break;
+					case 15: if((isFilled&&(mode!=5))&&(mode!=1)){primaryColor=Color::RED;}else{borderColor=Color::RED;};break;
+					case 16: if((isFilled&&(mode!=5))&&(mode!=1)){primaryColor=Color::YELLOW;}else{borderColor=Color::YELLOW;};break;
+				}
+			}
+		}
+			if(!creating){
+				switch(mode) {
+				case 0: break;
+				case 1: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
+				case 2: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
+				case 3: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
+				case 4: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
+				case 5: break;
+				}
+			}
+			creating = true;
+			
+		}
+		break;
+
+	case SDL_MOUSEBUTTONUP:
+		if (sdlEvent.button.button == SDL_BUTTON_LEFT) {
+			switch(mode) {
+				case 0: break;
+				case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, borderColor); break;
+				case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, borderColor, commonWidth, isFilled, primaryColor); break;
+				case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), borderColor, commonWidth, isFilled, primaryColor); break;
+				case 4: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawTriangle(pos1,  Vector2(2*pos1.x-mouse_position.x, mouse_position.y), mouse_position, borderColor, isFilled, primaryColor); break;
+				case 5: break;
+			}
+			creating = false;
+		}
+		break;
+
+	case SDL_MOUSEMOTION:
+		if (sdlEvent.button.button == SDL_BUTTON_LEFT && mode != 6) {
+		if(creating){
+			switch(mode){
+				case 0: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 1, backgroundColor, commonWidth, isFilled, backgroundColor); break;
+				case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, borderColor);break;
+				case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, borderColor, commonWidth, isFilled, primaryColor); break;
+				case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), borderColor, commonWidth, isFilled, primaryColor); break;
+				case 4: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawTriangle(pos1, Vector2(2*pos1.x-mouse_position.x, mouse_position.y), mouse_position, borderColor, isFilled, primaryColor); break;
+				case 5: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 1, borderColor, commonWidth, true, borderColor); break;
+			}
+		}
+		}else{
+			creating = false;
+		}
+		break;
+
+	case SDL_KEYUP:  
+		if(mode == 6 && sdlEvent.key.keysym.sym != 6){
+			framebuffer.Fill(backgroundColor);
+			particleSystem.Init(&framebuffer, !particleSystem.type);
+
+		}
+		switch(sdlEvent.key.keysym.sym) {
+			case SDLK_ESCAPE: exit(0); break; // ESC key, kill the app
+			case SDLK_e: framebuffer.Fill(backgroundColor); break; 
+			case SDLK_PLUS: commonWidth++;printf("Width: %d\n", commonWidth); break; 
+			case SDLK_MINUS: if(commonWidth>1){commonWidth--;printf("Width: %d\n", commonWidth);} break; 
+			case SDLK_0: mode = 0; break;
+			case SDLK_1: mode = 1; break;
+			case SDLK_2: mode = 2; break;
+			case SDLK_3: mode = 3; break;
+			case SDLK_4: mode = 4; break;
+			case SDLK_5: mode = 5; break;
+			case SDLK_6: mode = 6; framebuffer.Fill(backgroundColor); break;
+			case SDLK_f: isFilled = !isFilled;break;
+		}
+		break;
+	case SDL_WINDOWEVENT:
+		switch (sdlEvent.window.event) {
+			case SDL_WINDOWEVENT_RESIZED: // Resize OpenGL context
+				std::cout << "window resize" << std::endl;
+				SetWindowSize( sdlEvent.window.data1, sdlEvent.window.data2 );
+				break;
+		}
+		break;
+	}
+	DrawToolbar();
 	
-	framebuffer.Render();
+	
+}
 	
 }
 
@@ -82,94 +193,29 @@ void Application::Update(float seconds_elapsed)
 void Application::OnKeyPressed( SDL_KeyboardEvent event )
 {
 	// KEY CODES: https://wiki.libsdl.org/SDL2/SDL_Keycode
-	if(mode == 6 && event.keysym.sym != 6){
-		framebuffer.Fill(backgroundColor);
-		particleSystem.Init(&framebuffer, !particleSystem.type);
-
-	}
-
-
 	switch(event.keysym.sym) {
-		case SDLK_ESCAPE: exit(0); break; // ESC key, kill the app
-		case SDLK_e: framebuffer.Fill(backgroundColor); break; 
-		case SDLK_PLUS: commonWidth++;printf("Width: %d\n", commonWidth); break; 
-		case SDLK_MINUS: if(commonWidth>1){commonWidth--;printf("Width: %d\n", commonWidth);} break; 
-		case SDLK_0: mode = 0; break;
-		case SDLK_1: mode = 1; break;
-		case SDLK_2: mode = 2; break;
-		case SDLK_3: mode = 3; break;
-		case SDLK_4: mode = 4; break;
-		case SDLK_5: mode = 5; break;
-		case SDLK_6: mode = 6; framebuffer.Fill(backgroundColor); break;
-		case SDLK_f: isFilled = !isFilled;break;
+		
 	}
 }
 
 void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 {
 	if (event.button == SDL_BUTTON_LEFT) {
-		for(int i = 0; i<17; i++){
-			if(toolBar[i].IsMouseInside(mouse_position)){
-				switch(toolBar[i].id) {
-					case 0: framebuffer.Fill(backgroundColor); prevIm = framebuffer; break;
-					case 1: framebuffer.DrawImage(savedImage, 0, 0); prevIm = framebuffer; break;
-					case 2: savedImage = framebuffer; break;
-					case 3: mode = 0; break;
-					case 4: mode = 1; break;
-					case 5: mode = 2; break;
-					case 6: mode = 3; break;
-					case 7: mode = 4; break;
-					case 8: mode = 5; break;
-					case 9: if(isFilled){primaryColor=Color::BLACK;}else{borderColor=Color::BLACK;}; break;
-					case 10: if(isFilled){primaryColor=Color::WHITE;}else{borderColor=Color::WHITE;};break;
-					case 11: if(isFilled){primaryColor=Color::BLUE;}else{borderColor=Color::BLUE;};break;
-					case 12: if(isFilled){primaryColor=Color::CYAN;}else{borderColor=Color::CYAN;};break;
-					case 13: if(isFilled){primaryColor=Color::GREEN;}else{borderColor=Color::GREEN;};break;
-					case 14: if(isFilled){primaryColor=Color::PURPLE;}else{borderColor=Color::PURPLE;};break;
-					case 15: if(isFilled){primaryColor=Color::RED;}else{borderColor=Color::RED;};break;
-					case 16: if(isFilled){primaryColor=Color::YELLOW;}else{borderColor=Color::YELLOW;};break;
-				}
-			}
-		}
 
-		creating = false;
-		switch(mode) {
-			case 0: break;
-			case 1: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
-			case 2: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
-			case 3: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
-			case 4: pos1 = Vector2(mouse_position.x, mouse_position.y); break;
-			case 5: break;
-		}
 	}
+
 }
 
 void Application::OnMouseButtonUp( SDL_MouseButtonEvent event )
 {
 	if (event.button == SDL_BUTTON_LEFT) {
-		creating = true;
-		switch(mode) {
-			case 0: break;
-			case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, borderColor); break;
-			case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, borderColor, commonWidth, isFilled, primaryColor); break;
-			case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), borderColor, commonWidth, isFilled, primaryColor); break;
-			case 4: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawTriangle(pos1,  Vector2(2*pos1.x-mouse_position.x, mouse_position.y), mouse_position, borderColor, isFilled, primaryColor); break;
-			case 5: break;
-		}
+		
 	}
 }
 
 void Application::OnMouseMove(SDL_MouseButtonEvent event)
 {
 	if (event.button == SDL_BUTTON_LEFT) {
-		switch(mode){
-			case 0: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 1, backgroundColor, commonWidth, isFilled, backgroundColor); break;
-			case 1: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawLineDDA(pos1.x, pos1.y,  mouse_position.x, mouse_position.y, borderColor);break;
-			case 2: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawRect(pos1.x, pos1.y,  mouse_position.x-pos1.x, mouse_position.y-pos1.y, borderColor, commonWidth, isFilled, primaryColor); break;
-			case 3: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawCircle(pos1.x, pos1.y,  pos1.Distance(mouse_position), borderColor, commonWidth, isFilled, primaryColor); break;
-			case 4: framebuffer.DrawImage(prevIm, 0, 0);framebuffer.DrawTriangle(pos1, Vector2(2*pos1.x-mouse_position.x, mouse_position.y), mouse_position, primaryColor, isFilled, borderColor); break;
-			case 5: framebuffer.DrawCircle(mouse_position.x, mouse_position.y, 1, primaryColor, commonWidth, isFilled, primaryColor); break;
-		}
 		
 	}
 }

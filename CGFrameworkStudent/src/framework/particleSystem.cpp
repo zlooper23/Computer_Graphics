@@ -28,6 +28,7 @@ void ParticleSystem::Init(Image* framebuffer, int t) {
 
 //Render all particles as a white circle to simulate snow
 void ParticleSystem::Render(Image* framebuffer) {
+    framebuffer->Fill(Color(20, 20, 20));
     for (int i = 0; i < MAX_PARTICLES; ++i) {
         if (!particles[i].inactive) {
             // Draw the particle to the framebuffer
