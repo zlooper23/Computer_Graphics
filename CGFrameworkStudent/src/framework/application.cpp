@@ -151,7 +151,6 @@ void Application::Render(void)
 		}
 		switch(sdlEvent.key.keysym.sym) {
 			case SDLK_ESCAPE: exit(0); break; // ESC key, kill the app
-			case SDLK_e: framebuffer.Fill(backgroundColor); break; 
 			case SDLK_PLUS: commonWidth++;printf("Width: %d\n", commonWidth); break; 
 			case SDLK_MINUS: if(commonWidth>1){commonWidth--;printf("Width: %d\n", commonWidth);} break; 
 			case SDLK_0: mode = 0; break;
