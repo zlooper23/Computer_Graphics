@@ -11,12 +11,12 @@
 
 class Mesh
 {
+	
+
+public:
 	std::vector<Vector3> vertices;
 	std::vector<Vector3> normals;
 	std::vector<Vector2> uvs;
-
-public:
-
 	Mesh();
 	void Clear();
 	void Render(int primitive = GL_TRIANGLES);

@@ -251,4 +251,5 @@ CMakeFiles/ComputerGraphics.dir/src/framework/application.cpp.o: \
  /usr/include/c++/13/bits/stl_map.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/cstring
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/cstring \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/entity.h

@@ -375,6 +375,30 @@ src/framework/camera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.s
 .PHONY : src/framework/camera.cpp.s
 
+src/framework/entity.o: src/framework/entity.cpp.o
+.PHONY : src/framework/entity.o
+
+# target to build an object file
+src/framework/entity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/entity.cpp.o
+.PHONY : src/framework/entity.cpp.o
+
+src/framework/entity.i: src/framework/entity.cpp.i
+.PHONY : src/framework/entity.i
+
+# target to preprocess a source file
+src/framework/entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/entity.cpp.i
+.PHONY : src/framework/entity.cpp.i
+
+src/framework/entity.s: src/framework/entity.cpp.s
+.PHONY : src/framework/entity.s
+
+# target to generate assembly for a file
+src/framework/entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/entity.cpp.s
+.PHONY : src/framework/entity.cpp.s
+
 src/framework/framework.o: src/framework/framework.cpp.o
 .PHONY : src/framework/framework.o
 
@@ -600,6 +624,9 @@ help:
 	@echo "... src/framework/camera.o"
 	@echo "... src/framework/camera.i"
 	@echo "... src/framework/camera.s"
+	@echo "... src/framework/entity.o"
+	@echo "... src/framework/entity.i"
+	@echo "... src/framework/entity.s"
 	@echo "... src/framework/framework.o"
 	@echo "... src/framework/framework.i"
 	@echo "... src/framework/framework.s"

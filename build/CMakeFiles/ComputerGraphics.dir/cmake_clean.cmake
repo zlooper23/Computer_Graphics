@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ComputerGraphics.dir/src/framework/button.cpp.o.d"
   "CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o"
   "CMakeFiles/ComputerGraphics.dir/src/framework/camera.cpp.o.d"
+  "CMakeFiles/ComputerGraphics.dir/src/framework/entity.cpp.o"
+  "CMakeFiles/ComputerGraphics.dir/src/framework/entity.cpp.o.d"
   "CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o"
   "CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o.d"
   "CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o"

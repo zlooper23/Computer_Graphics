@@ -4,6 +4,8 @@
 #include "utils.h" 
 #include "particleSystem.h"
 #include "button.h"
+#include "entity.h"
+#include "camera.h"
 
 
 Application::Application(const char* caption, int width, int height)
@@ -55,7 +57,7 @@ void Application::Render(void)
 {
 	
 	framebuffer.Render();
-	SDL_Event sdlEvent;
+	/*SDL_Event sdlEvent;
 	if(mode == 6){
 		particleSystem.Render(&framebuffer);
 		framebuffer.Render();
@@ -175,7 +177,15 @@ void Application::Render(void)
 	DrawToolbar();
 	
 	
-}
+}*/
+
+	Mesh m;
+	m.LoadOBJ("./meshes/anna.obj");
+	//m.Render(0);
+
+	Entity e = Entity(m);
+	Camera c = Camera();
+	e.Render(&framebuffer, &c, Color::BLACK);
 	
 }
 
