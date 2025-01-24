@@ -511,32 +511,25 @@ void Image::DrawQuarter(int x, int y, int a, int b, const Color& borderColor){
 }
 
 void Image::DrawCircle(int x, int y, int r, const Color& borderColor, int borderWidth, bool isFilled, const Color& fillColor){
-
 	std::vector<int> min;
 	std::vector<int> max;
-
 	min.assign(r+borderWidth+1, 0);
 	max.assign(r+borderWidth+1, 0);
-	
-	float t1 = (r / 16.0);
+	float t1 = (float)r;
 	float x0 = (float)r;
 	float y0 = 0.0;
 	int r1=r;
 
-
 	for(int z = 0; z<2; z++){
-
 		int a = (int)x0;
 		int b = (int)y0;
 		if(z == 0){
 			min[b] = a;
-			min[a] = b;	
-			
+			min[a] = b;		
 		}else{
 			max[b] = a;
 			max[a] = b;	
 		}
-
 		while(x0>y0){
 			if(isFilled&&z==0){
 				for(int i = 0; i<a; i++){
@@ -548,9 +541,8 @@ void Image::DrawCircle(int x, int y, int r, const Color& borderColor, int border
 			DrawQuarter(x, y, b, a, borderColor);
 			y0++;
 			t1 = t1+y0;
-			float t2 = t1-x0;
-			if(t2>=0){
-				t1 = t2;
+			if(t1>=x0){
+				t1 -= x0;
 				x0--;
 			}
 
@@ -575,7 +567,6 @@ void Image::DrawCircle(int x, int y, int r, const Color& borderColor, int border
 			DrawQuarter(x, y, j, i, borderColor);
 		}
 	}
-		
 }
 
 void Image::DrawImage(const Image& image, int x, int y){
