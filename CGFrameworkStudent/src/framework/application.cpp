@@ -178,14 +178,17 @@ void Application::Render(void)
 	
 	
 }*/
-
+	framebuffer.Fill(Color::BLACK);
 	Mesh m;
-	m.LoadOBJ("./meshes/anna.obj");
-	//m.Render(0);
-
+	m.CreateCube(100);
+	//m.LoadOBJ("./meshes/anna.obj");
+	//m.Render(1);
+	
 	Entity e = Entity(m);
 	Camera c = Camera();
-	e.Render(&framebuffer, &c, Color::BLACK);
+	c.LookAt(Vector3(0, 0, 0), Vector3(100*sin(time), 50*sin(time), 70*cos(time)), Vector3(0, 1, 0));
+	e.Render(&framebuffer, &c, Color::WHITE);
+	
 	
 }
 
