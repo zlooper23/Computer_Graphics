@@ -84,10 +84,10 @@ void Camera::LookAt(const Vector3& eye, const Vector3& center, const Vector3& up
 void Camera::UpdateViewMatrix()
 {
 	// Reset Matrix (Identity)
-	view_matrix.SetIdentity();
+	//view_matrix.SetIdentity();
 
 	// Comment this line to create your own projection matrix!
-	SetExampleViewMatrix();
+	//SetExampleViewMatrix();
 
 	// Remember how to fill a Matrix4x4 (check framework slides)
 	// Careful with the order of matrix multiplications, and be sure to use normalized vectors!
@@ -98,6 +98,35 @@ void Camera::UpdateViewMatrix()
 
 	// Translate view matrix
 	// ...
+	Matrix44 rot_matrix;
+	rot_matrix.SetIdentity();
+
+	Matrix44 trans_matrix;
+	trans_matrix.SetIdentity();
+
+	Vector3 forward = eye-center;
+	Vector3 right = up.Cross(forward);
+	up = forward.Cross(right);
+
+	forward.Normalize();
+	right.Normalize();
+	up.Normalize();
+
+	rot_matrix.Set(
+		right.x, right.y, right.z, 0,
+		up.x, up.y, up.z, 0,
+		forward.x, forward.y, forward.z, 0,
+		0, 0, 0, 1
+	);
+	trans_matrix.Set(
+		1, 0, 0, -eye.x,
+		0, 1, 0, -eye.y,
+		0, 0, 1, -eye.z,
+		0, 0, 0, 1
+	);
+
+	view_matrix = rot_matrix*trans_matrix;
+
 
 	UpdateViewProjectionMatrix();
 }
@@ -109,16 +138,29 @@ void Camera::UpdateProjectionMatrix()
 	projection_matrix.SetIdentity();
 
 	// Comment this line to create your own projection matrix!
-	SetExampleProjectionMatrix();
+	//SetExampleProjectionMatrix();
 
 	// Remember how to fill a Matrix4x4 (check framework slides)
 	
 	if (type == PERSPECTIVE) {
 		// projection_matrix.M[2][3] = -1;
 		// ...
+		float f = 1.0/(tan(fov/2.0));
+		projection_matrix.Set(
+			f/aspect, 0, 0, 0,
+			0, f, 0, 0,
+			0, 0, (far_plane+near_plane)/(near_plane-far_plane), 2.0*((far_plane*near_plane)/(near_plane-far_plane)),
+			0, 0, -1.0, 0
+		);
 	}
 	else if (type == ORTHOGRAPHIC) {
 		// ...
+		projection_matrix.Set(
+			2.0/(right-left), 0, 0, -(right+left)/(right-left),
+			0, 2.0/(top-bottom), 0, -(top+bottom)/(top-bottom),
+			0, 0, -2.0/(far_plane-near_plane), -(far_plane+near_plane)/(far_plane-near_plane),
+			0, 0, 0, 1
+		);
 	} 
 
 	UpdateViewProjectionMatrix();

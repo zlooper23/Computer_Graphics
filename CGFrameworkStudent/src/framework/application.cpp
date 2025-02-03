@@ -186,8 +186,8 @@ void Application::Render(void)
 	
 	Entity e = Entity(m);
 	Camera c = Camera();
-	c.LookAt(Vector3(0, 0, 0), Vector3(100*sin(time), 50*sin(time), 70*cos(time)), Vector3(0, 1, 0));
-	e.Render(&framebuffer, &c, Color::WHITE);
+	c.LookAt(Vector3(1000*sin(time), 400, 400), Vector3(-200, -200, 0), Vector3(0, 1, 0));
+	e.Render(&framebuffer, &c, Color::RED);
 	
 	
 }

@@ -32,6 +32,7 @@ public:
 	Image prevIm;
 	bool creating;
 	Image savedImage;
+	Camera cam;
 
 	float time;
 
