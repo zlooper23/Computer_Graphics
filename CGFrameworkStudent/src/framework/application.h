@@ -9,6 +9,7 @@
 #include "image.h"
 #include "particleSystem.h"
 #include "button.h"
+#include "camera.h"
 
 class Application
 {

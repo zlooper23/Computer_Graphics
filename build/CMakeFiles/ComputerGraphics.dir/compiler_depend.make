@@ -420,6 +420,7 @@ CMakeFiles/ComputerGraphics.dir/src/framework/button.cpp.o: /home/zlooper23/Desk
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/close_code.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/button.h \
+  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/particleSystem.h \
@@ -2870,6 +2871,7 @@ CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o: /home/zlooper23/Deskt
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/close_code.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/button.h \
+  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/particleSystem.h \
@@ -3174,6 +3176,7 @@ CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o: /home/zlooper23/Desktop/Git
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/close_code.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/application.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/button.h \
+  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/framework.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.h \
   /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/particleSystem.h \

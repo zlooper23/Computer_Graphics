@@ -48,6 +48,7 @@ void Application::Init(void)
 	std::cout << "Initiating app..." << std::endl;
 	initToolbar();
 	particleSystem.Init(&framebuffer, 1);
+	cam.LookAt(Vector3(0, 0, 1), Vector3(0, 0, 0), Vector3(0, 1, 0));
 
 
 }
@@ -57,6 +58,7 @@ void Application::Render(void)
 {
 	
 	framebuffer.Render();
+	
 	/*SDL_Event sdlEvent;
 	if(mode == 6){
 		particleSystem.Render(&framebuffer);
@@ -180,15 +182,14 @@ void Application::Render(void)
 }*/
 	framebuffer.Fill(Color::BLACK);
 	Mesh m;
-	m.CreateCube(100);
+	m.CreateCube(10);
 	//m.LoadOBJ("./meshes/anna.obj");
-	//m.Render(1);
 	
 	Entity e = Entity(m);
-	Camera c = Camera();
-	c.LookAt(Vector3(1000*sin(time), 400, 400), Vector3(-200, -200, 0), Vector3(0, 1, 0));
-	e.Render(&framebuffer, &c, Color::RED);
+	e.modelMatrix.Rotate(PI*time, Vector3(1, 0, 0));
 	
+	e.Render(&framebuffer, &cam, Color::RED);
+
 	
 }
 
@@ -198,7 +199,6 @@ void Application::Update(float seconds_elapsed)
 	if(mode == 6){
 		particleSystem.Update(seconds_elapsed, &framebuffer);
 	}
-	
 }
 
 //keyboard press event 
@@ -206,7 +206,10 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 {
 	// KEY CODES: https://wiki.libsdl.org/SDL2/SDL_Keycode
 	switch(event.keysym.sym) {
-		
+		case SDLK_a:  cam.eye.x+=100; cam.UpdateViewMatrix();break;
+		case SDLK_d: cam.eye.x-=100; cam.UpdateViewMatrix();break;
+		case SDLK_w: cam.eye.y+=100; cam.UpdateViewMatrix();break;
+		case SDLK_s: cam.eye.y-=100; cam.UpdateViewMatrix();break;
 	}
 }
 
