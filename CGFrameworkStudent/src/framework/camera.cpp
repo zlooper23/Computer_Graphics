@@ -104,10 +104,11 @@ void Camera::UpdateViewMatrix()
 	Matrix44 trans_matrix;
 	trans_matrix.SetIdentity();
 
-	Vector3 forward = eye-center;
+	Vector3 forward = center-eye;
 	Vector3 right = up.Cross(forward);
 	up = forward.Cross(right);
 
+	
 	forward.Normalize();
 	right.Normalize();
 	up.Normalize();
@@ -115,7 +116,7 @@ void Camera::UpdateViewMatrix()
 	rot_matrix.Set(
 		right.x, right.y, right.z, 0,
 		up.x, up.y, up.z, 0,
-		forward.x, forward.y, forward.z, 0,
+		-forward.x, -forward.y, -forward.z, 0,
 		0, 0, 0, 1
 	);
 	trans_matrix.Set(
@@ -126,6 +127,7 @@ void Camera::UpdateViewMatrix()
 	);
 
 	view_matrix = rot_matrix*trans_matrix;
+	view_matrix.M[3][3] = 1.0;
 
 
 	UpdateViewProjectionMatrix();
@@ -145,7 +147,7 @@ void Camera::UpdateProjectionMatrix()
 	if (type == PERSPECTIVE) {
 		// projection_matrix.M[2][3] = -1;
 		// ...
-		float f = 1.0/(tan(fov/2.0));
+		float f = 1.0/(tan(fov*0.5));
 		projection_matrix.Set(
 			f/aspect, 0, 0, 0,
 			0, f, 0, 0,

@@ -28,15 +28,25 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c){
     const std::vector<Vector3>& vertices = mesh.GetVertices();
     std::vector<Vector3> points;
     Matrix44 viewProjectionMatrix = camera->viewprojection_matrix;
-    
+    bool negZ = false;
+    bool clip = true;
     for(int i = 0; i < vertices.size(); i++){
-        Vector3 p = modelMatrix * vertices[i];
-        p = viewProjectionMatrix * p;
+        Vector3 p = camera->ProjectVector(modelMatrix * vertices[i], negZ);
+        if((abs(p.x)>1 || abs(p.y)>1)||(abs(p.z)>1)){
+            clip = false;
+        }
+
+        p.x = ((p.x+1)/2)*(framebuffer->width-1);
+        p.y = ((p.y+1)/2)*(framebuffer->height-1);
+
         points.push_back(p);
         if(i%3==2){
-            framebuffer->DrawLineDDA(points[i-2].x, points[i-2].y, points[i-1].x, points[i-1].y, c);
-            framebuffer->DrawLineDDA(points[i-1].x, points[i-1].y, points[i].x, points[i].y, c);
-            framebuffer->DrawLineDDA(points[i].x, points[i].y, points[i-2].x, points[i-2].y, c);
+            if(clip){
+                framebuffer->DrawLineDDA(points[i-2].x, points[i-2].y, points[i-1].x, points[i-1].y, c);
+                framebuffer->DrawLineDDA(points[i-1].x, points[i-1].y, points[i].x, points[i].y, c);
+                framebuffer->DrawLineDDA(points[i].x, points[i].y, points[i-2].x, points[i-2].y, c);
+            }
+            clip = true;
         }
     }
 }
