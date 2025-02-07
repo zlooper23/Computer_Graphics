@@ -48,8 +48,8 @@ void Application::Init(void)
 	std::cout << "Initiating app..." << std::endl;
 	initToolbar();
 	particleSystem.Init(&framebuffer, 1);
-	cam.LookAt(Vector3(0, 5, 2), Vector3(0, 0, 0), Vector3(0, 1, 0));
-	cam.SetPerspective(PI/4.0, framebuffer.width/framebuffer.height, 0.01, 100);
+	cam.LookAt(Vector3(2, 0, 2), Vector3(0, 0, 0), Vector3(0, 1, 0));
+	cam.SetPerspective(45, framebuffer.width/framebuffer.height, 0.01, 100);
 	cam.type = 0;
 
 }
@@ -183,12 +183,13 @@ void Application::Render(void)
 }*/
 	framebuffer.Fill(Color::BLACK);
 	Mesh m;
-	m.CreateCube(0.5);
-	//m.LoadOBJ("./meshes/anna.obj");
+	//m.CreateCube(0.5);
+	m.LoadOBJ("./meshes/anna.obj");
 	
 	Entity e = Entity(m);
-	e.modelMatrix.Rotate(PI*time, Vector3(1, 0, 0));
+	//e.modelMatrix.Rotate(PI*time, Vector3(1, 0, 0));
 	//e.modelMatrix.Rotate(PI*time, Vector3(0, 1, 0));
+	//printf("%lf, %lf\n", sin(time), cos(time));
 	
 	e.Render(&framebuffer, &cam, Color::RED);
 
@@ -215,7 +216,11 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 {
 	if (event.button == SDL_BUTTON_LEFT) {
-
+		if(!creating){
+			pos1 = Vector2(mouse_position.x, mouse_position.y);
+		}
+		creating = true;
+		printf("aaaaaaaaaaa\n");
 	}
 
 }
@@ -223,21 +228,31 @@ void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 void Application::OnMouseButtonUp( SDL_MouseButtonEvent event )
 {
 	if (event.button == SDL_BUTTON_LEFT) {
-		
+		creating = false;
 	}
 }
 
 void Application::OnMouseMove(SDL_MouseButtonEvent event)
-{
+{	
+
+	float d = Vector2(cam.eye.x, cam.eye.z).Distance(Vector2(cam.center.x, cam.center.z));
 	if (event.button == SDL_BUTTON_LEFT) {
-		
+		Vector2 v = mouse_position-pos1;
+		//float d = sqrt(pow(cam.eye.x-cam.center.x, 2) + pow(cam.eye.x-cam.center.x, 2));
+		cam.eye = Vector3(sqrt(cam.center.x)+sin(v.x*0.01)*d, cam.eye.y, sqrt(cam.center.z)+cos(v.x*0.01)*d);
+		//printf("(%lf, %lf, %lf)\n", cam.eye.x, cam.eye.y, cam.eye.z);
+		cam.UpdateViewMatrix();	
 	}
 }
 
 void Application::OnWheel(SDL_MouseWheelEvent event)
 {
-	float dy = event.preciseY;
-
+	float dy = event.preciseY;// 1 or -1
+	dy*=0.03;
+	Vector3 v = cam.eye - cam.center;
+	v = v * dy;
+	cam.eye = cam.eye-v;
+	cam.UpdateViewMatrix();	
 	// ...
 }
 

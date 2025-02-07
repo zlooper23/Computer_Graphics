@@ -42,9 +42,13 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c){
         points.push_back(p);
         if(i%3==2){
             if(clip){
+
                 framebuffer->DrawLineDDA(points[i-2].x, points[i-2].y, points[i-1].x, points[i-1].y, c);
                 framebuffer->DrawLineDDA(points[i-1].x, points[i-1].y, points[i].x, points[i].y, c);
                 framebuffer->DrawLineDDA(points[i].x, points[i].y, points[i-2].x, points[i-2].y, c);
+
+                //framebuffer->DrawTriangle(Vector2(points[i-2].x, points[i-2].y), Vector2(points[i-1].x, points[i-1].y), Vector2(points[i].x, points[i].y), c, true, c);
+ 
             }
             clip = true;
         }

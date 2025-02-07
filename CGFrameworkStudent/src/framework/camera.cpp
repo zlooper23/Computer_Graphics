@@ -147,7 +147,7 @@ void Camera::UpdateProjectionMatrix()
 	if (type == PERSPECTIVE) {
 		// projection_matrix.M[2][3] = -1;
 		// ...
-		float f = 1.0/(tan(fov*0.5));
+		float f = 1.0/(tan(fov*DEG2RAD*0.5));
 		projection_matrix.Set(
 			f/aspect, 0, 0, 0,
 			0, f, 0, 0,
