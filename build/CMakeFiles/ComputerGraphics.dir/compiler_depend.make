@@ -1542,6 +1542,7 @@ CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o: /home/zlooper23/Deskt
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
+  /usr/include/c++/13/math.h \
   /usr/include/c++/13/new \
   /usr/include/c++/13/numeric \
   /usr/include/c++/13/ostream \
@@ -1559,7 +1560,9 @@ CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o: /home/zlooper23/Deskt
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/limits.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
@@ -1588,12 +1591,15 @@ CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o: /home/zlooper23/Deskt
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -1639,11 +1645,13 @@ CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o: /home/zlooper23/Deskt
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
@@ -1665,11 +1673,13 @@ CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o: /home/zlooper23/Deskt
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h
 
 CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.cpp \
@@ -2703,7 +2713,9 @@ CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o: /home/zlooper23/Des
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/limits.h \
   /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
@@ -2732,12 +2744,15 @@ CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o: /home/zlooper23/Des
   /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
   /usr/include/x86_64-linux-gnu/bits/long-double.h \
   /usr/include/x86_64-linux-gnu/bits/math-vector.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
@@ -2783,11 +2798,13 @@ CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o: /home/zlooper23/Des
   /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
   /usr/include/x86_64-linux-gnu/bits/typesizes.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/bits/wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -2807,11 +2824,13 @@ CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o: /home/zlooper23/Des
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/emmintrin.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/mm_malloc.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/mmintrin.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/xmmintrin.h
 
 CMakeFiles/ComputerGraphics.dir/src/framework/utils.cpp.o: /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.cpp \
@@ -3409,25 +3428,13 @@ CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o: /home/zlooper23/Desktop/Git
 
 /usr/include/x86_64-linux-gnu/sys/time.h:
 
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
 /usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
-
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/linux/limits.h:
 
 /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/utils.cpp:
 
@@ -3456,6 +3463,18 @@ CMakeFiles/ComputerGraphics.dir/src/main/main.cpp.o: /home/zlooper23/Desktop/Git
 /usr/include/asm-generic/posix_types.h:
 
 /usr/include/asm-generic/int-ll64.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
 

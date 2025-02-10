@@ -240,4 +240,12 @@ CMakeFiles/ComputerGraphics.dir/src/framework/texture.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.h
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/image.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h

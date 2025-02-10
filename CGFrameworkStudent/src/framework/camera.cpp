@@ -98,6 +98,8 @@ void Camera::UpdateViewMatrix()
 
 	// Translate view matrix
 	// ...
+	up = Vector3(0, 1, 0);
+
 	Matrix44 rot_matrix;
 	rot_matrix.SetIdentity();
 
