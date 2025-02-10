@@ -577,6 +577,57 @@ void Image::DrawImage(const Image& image, int x, int y){
 	}
 }
 
+void Image::DrawTriangleInterpolated(const Vector3& p0, const Vector3& p1, const Vector3& p2, const Color& c0, const Color& c1, const Color& c2){
+	int mxy = std::max(p2.y, std::max(p1.y, p0.y));
+	int mny = std::min(p2.y, std::min(p1.y, p0.y));
+	int mxx = std::max(p2.x, std::max(p1.x, p0.x));
+	int mnx = std::min(p2.x, std::min(p1.x, p0.x));
+	
+	std::vector<int> minX;
+	std::vector<int> maxX;
+
+	minX.assign(mxy+1, mxx);
+	maxX.assign(mxy+1, mnx);
+
+	ScanLineDDA(p0.x, p0.y, p1.x, p1.y, minX, maxX);
+	ScanLineDDA(p1.x, p1.y, p2.x, p2.y, minX, maxX);
+	ScanLineDDA(p2.x, p2.y, p0.x, p0.y, minX, maxX);
+	int a = 0;
+	for(int i = 0; i<mxy; i++){
+		a++;
+		for(int j = minX[a];j<maxX[a]; j++){
+
+			float TotalA = AreaTrinagle(p0, p1, p2);
+
+			float P1 = AreaTrinagle(p0, p1, Vector3(j, i, 0))/TotalA;
+			float P2 = AreaTrinagle(p2, p1, Vector3(j, i, 0))/TotalA;
+			float P3 = AreaTrinagle(p0, p2, Vector3(j, i, 0))/TotalA;
+			float sum = P1+P2+P3;
+			Color final = c0*P2/sum+c1*P3/sum+c2*P1/sum;
+
+
+
+
+
+			SetPixel(j, i, final);
+		}
+		
+	}
+
+	
+
+
+
+
+
+}
+
+float Image::AreaTrinagle(const Vector3& p0, const Vector3& p1, const Vector3& p2){
+	Vector3 AB = p1-p0;
+	Vector3 AC = p2-p0;
+	return abs(AB.x*AC.y - AC.x*AB.y)/2.0;
+}
+
 
 
 

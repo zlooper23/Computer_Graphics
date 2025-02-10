@@ -183,8 +183,8 @@ void Application::Render(void)
 }*/
 	framebuffer.Fill(Color::BLACK);
 	Mesh m;
-	m.CreateCube(0.5);
-	//m.LoadOBJ("./meshes/anna.obj");
+	//m.CreateCube(0.5);
+	m.LoadOBJ("./meshes/anna.obj");
 	
 	Entity e = Entity(m);
 	//e.modelMatrix.Rotate(PI*time, Vector3(1, 0, 0));
