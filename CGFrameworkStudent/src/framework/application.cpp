@@ -50,10 +50,10 @@ void Application::Init(void)
 	cam.type = 0;
 
 	Mesh m;
-	m.CreateCube(0.5);
-	ents[0] = Entity(m);
+	//m.CreateCube(0.5);
+	//ents[1] = Entity(m);
 	m.LoadOBJ("./meshes/anna.obj");
-	ents[1] = Entity(m);
+	ents[0] = Entity(m);
 	
 	
 
@@ -191,8 +191,8 @@ void Application::Render(void)
 	//e.modelMatrix.Rotate(PI*time, Vector3(0, 1, 0));
 	//printf("%lf, %lf\n", sin(time), cos(time));
 	
+	//ents[0].Render(&framebuffer, &cam, Color::RED, &zBuffer);
 	ents[0].Render(&framebuffer, &cam, Color::RED, &zBuffer);
-	ents[1].Render(&framebuffer, &cam, Color::RED, &zBuffer);
 
 	
 }

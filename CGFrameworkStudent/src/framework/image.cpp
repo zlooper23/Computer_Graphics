@@ -596,21 +596,30 @@ void Image::DrawTriangleInterpolated(const Vector3& p0, const Vector3& p1, const
 	for(int i = 0; i<mxy; i++){
 		a++;
 		for(int j = minX[a];j<maxX[a]; j++){
-			//if(zBuffer->GetPixel(j, i)>)
-
 			float TotalA = AreaTrinagle(p0, p1, p2);
 
-			float P1 = AreaTrinagle(p0, p1, Vector3(j, i, 0))/TotalA;
-			float P2 = AreaTrinagle(p2, p1, Vector3(j, i, 0))/TotalA;
-			float P3 = AreaTrinagle(p0, p2, Vector3(j, i, 0))/TotalA;
-			float sum = P1+P2+P3;
-			Color final = c0*P2/sum+c1*P3/sum+c2*P1/sum;
+			float a = AreaTrinagle(p0, p1, Vector3(j, i, 0))/TotalA;
+			float b = AreaTrinagle(p2, p1, Vector3(j, i, 0))/TotalA;
+			float c = AreaTrinagle(p0, p2, Vector3(j, i, 0))/TotalA;
+			float sum = a+b+c;
+			a/=sum;
+			b/=sum;
+			c/=sum;
+
+			Color final = c0*b+c1*c+c2*a;
+			float z = p0.z*b+p1.z*c+p2.z*a;
+			printf("%lf\n", z);
+			if(zBuffer->GetPixel(j, i)>z){
+				SetPixel(j, i, final);
+				zBuffer->SetPixel(j, i, z);
+
+			}
 
 
 
 
 
-			SetPixel(j, i, final);
+			
 		}
 		
 	}
