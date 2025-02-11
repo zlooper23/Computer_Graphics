@@ -242,4 +242,6 @@ CMakeFiles/ComputerGraphics.dir/src/framework/button.cpp.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.h
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/camera.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/entity.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/mesh.h

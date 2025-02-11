@@ -577,7 +577,7 @@ void Image::DrawImage(const Image& image, int x, int y){
 	}
 }
 
-void Image::DrawTriangleInterpolated(const Vector3& p0, const Vector3& p1, const Vector3& p2, const Color& c0, const Color& c1, const Color& c2){
+void Image::DrawTriangleInterpolated(const Vector3& p0, const Vector3& p1, const Vector3& p2, const Color& c0, const Color& c1, const Color& c2, FloatImage* zBuffer){
 	int mxy = std::max(p2.y, std::max(p1.y, p0.y));
 	int mny = std::min(p2.y, std::min(p1.y, p0.y));
 	int mxx = std::max(p2.x, std::max(p1.x, p0.x));
@@ -596,6 +596,7 @@ void Image::DrawTriangleInterpolated(const Vector3& p0, const Vector3& p1, const
 	for(int i = 0; i<mxy; i++){
 		a++;
 		for(int j = minX[a];j<maxX[a]; j++){
+			//if(zBuffer->GetPixel(j, i)>)
 
 			float TotalA = AreaTrinagle(p0, p1, p2);
 

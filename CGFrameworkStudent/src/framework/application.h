@@ -10,6 +10,7 @@
 #include "particleSystem.h"
 #include "button.h"
 #include "camera.h"
+#include "entity.h"
 
 class Application
 {
@@ -34,6 +35,8 @@ public:
 	bool creating;
 	Image savedImage;
 	Camera cam;
+	FloatImage zBuffer;
+	Entity ents[3];
 
 	float time;
 
@@ -71,6 +74,7 @@ public:
 		this->window_width = width;
 		this->window_height = height;
 		this->framebuffer.Resize(width, height);
+		this->cam.SetPerspective(45, width/height, 0.01, 100);
 	}
 
 	Vector2 GetWindowSize()

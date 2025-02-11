@@ -31,11 +31,8 @@ Application::Application(const char* caption, int width, int height)
 	this->isFilled = true;
 	this->creating = false;
 	this->savedImage.LoadPNG("images/fruits.png");
-
-
-
-
-
+	this->zBuffer = FloatImage(width, height);
+	this->zBuffer.Fill(__FLT_MAX__);
 	
 }
 
@@ -51,6 +48,14 @@ void Application::Init(void)
 	cam.LookAt(Vector3(2, 2, 2), Vector3(0, 0, 0), Vector3(0, 1, 0));
 	cam.SetPerspective(45, framebuffer.width/framebuffer.height, 0.01, 100);
 	cam.type = 0;
+
+	Mesh m;
+	m.CreateCube(0.5);
+	ents[0] = Entity(m);
+	m.LoadOBJ("./meshes/anna.obj");
+	ents[1] = Entity(m);
+	
+	
 
 }
 
@@ -182,16 +187,12 @@ void Application::Render(void)
 	
 }*/
 	framebuffer.Fill(Color::BLACK);
-	Mesh m;
-	//m.CreateCube(0.5);
-	m.LoadOBJ("./meshes/anna.obj");
-	
-	Entity e = Entity(m);
 	//e.modelMatrix.Rotate(PI*time, Vector3(1, 0, 0));
 	//e.modelMatrix.Rotate(PI*time, Vector3(0, 1, 0));
 	//printf("%lf, %lf\n", sin(time), cos(time));
 	
-	e.Render(&framebuffer, &cam, Color::RED);
+	ents[0].Render(&framebuffer, &cam, Color::RED, &zBuffer);
+	ents[1].Render(&framebuffer, &cam, Color::RED, &zBuffer);
 
 	
 }
@@ -265,6 +266,7 @@ void Application::OnMouseMove(SDL_MouseButtonEvent event)
 		cam.center = m*cam.center;
 
 	}
+	
 	cam.UpdateViewMatrix();	
 }
 
