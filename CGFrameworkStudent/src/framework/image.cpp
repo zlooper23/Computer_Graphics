@@ -608,28 +608,13 @@ void Image::DrawTriangleInterpolated(const Vector3& p0, const Vector3& p1, const
 
 			Color final = c0*b+c1*c+c2*a;
 			float z = p0.z*b+p1.z*c+p2.z*a;
-			printf("%lf\n", z);
 			if(zBuffer->GetPixel(j, i)>z){
 				SetPixel(j, i, final);
 				zBuffer->SetPixel(j, i, z);
 
 			}
-
-
-
-
-
-			
 		}
-		
 	}
-
-	
-
-
-
-
-
 }
 
 float Image::AreaTrinagle(const Vector3& p0, const Vector3& p1, const Vector3& p2){

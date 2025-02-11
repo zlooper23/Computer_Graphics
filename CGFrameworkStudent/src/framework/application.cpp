@@ -186,6 +186,9 @@ void Application::Render(void)
 	
 	
 }*/
+	zBuffer = FloatImage(framebuffer.width, framebuffer.height);
+	zBuffer.Fill(__FLT_MAX__);
+
 	framebuffer.Fill(Color::BLACK);
 	//e.modelMatrix.Rotate(PI*time, Vector3(1, 0, 0));
 	//e.modelMatrix.Rotate(PI*time, Vector3(0, 1, 0));
