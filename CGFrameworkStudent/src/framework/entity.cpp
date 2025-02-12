@@ -19,10 +19,10 @@ Entity::Entity(Mesh &mesh){
     this->modelMatrix = Matrix44();
     this->myTexture = NULL;
 }
-Entity::Entity(Mesh &mesh, Image texture){
+Entity::Entity(Mesh &mesh, Image *texture){
     this->mesh = mesh;
     this->modelMatrix = Matrix44();
-    this->myTexture = &texture;
+    this->myTexture = texture;
 }
 
 Entity::Entity(Mesh &mesh, Matrix44 modelMatrix){
@@ -49,22 +49,24 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
         if(i%3==2){
             if(clip){
                 //framebuffer->DrawTriangle(Vector2(points[i-2].x, points[i-2].y), Vector2(points[i-1].x, points[i-1].y), Vector2(points[i].x, points[i].y), c, true, c);
-
-                TriangleInfo *t = new TriangleInfo;
-                t->p0 = points[i-2];
-                t->p1 = points[i-1];
-                t->p2 = points[i];
-
                 if(myTexture == nullptr) {
+                    TriangleInfo *t = new TriangleInfo;
+                    t->p0 = points[i-2];
+                    t->p1 = points[i-1];
+                    t->p2 = points[i];
                     t->c0 = Color::GREEN;
                     t->c1 = Color::RED;
                     t->c2 = Color::BLUE;
-                    framebuffer->DrawTriangleInterpolated(t, zBuffer);
+                    framebuffer->DrawTriangleInterpolated(t, zBuffer, NULL, false);
                 } else {
-                    t->c0 = myTexture->GetPixel(uvs[i-2].x, uvs[i-2].y);
-                    t->c1 = myTexture->GetPixel(uvs[i-1].x, uvs[i-1].y);
-                    t->c2 = myTexture->GetPixel(uvs[i].x, uvs[i].y);
-                    framebuffer->DrawTriangleInterpolated(t, zBuffer);
+                    TriangleInfo *t = new TriangleInfo;
+                    t->p0 = points[i-2];
+                    t->p1 = points[i-1];
+                    t->p2 = points[i];
+                    t->uv0 = Vector2(uvs[i-2].x*(myTexture->width-1), uvs[i-2].y*(myTexture->height-1));
+                    t->uv1 = Vector2(uvs[i-1].x*(myTexture->width-1), uvs[i-1].y*(myTexture->height-1));
+                    t->uv2 = Vector2(uvs[i].x*(myTexture->width-1), uvs[i].y*(myTexture->height-1));
+                    framebuffer->DrawTriangleInterpolated(t, zBuffer, myTexture, true);
                 }
                 
  

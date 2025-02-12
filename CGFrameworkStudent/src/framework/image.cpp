@@ -577,7 +577,7 @@ void Image::DrawImage(const Image& image, int x, int y){
 	}
 }
 
-void Image::DrawTriangleInterpolated(TriangleInfo *t, FloatImage* zBuffer){
+void Image::DrawTriangleInterpolated(TriangleInfo *t, FloatImage* zBuffer, Image *texture, bool doText){
 	int mxy = std::max(t->p2.y, std::max(t->p1.y, t->p0.y));
 	int mny = std::min(t->p2.y, std::min(t->p1.y, t->p0.y));
 	int mxx = std::max(t->p2.x, std::max(t->p1.x, t->p0.x));
@@ -606,11 +606,19 @@ void Image::DrawTriangleInterpolated(TriangleInfo *t, FloatImage* zBuffer){
 			b/=sum;
 			c/=sum;
 
-			Color final = t->c0*b+t->c1*c+t->c2*a;
+			
 			float z = t->p0.z*b+t->p1.z*c+t->p2.z*a;
 			if(zBuffer->GetPixel(j, i)>z){
-				SetPixel(j, i, final);
-				zBuffer->SetPixel(j, i, z);
+				if(doText){
+					Vector2 uv = t->uv0*b+t->uv1*c+t->uv2*a;
+					SetPixel(j, i, texture->GetPixel(uv.x, uv.y));
+					zBuffer->SetPixel(j, i, z);
+				}else{
+					Color final = t->c0*b+t->c1*c+t->c2*a;
+					SetPixel(j, i, final);
+					zBuffer->SetPixel(j, i, z);
+				}
+				
 
 			}
 		}

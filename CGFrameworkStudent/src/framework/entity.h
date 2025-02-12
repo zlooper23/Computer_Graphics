@@ -18,7 +18,7 @@ class Entity{
 
         Entity();
         Entity(Mesh &mesh);
-        Entity(Mesh &mesh, Image texture);
+        Entity(Mesh &mesh, Image *texture);
         Entity(Mesh &mesh, Matrix44 modelMatrix);
 
         void Render(Image* framebuffer, Camera* camera, const Color& c, FloatImage* zBuffer);

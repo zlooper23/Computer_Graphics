@@ -54,11 +54,10 @@ void Application::Init(void)
 	ents[0] = Entity(m1);
 	Mesh m2;
 	m2.LoadOBJ("./meshes/anna.obj");
-	Image texture;
-	texture.LoadTGA("./textures/anna_normal.tga", true);
-	ents[1] = Entity(m2, texture);
-	//framebuffer = texture;
-	//ents[1] = Entity(m2);
+	Image *texture = new Image();
+	texture->LoadTGA("./textures/anna_color_specular.tga", true);
+	//ents[1] = Entity(m2, texture);
+	ents[1] = Entity(m2);
 	
 	
 
@@ -195,8 +194,8 @@ void Application::Render(void)
 	zBuffer.Fill(__FLT_MAX__);
 
 	framebuffer.Fill(Color::BLACK);
-	//e.modelMatrix.Rotate(PI*time, Vector3(1, 0, 0));
-	//e.modelMatrix.Rotate(PI*time, Vector3(0, 1, 0));
+	//ents[1].modelMatrix.Rotate(0.5, Vector3(1, 0, 0));
+	ents[1].modelMatrix.Rotate(0.5, Vector3(0, 1, 0));
 	//printf("%lf, %lf\n", sin(time), cos(time));
 	
 	ents[1].Render(&framebuffer, &cam, Color::RED, &zBuffer);
