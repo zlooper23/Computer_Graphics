@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <iostream>
 #include "framework.h"
+#include "utils.h"
 
 //remove unsafe warnings
 #ifndef _CRT_SECURE_NO_WARNINGS
@@ -19,6 +20,8 @@
 class FloatImage;
 class Entity;
 class Camera;
+
+
 
 // A matrix of pixels
 class Image
@@ -31,6 +34,7 @@ class Image
 		unsigned char* data; // Bytes with the pixel information
 	} TGAInfo;
 
+	
 public:
 	unsigned int width;
 	unsigned int height;
@@ -101,7 +105,7 @@ public:
 	void DrawCircle(int x, int y, int r, const Color& borderColor, int borderWidth, bool isFilled, const Color& fillColor);
 	void DrawImage(const Image& image, int x, int y);
 
-	void DrawTriangleInterpolated(const Vector3& p0, const Vector3& p1, const Vector3& p2, const Color& c0, const Color& c1, const Color& c2, FloatImage* zBuffer);
+	void DrawTriangleInterpolated(TriangleInfo *t, FloatImage* zBuffer);
 	float AreaTrinagle(const Vector3& p0, const Vector3& p1, const Vector3& p2);
 
 

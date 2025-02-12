@@ -577,11 +577,11 @@ void Image::DrawImage(const Image& image, int x, int y){
 	}
 }
 
-void Image::DrawTriangleInterpolated(const Vector3& p0, const Vector3& p1, const Vector3& p2, const Color& c0, const Color& c1, const Color& c2, FloatImage* zBuffer){
-	int mxy = std::max(p2.y, std::max(p1.y, p0.y));
-	int mny = std::min(p2.y, std::min(p1.y, p0.y));
-	int mxx = std::max(p2.x, std::max(p1.x, p0.x));
-	int mnx = std::min(p2.x, std::min(p1.x, p0.x));
+void Image::DrawTriangleInterpolated(TriangleInfo *t, FloatImage* zBuffer){
+	int mxy = std::max(t->p2.y, std::max(t->p1.y, t->p0.y));
+	int mny = std::min(t->p2.y, std::min(t->p1.y, t->p0.y));
+	int mxx = std::max(t->p2.x, std::max(t->p1.x, t->p0.x));
+	int mnx = std::min(t->p2.x, std::min(t->p1.x, t->p0.x));
 	
 	std::vector<int> minX;
 	std::vector<int> maxX;
@@ -589,25 +589,25 @@ void Image::DrawTriangleInterpolated(const Vector3& p0, const Vector3& p1, const
 	minX.assign(mxy+1, mxx);
 	maxX.assign(mxy+1, mnx);
 
-	ScanLineDDA(p0.x, p0.y, p1.x, p1.y, minX, maxX);
-	ScanLineDDA(p1.x, p1.y, p2.x, p2.y, minX, maxX);
-	ScanLineDDA(p2.x, p2.y, p0.x, p0.y, minX, maxX);
+	ScanLineDDA(t->p0.x, t->p0.y, t->p1.x, t->p1.y, minX, maxX);
+	ScanLineDDA(t->p1.x, t->p1.y, t->p2.x, t->p2.y, minX, maxX);
+	ScanLineDDA(t->p2.x, t->p2.y, t->p0.x, t->p0.y, minX, maxX);
 	int a = 0;
 	for(int i = 0; i<mxy; i++){
 		a++;
 		for(int j = minX[a];j<maxX[a]; j++){
-			float TotalA = AreaTrinagle(p0, p1, p2);
+			float TotalA = AreaTrinagle(t->p0, t->p1, t->p2);
 
-			float a = AreaTrinagle(p0, p1, Vector3(j, i, 0))/TotalA;
-			float b = AreaTrinagle(p2, p1, Vector3(j, i, 0))/TotalA;
-			float c = AreaTrinagle(p0, p2, Vector3(j, i, 0))/TotalA;
+			float a = AreaTrinagle(t->p0, t->p1, Vector3(j, i, 0))/TotalA;
+			float b = AreaTrinagle(t->p2, t->p1, Vector3(j, i, 0))/TotalA;
+			float c = AreaTrinagle(t->p0, t->p2, Vector3(j, i, 0))/TotalA;
 			float sum = a+b+c;
 			a/=sum;
 			b/=sum;
 			c/=sum;
 
-			Color final = c0*b+c1*c+c2*a;
-			float z = p0.z*b+p1.z*c+p2.z*a;
+			Color final = t->c0*b+t->c1*c+t->c2*a;
+			float z = t->p0.z*b+t->p1.z*c+t->p2.z*a;
 			if(zBuffer->GetPixel(j, i)>z){
 				SetPixel(j, i, final);
 				zBuffer->SetPixel(j, i, z);

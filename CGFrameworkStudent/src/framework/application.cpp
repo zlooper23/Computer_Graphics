@@ -49,11 +49,16 @@ void Application::Init(void)
 	cam.SetPerspective(45, framebuffer.width/framebuffer.height, 0.01, 100);
 	cam.type = 0;
 
-	Mesh m;
-	m.CreateCube(0.5);
-	ents[0] = Entity(m);
-	m.LoadOBJ("./meshes/anna.obj");
-	ents[1] = Entity(m);
+	Mesh m1;
+	m1.CreateCube(0.5);
+	ents[0] = Entity(m1);
+	Mesh m2;
+	m2.LoadOBJ("./meshes/anna.obj");
+	Image texture;
+	texture.LoadTGA("./textures/anna_normal.tga", true);
+	ents[1] = Entity(m2, texture);
+	//framebuffer = texture;
+	//ents[1] = Entity(m2);
 	
 	
 
@@ -195,9 +200,7 @@ void Application::Render(void)
 	//printf("%lf, %lf\n", sin(time), cos(time));
 	
 	ents[1].Render(&framebuffer, &cam, Color::RED, &zBuffer);
-	ents[0].Render(&framebuffer, &cam, Color::RED, &zBuffer);
-
-	
+	//ents[0].Render(&framebuffer, &cam, Color::RED, &zBuffer);
 }
 
 // Called after render
@@ -224,7 +227,6 @@ void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 			pos1 = Vector2(mouse_position.x, mouse_position.y);
 		}
 		creating = true;
-		printf("aaaaaaaaaaa\n");
 	}
 
 }

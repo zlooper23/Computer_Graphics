@@ -34,3 +34,16 @@ std::string absResPath(const std::string& p_sFile);
 std::vector<std::string> tokenize(const std::string& source, const char* delimiters, bool process_strings = false);
 Vector2 parseVector2(const char* text);
 Vector3 parseVector3(const char* text, const char separator);
+
+
+typedef struct sTriangleInfo {
+	Vector3 p0;
+	Vector3 p1;
+	Vector3 p2;
+	Color c0;
+	Color c1;
+	Color c2;
+	Vector2 uv0;
+	Vector2 uv1;
+	Vector2 uv2;
+} TriangleInfo;
