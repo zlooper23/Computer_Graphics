@@ -56,8 +56,7 @@ void Application::Init(void)
 	m2.LoadOBJ("./meshes/anna.obj");
 	Image *texture = new Image();
 	texture->LoadTGA("./textures/anna_color_specular.tga", true);
-	//ents[1] = Entity(m2, texture);
-	ents[1] = Entity(m2);
+	ents[1] = Entity(m2, texture);
 	
 	
 
@@ -195,7 +194,7 @@ void Application::Render(void)
 
 	framebuffer.Fill(Color::BLACK);
 	//ents[1].modelMatrix.Rotate(0.5, Vector3(1, 0, 0));
-	ents[1].modelMatrix.Rotate(0.5, Vector3(0, 1, 0));
+	//ents[1].modelMatrix.Rotate(0.5, Vector3(0, 1, 0));
 	//printf("%lf, %lf\n", sin(time), cos(time));
 	
 	ents[1].Render(&framebuffer, &cam, Color::RED, &zBuffer);
@@ -215,7 +214,39 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 {
 	// KEY CODES: https://wiki.libsdl.org/SDL2/SDL_Keycode
 	switch(event.keysym.sym) {
-		case SDLK_PLUS:Vector3 a = cam.eye-cam.center;a.Normalize();cam.eye = cam.center+(10*a);cam.UpdateViewMatrix();break;
+		/*“T”Toggle between USE MESH TEXTURE and USE COLOR PER VERTEX
+		“Z”Toggle between OCCLUSIONS and NO OCCLUSIONS
+		“C”Toggle (activate/deactivate) between INTERPOLATED UVs / PLAIN COLOR (Exercise 1)*/
+		case SDLK_t:
+			for(int i = 0; i<3; i++){
+				if(ents[i].GetMode()!=3){
+					ents[i].ChangeMode(3);
+				}else{
+					ents[i].ChangeMode(4);
+				}
+				
+			}
+			break;
+		case SDLK_z:
+			
+
+
+
+			break;
+		case SDLK_c:
+			for(int i = 0; i<3; i++){
+				if(ents[i].GetMode()!=2){
+					ents[i].ChangeMode(2);
+				}else{
+					ents[i].ChangeMode(4);
+				}
+				
+			}
+
+			break;
+
+
+
 	}
 }
 
@@ -238,7 +269,8 @@ void Application::OnMouseButtonUp( SDL_MouseButtonEvent event )
 }
 
 void Application::OnMouseMove(SDL_MouseButtonEvent event)
-{	Vector2 v = mouse_position-pos1;
+{		Vector2 v = mouse_position-pos1;
+	//printf("%lf\n", v.x);
 	if (event.button == SDL_BUTTON_LEFT) {
 		//Vector3 vcam = cam.eye-cam.center;
 		//float d = Vector2(vcam.x, vcam.z).Distance(Vector2(0, 0));
@@ -258,13 +290,14 @@ void Application::OnMouseMove(SDL_MouseButtonEvent event)
 		r=m*r;
 		cam.eye = r*cam.eye;
 
+
 	}if(event.button == SDL_BUTTON_RIGHT){
 		printf("test\n");
 		Matrix44 m;
 		m.SetIdentity();
 		m.Translate(-cam.eye.x, -cam.eye.y, -cam.eye.z);
 		cam.center = m*cam.center;
-		m.Rotate(v.x*0.0001, Vector3(0,1,0));
+		m.Rotate(sin(v.x*0.01), Vector3(0,1,0));
 		cam.center = m*cam.center;
 		m.Translate(cam.eye.x, cam.eye.y, cam.eye.z);
 		cam.center = m*cam.center;

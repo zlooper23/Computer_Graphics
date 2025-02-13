@@ -11,6 +11,21 @@
 
 class Entity{
 
+    enum class eRenderMode {
+
+        POINTCLOUD,
+
+        WIREFRAME,
+
+        TRIANGLES,
+
+        TRIANGLES_INTERPOLATED,
+
+        TEXTURES
+
+    }; eRenderMode mode;
+
+
     public:
         Mesh mesh;
         Matrix44 modelMatrix;
@@ -20,6 +35,10 @@ class Entity{
         Entity(Mesh &mesh);
         Entity(Mesh &mesh, Image *texture);
         Entity(Mesh &mesh, Matrix44 modelMatrix);
+
+        void ChangeMode(int n);
+        int GetMode();
+
 
         void Render(Image* framebuffer, Camera* camera, const Color& c, FloatImage* zBuffer);
 };

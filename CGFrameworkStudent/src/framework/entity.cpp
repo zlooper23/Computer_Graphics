@@ -18,16 +18,39 @@ Entity::Entity(Mesh &mesh){
     this->mesh = mesh;
     this->modelMatrix = Matrix44();
     this->myTexture = NULL;
+    this->mode = eRenderMode::TEXTURES;
 }
 Entity::Entity(Mesh &mesh, Image *texture){
     this->mesh = mesh;
     this->modelMatrix = Matrix44();
     this->myTexture = texture;
+    this->mode = eRenderMode::TEXTURES;
 }
 
 Entity::Entity(Mesh &mesh, Matrix44 modelMatrix){
     this->mesh = mesh;
     this->modelMatrix = modelMatrix;
+    this->mode = eRenderMode::TEXTURES;
+}
+
+void Entity::ChangeMode(int n){
+    switch(n){
+        case 0: mode = eRenderMode::POINTCLOUD; break;
+        case 1: mode = eRenderMode::WIREFRAME; break;
+        case 2: mode = eRenderMode::TRIANGLES; break;
+        case 3: mode = eRenderMode::TRIANGLES_INTERPOLATED; break;
+        case 4: mode = eRenderMode::TEXTURES; break;
+    }
+}
+
+int Entity::GetMode(){
+    switch(mode){
+        case eRenderMode::POINTCLOUD: return 0;
+        case eRenderMode::WIREFRAME: return 1;
+        case eRenderMode::TRIANGLES: return 2;
+        case eRenderMode::TRIANGLES_INTERPOLATED: return 3;
+        case eRenderMode::TEXTURES: return 4;
+    }
 }
 
 void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatImage* zBuffer){
@@ -48,9 +71,24 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
         points.push_back(p);
         if(i%3==2){
             if(clip){
-                //framebuffer->DrawTriangle(Vector2(points[i-2].x, points[i-2].y), Vector2(points[i-1].x, points[i-1].y), Vector2(points[i].x, points[i].y), c, true, c);
-                if(myTexture == nullptr) {
-                    TriangleInfo *t = new TriangleInfo;
+                TriangleInfo *t = new TriangleInfo;
+                switch (mode)
+                {
+                case eRenderMode::POINTCLOUD:
+                    framebuffer->SetPixel(points[i-2].x, points[i-2].y, c);
+                    framebuffer->SetPixel(points[i-1].x, points[i-1].y, c);
+                    framebuffer->SetPixel(points[i].x, points[i].y, c);
+                    break;
+                
+               case eRenderMode::WIREFRAME:
+                    framebuffer->DrawLineDDA(points[i-2].x, points[i-2].y, points[i-1].x, points[i-1].y, c);
+                    framebuffer->DrawLineDDA(points[i-2].x, points[i-2].y, points[i].x, points[i].y, c);
+                    framebuffer->DrawLineDDA(points[i].x, points[i].y, points[i-1].x, points[i-1].y, c);
+                    break;
+                case eRenderMode::TRIANGLES:
+                    framebuffer->DrawTriangle(Vector2(points[i-2].x, points[i-2].y), Vector2(points[i-1].x, points[i-1].y), Vector2(points[i].x, points[i].y), c, true, c);
+                    break;
+                case eRenderMode::TRIANGLES_INTERPOLATED:
                     t->p0 = points[i-2];
                     t->p1 = points[i-1];
                     t->p2 = points[i];
@@ -58,18 +96,28 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
                     t->c1 = Color::RED;
                     t->c2 = Color::BLUE;
                     framebuffer->DrawTriangleInterpolated(t, zBuffer, NULL, false);
-                } else {
-                    TriangleInfo *t = new TriangleInfo;
-                    t->p0 = points[i-2];
-                    t->p1 = points[i-1];
-                    t->p2 = points[i];
-                    t->uv0 = Vector2(uvs[i-2].x*(myTexture->width-1), uvs[i-2].y*(myTexture->height-1));
-                    t->uv1 = Vector2(uvs[i-1].x*(myTexture->width-1), uvs[i-1].y*(myTexture->height-1));
-                    t->uv2 = Vector2(uvs[i].x*(myTexture->width-1), uvs[i].y*(myTexture->height-1));
-                    framebuffer->DrawTriangleInterpolated(t, zBuffer, myTexture, true);
+                    break;
+                case eRenderMode::TEXTURES:
+                    if(myTexture == nullptr) {
+                        t->p0 = points[i-2];
+                        t->p1 = points[i-1];
+                        t->p2 = points[i];
+                        t->c0 = Color::GREEN;
+                        t->c1 = Color::RED;
+                        t->c2 = Color::BLUE;
+                        framebuffer->DrawTriangleInterpolated(t, zBuffer, NULL, false);
+                    } else {
+                                                t->p0 = points[i-2];
+                        t->p1 = points[i-1];
+                        t->p2 = points[i];
+                        t->uv0 = Vector2(uvs[i-2].x*(myTexture->width-1), uvs[i-2].y*(myTexture->height-1));
+                        t->uv1 = Vector2(uvs[i-1].x*(myTexture->width-1), uvs[i-1].y*(myTexture->height-1));
+                        t->uv2 = Vector2(uvs[i].x*(myTexture->width-1), uvs[i].y*(myTexture->height-1));
+                        framebuffer->DrawTriangleInterpolated(t, zBuffer, myTexture, true);
+                    }
+                    break;
                 }
                 
- 
             }
             clip = true;
         }
