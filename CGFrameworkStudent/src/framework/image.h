@@ -105,7 +105,7 @@ public:
 	void DrawCircle(int x, int y, int r, const Color& borderColor, int borderWidth, bool isFilled, const Color& fillColor);
 	void DrawImage(const Image& image, int x, int y);
 
-	void DrawTriangleInterpolated(TriangleInfo *t, FloatImage* zBuffer, Image *texture, bool doText);
+	void DrawTriangleInterpolated(TriangleInfo *t, FloatImage* zBuffer, Image *texture, bool doText, bool doOcc);
 	float AreaTrinagle(const Vector3& p0, const Vector3& p1, const Vector3& p2);
 
 

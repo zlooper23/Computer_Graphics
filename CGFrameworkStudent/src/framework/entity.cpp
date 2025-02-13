@@ -19,18 +19,21 @@ Entity::Entity(Mesh &mesh){
     this->modelMatrix = Matrix44();
     this->myTexture = NULL;
     this->mode = eRenderMode::TEXTURES;
+    this->oclussions = true;
 }
 Entity::Entity(Mesh &mesh, Image *texture){
     this->mesh = mesh;
     this->modelMatrix = Matrix44();
     this->myTexture = texture;
     this->mode = eRenderMode::TEXTURES;
+    this->oclussions = true;
 }
 
 Entity::Entity(Mesh &mesh, Matrix44 modelMatrix){
     this->mesh = mesh;
     this->modelMatrix = modelMatrix;
     this->mode = eRenderMode::TEXTURES;
+    this->oclussions = true;
 }
 
 void Entity::ChangeMode(int n){
@@ -95,7 +98,7 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
                     t->c0 = Color::GREEN;
                     t->c1 = Color::RED;
                     t->c2 = Color::BLUE;
-                    framebuffer->DrawTriangleInterpolated(t, zBuffer, NULL, false);
+                    framebuffer->DrawTriangleInterpolated(t, zBuffer, NULL, false, oclussions);
                     break;
                 case eRenderMode::TEXTURES:
                     if(myTexture == nullptr) {
@@ -105,7 +108,7 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
                         t->c0 = Color::GREEN;
                         t->c1 = Color::RED;
                         t->c2 = Color::BLUE;
-                        framebuffer->DrawTriangleInterpolated(t, zBuffer, NULL, false);
+                        framebuffer->DrawTriangleInterpolated(t, zBuffer, NULL, false, oclussions);
                     } else {
                                                 t->p0 = points[i-2];
                         t->p1 = points[i-1];
@@ -113,7 +116,7 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
                         t->uv0 = Vector2(uvs[i-2].x*(myTexture->width-1), uvs[i-2].y*(myTexture->height-1));
                         t->uv1 = Vector2(uvs[i-1].x*(myTexture->width-1), uvs[i-1].y*(myTexture->height-1));
                         t->uv2 = Vector2(uvs[i].x*(myTexture->width-1), uvs[i].y*(myTexture->height-1));
-                        framebuffer->DrawTriangleInterpolated(t, zBuffer, myTexture, true);
+                        framebuffer->DrawTriangleInterpolated(t, zBuffer, myTexture, true, oclussions);
                     }
                     break;
                 }
@@ -121,5 +124,50 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
             }
             clip = true;
         }
+    }
+}
+
+void Entity::Update(float seconds_elapsed, int animationMode) {
+    totalTime += seconds_elapsed;
+    switch (animationMode) {
+        case 0: {  //Rotation
+            float angle = seconds_elapsed * 2.5f;
+            Matrix44 rotation;
+            rotation.SetRotation(angle, Vector3(0, 1, 0));
+            modelMatrix = modelMatrix * rotation;
+            break;
+        }
+        
+        case 1: {  //Translation 
+            float yOffset = sin(totalTime * 2.0f) * 1.0f; 
+            
+            Matrix44 translationMatrix;
+            translationMatrix.SetTranslation(0, yOffset, 0); 
+            
+            modelMatrix = translationMatrix;
+            break;
+        }
+
+        case 2: {  //Scaling 
+            float scaleFactor = 1.0f + sin(totalTime * 2.0f); 
+            
+            Matrix44 scaleMatrix;
+            scaleMatrix.Set(
+                scaleFactor, 0, 0, 0,
+                0, scaleFactor, 0, 0,
+                0, 0, scaleFactor, 0,
+                0, 0, 0, 1
+            );
+            
+            Matrix44 baseMatrix = modelMatrix;
+            baseMatrix.M[0][0] = 1.0f;  //Reset X scale
+            baseMatrix.M[1][1] = 1.0f;  //Reset Y scale
+            baseMatrix.M[2][2] = 1.0f;  //Reset Z scale
+            
+            modelMatrix = baseMatrix * scaleMatrix;
+            break;
+        }
+        default:
+            break;
     }
 }

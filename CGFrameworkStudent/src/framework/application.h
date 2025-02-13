@@ -39,6 +39,9 @@ public:
 	Camera cam;
 	FloatImage zBuffer;
 	Entity ents[3];
+	int mouseButton;
+	int perspectiveChange;
+
 
 	float time;
 
@@ -76,7 +79,7 @@ public:
 		this->window_width = width;
 		this->window_height = height;
 		this->framebuffer.Resize(width, height);
-		this->cam.SetPerspective(45, width/height, 0.01, 100);
+		this->cam.SetPerspective(cam.fov, width/height, cam.near_plane, cam.far_plane);
 	}
 
 	Vector2 GetWindowSize()

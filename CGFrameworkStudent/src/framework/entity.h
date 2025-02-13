@@ -30,6 +30,8 @@ class Entity{
         Mesh mesh;
         Matrix44 modelMatrix;
         Image *myTexture;
+        float totalTime = 0.0f;
+        bool oclussions;
 
         Entity();
         Entity(Mesh &mesh);
@@ -41,4 +43,5 @@ class Entity{
 
 
         void Render(Image* framebuffer, Camera* camera, const Color& c, FloatImage* zBuffer);
+        void Update(float seconds_elapsed, int animationMode);
 };
