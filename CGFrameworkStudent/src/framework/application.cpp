@@ -34,7 +34,7 @@ Application::Application(const char* caption, int width, int height)
 	this->zBuffer = FloatImage(width, height);
 	this->zBuffer.Fill(__FLT_MAX__);
 	this->mouseButton = -1;
-	//this->perspectiveChange = 0;
+	this->cam.type = 0;
 }
 
 Application::~Application()
@@ -44,11 +44,9 @@ Application::~Application()
 void Application::Init(void)
 {
 	std::cout << "Initiating app..." << std::endl;
-	initToolbar();
+
+	/*initToolbar();
 	particleSystem.Init(&framebuffer, 1);
-	cam.LookAt(Vector3(0, 0, 3), Vector3(0, 0, 0), Vector3(0, 1, 0));
-	cam.SetPerspective(45, framebuffer.width/framebuffer.height, 0.01, 100);
-	cam.type = 0;
 
 	Mesh m1;
 	m1.LoadOBJ("./meshes/cleo.obj");
@@ -69,16 +67,22 @@ void Application::Init(void)
 	Image *texture2 = new Image();
 	texture2->LoadTGA("./textures/lee_color_specular.tga", true);
 	ents[2] = Entity(m3, texture2);
-	ents[2].modelMatrix.Translate(-0.5, 0, 0);
-	
-	
+	ents[2].modelMatrix.Translate(-0.5, 0, 0);*/
 
+
+	cam.LookAt(Vector3(0, 0, 3), Vector3(0, 0, 0), Vector3(0, 1, 0));
+	cam.SetPerspective(45, framebuffer.width/framebuffer.height, 0.01, 100);
+
+	mesh = new Mesh();
+	shader = new Shader();
+	shader = Shader::Get("./shaders/Sh2.vs","./shaders/Sh2.fs");
+	mesh->CreateQuad();
 }
 
 // Render one frame
 void Application::Render(void)
 {
-	if(mode == 2){
+	/*if(mode == 2){
 		ents[1].Render(&framebuffer, &cam, Color::RED, &zBuffer);
 		
 	}
@@ -91,34 +95,29 @@ void Application::Render(void)
 		
 
 		ents[2].Render(&framebuffer, &cam, Color::BLUE, &zBuffer);
-		
 	}
-	zBuffer = FloatImage(framebuffer.width, framebuffer.height);
-	zBuffer.Fill(__FLT_MAX__);
+	
 	//framebuffer.Fill(Color::BLACK);
-	
-	
-	
-	//entity1.Render(&framebuffer, &camera, Color::RED, &zBuffer);
-	//ents[1].Render(&framebuffer, &cam, Color::RED, &zBuffer);
-	//ents[0].Render(&framebuffer, &camera, Color::RED, &zBuffer);
-	framebuffer.Render();
-	//ents[1].modelMatrix.Rotate(0.5, Vector3(1, 0, 0));
-	//ents[1].modelMatrix.Rotate(0.5, Vector3(0, 1, 0));
-	//printf("%lf, %lf\n", sin(time), cos(time));
-	
-	//ents[0].Render(&framebuffer, &cam, Color::RED, &zBuffer);
+	framebuffer.Render();*/
+
+
+
+	shader->Enable();
+	mesh->Render();
+	shader->Disable();
 }
 
 // Called after render
 void Application::Update(float seconds_elapsed)
 {	
-	framebuffer.Fill(Color::BLACK);
+	/*framebuffer.Fill(Color::BLACK);
 	if(mode == 3){
 		ents[0].Update(seconds_elapsed, 2);
 		ents[1].Update(seconds_elapsed, 1);
 		ents[2].Update(seconds_elapsed, 0);
 	}
+	zBuffer = FloatImage(framebuffer.width, framebuffer.height);
+	zBuffer.Fill(__FLT_MAX__);*/
 }
 
 //keyboard press event 
@@ -126,6 +125,7 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 {
 	// KEY CODES: https://wiki.libsdl.org/SDL2/SDL_Keycode
 	switch(event.keysym.sym) {
+		/*
 		//“Z”Toggle between OCCLUSIONS and NO OCCLUSIONS
 		case SDLK_t:
 			for(int i = 0; i<3; i++){
@@ -206,7 +206,7 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 		case SDLK_f: perspectiveChange = 2; break;
 
 		case SDLK_1: mode = 2; break;
-		case SDLK_2: mode = 3; break;
+		case SDLK_2: mode = 3; break;*/
 		
 	}
 }
@@ -216,13 +216,11 @@ void Application::OnMouseButtonDown( SDL_MouseButtonEvent event )
 {
 	if (event.button == SDL_BUTTON_LEFT) {
 		if(!creating){
-			pos1 = Vector2(mouse_position.x, mouse_position.y);
 			mouseButton = 0;
 		}
 		creating = true;
 	}else if (event.button == SDL_BUTTON_RIGHT) {
 		if(!creating){
-			pos1 = Vector2(mouse_position.x, mouse_position.y);
 			mouseButton = 1;
 		}
 		creating = true;
@@ -242,8 +240,7 @@ void Application::OnMouseButtonUp( SDL_MouseButtonEvent event )
 
 void Application::OnMouseMove(SDL_MouseButtonEvent event)
 {	
-	Vector2 v = mouse_position-pos1;
-	if (mouseButton == 0) {
+	/*if (mouseButton == 0) {
 		Matrix44 m;
 		Matrix44 r;
 		m.SetIdentity();
@@ -274,7 +271,7 @@ void Application::OnMouseMove(SDL_MouseButtonEvent event)
 		cam.center = r*cam.center;
 		cam.center.y = cam.center.y+mouse_delta.y*0.001;
 	}
-	cam.UpdateViewMatrix();	
+	cam.UpdateViewMatrix();*/
 }
 
 void Application::OnWheel(SDL_MouseWheelEvent event)

@@ -89,7 +89,8 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
                     framebuffer->DrawLineDDA(points[i].x, points[i].y, points[i-1].x, points[i-1].y, c);
                     break;
                 case eRenderMode::TRIANGLES:
-                    framebuffer->DrawTriangle(Vector2(points[i-2].x, points[i-2].y), Vector2(points[i-1].x, points[i-1].y), Vector2(points[i].x, points[i].y), c, true, c);
+                    framebuffer->DrawTriangle(Vector2(points[i-2].x, points[i-2].y), 
+                     Vector2(points[i-1].x, points[i-1].y), Vector2(points[i].x, points[i].y), c, true, c);
                     break;
                 case eRenderMode::TRIANGLES_INTERPOLATED:
                     t->p0 = points[i-2];
@@ -110,7 +111,7 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
                         t->c2 = Color::BLUE;
                         framebuffer->DrawTriangleInterpolated(t, zBuffer, NULL, false, oclussions);
                     } else {
-                                                t->p0 = points[i-2];
+                        t->p0 = points[i-2];
                         t->p1 = points[i-1];
                         t->p2 = points[i];
                         t->uv0 = Vector2(uvs[i-2].x*(myTexture->width-1), uvs[i-2].y*(myTexture->height-1));

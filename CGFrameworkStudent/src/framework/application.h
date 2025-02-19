@@ -11,6 +11,8 @@
 #include "button.h"
 #include "camera.h"
 #include "entity.h"
+#include "shader.h"
+
 
 
 
@@ -41,6 +43,8 @@ public:
 	Entity ents[3];
 	int mouseButton;
 	int perspectiveChange;
+	Shader* shader;
+	Mesh* mesh;
 
 
 	float time;

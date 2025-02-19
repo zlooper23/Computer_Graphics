@@ -606,7 +606,6 @@ void Image::DrawTriangleInterpolated(TriangleInfo *t, FloatImage* zBuffer, Image
 			b/=sum;
 			c/=sum;
 
-			
 			float z = t->p0.z*b+t->p1.z*c+t->p2.z*a;
 			if((zBuffer->GetPixel(j, i)>z)||(!doOcc)){
 				if(doText){
@@ -621,6 +620,8 @@ void Image::DrawTriangleInterpolated(TriangleInfo *t, FloatImage* zBuffer, Image
 				
 
 			}
+			
+			
 		}
 	}
 }
