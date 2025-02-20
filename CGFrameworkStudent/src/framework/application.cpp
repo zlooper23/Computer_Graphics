@@ -75,7 +75,7 @@ void Application::Init(void)
 
 	mesh = new Mesh();
 	shader = new Shader();
-	shader = Shader::Get("./shaders/Sh2.vs","./shaders/Sh2.fs");
+	shader = Shader::Get("./shaders/Sh4.vs","./shaders/Sh4.fs");
 	mesh->CreateQuad();
 }
 
