@@ -72,10 +72,11 @@ void Application::Init(void)
 
 	cam.LookAt(Vector3(0, 0, 3), Vector3(0, 0, 0), Vector3(0, 1, 0));
 	cam.SetPerspective(45, framebuffer.width/framebuffer.height, 0.01, 100);
-
-	mesh = new Mesh();
+	
 	shader = new Shader();
-	shader = Shader::Get("./shaders/Sh4.vs","./shaders/Sh4.fs");
+	shader = Shader::Get("./shaders/Tx6.vs","./shaders/Tx6.fs");
+	
+	mesh = new Mesh();
 	mesh->CreateQuad();
 }
 
@@ -100,9 +101,12 @@ void Application::Render(void)
 	//framebuffer.Fill(Color::BLACK);
 	framebuffer.Render();*/
 
-
+	Texture* t = new Texture();
+	t = Texture::Get("./images/fruits.png");
 
 	shader->Enable();
+
+	shader->SetTexture("u_texture", t);
 	mesh->Render();
 	shader->Disable();
 }
