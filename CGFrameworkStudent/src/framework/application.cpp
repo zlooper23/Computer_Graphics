@@ -14,6 +14,7 @@ Application::Application(const char* caption, int width, int height)
 
 	int w,h;
 	SDL_GetWindowSize(window,&w,&h);
+	printf("%d, %d\n", w, h);
 
 	this->mouse_state = 0;
 	this->time = 0.f;
@@ -107,6 +108,9 @@ void Application::Render(void)
 	shader->Enable();
 
 	shader->SetTexture("u_texture", t);
+	shader->SetFloat("u_time", time);
+	shader->SetMatrix44("u_projviewmatrix", cam.GetViewProjectionMatrix());
+
 	mesh->Render();
 	shader->Disable();
 }

@@ -2,22 +2,25 @@ varying vec2 v_uv;
 
 uniform sampler2D u_texture; 
 
+uniform float u_time;
+
+uniform mat4 u_projviewmatrix;
+
 void main()
 {  
-    float blur = 0.01;
-    vec4 c1 = texture2D( u_texture, vec2(v_uv.x, v_uv.y));
-    vec4 c2 = texture2D( u_texture, vec2(v_uv.x+blur, v_uv.y));
-    vec4 c3 = texture2D( u_texture, vec2(v_uv.x, v_uv.y+blur));
-    vec4 c4 = texture2D( u_texture, vec2(v_uv.x+blur, v_uv.y+blur));
-    vec4 c5 = texture2D( u_texture, vec2(v_uv.x-blur, v_uv.y));
-    vec4 c6 = texture2D( u_texture, vec2(v_uv.x, v_uv.y-blur));
-    vec4 c7 = texture2D( u_texture, vec2(v_uv.x-blur, v_uv.y-blur));
-    vec4 c8 = texture2D( u_texture, vec2(v_uv.x+blur, v_uv.y-blur));
-    vec4 c9 = texture2D( u_texture, vec2(v_uv.x-blur, v_uv.y+blur));
-
-    //ec4 col = (c1+c2+c3+c4+c5+c6+c7+c8+c9)/9.0;
-    vec4 col = (c1+c4+c7+c8+c9)/5.0;
-
+    vec2 i = vec2(1280, 720)/5.0;
+    vec2 blur = 1.0/i;
+    vec4 col = vec4(0.0, 0.0, 0.0, 1.0);
+    col += texture2D( u_texture, vec2(v_uv.x, v_uv.y));
+    col += texture2D( u_texture, vec2(v_uv.x+blur.x, v_uv.y));
+    col += texture2D( u_texture, vec2(v_uv.x, v_uv.y+blur.y));
+    col += texture2D( u_texture, vec2(v_uv.x+blur.x, v_uv.y+blur.y));
+    col += texture2D( u_texture, vec2(v_uv.x-blur.x, v_uv.y));
+    col += texture2D( u_texture, vec2(v_uv.x, v_uv.y-blur.y));
+    col += texture2D( u_texture, vec2(v_uv.x-blur.x, v_uv.y-blur.y));
+    col += texture2D( u_texture, vec2(v_uv.x+blur.x, v_uv.y-blur.y));
+    col += texture2D( u_texture, vec2(v_uv.x-blur.x, v_uv.y+blur.y));
+    col /= 9.0;
 
 
 
