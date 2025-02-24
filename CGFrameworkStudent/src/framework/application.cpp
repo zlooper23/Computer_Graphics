@@ -75,7 +75,7 @@ void Application::Init(void)
 	cam.SetPerspective(45, framebuffer.width/framebuffer.height, 0.01, 100);
 	
 	shader = new Shader();
-	shader = Shader::Get("./shaders/Tx6.vs","./shaders/Tx6.fs");
+	shader = Shader::Get("./shaders/Tr1.vs","./shaders/Tr1.fs");
 	
 	mesh = new Mesh();
 	mesh->CreateQuad();
@@ -110,6 +110,7 @@ void Application::Render(void)
 	shader->SetTexture("u_texture", t);
 	shader->SetFloat("u_time", time);
 	shader->SetMatrix44("u_projviewmatrix", cam.GetViewProjectionMatrix());
+	shader->SetVector2("u_size", Vector2(window_height, window_width));
 
 	mesh->Render();
 	shader->Disable();
