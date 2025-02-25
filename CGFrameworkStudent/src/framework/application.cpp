@@ -75,10 +75,18 @@ void Application::Init(void)
 	cam.SetPerspective(45, framebuffer.width/framebuffer.height, 0.01, 100);
 	
 	shader = new Shader();
-	shader = Shader::Get("./shaders/Tr1.vs","./shaders/Tr1.fs");
+	shader = Shader::Get("./shaders/Tr2.vs","./shaders/Tr2.fs");
 	
 	mesh = new Mesh();
 	mesh->CreateQuad();
+
+	Mesh m1;
+	m1.LoadOBJ("./meshes/cleo.obj");
+	Image *texture0 = new Image();
+	Shader *sh = new Shader();
+	sh = Shader::Get("./shaders/raster.vs","./shaders/raster.fs");
+	texture0->LoadTGA("./textures/cleo_color_specular.tga", true);
+	ents[0] = Entity(m1, texture0, sh);
 }
 
 // Render one frame
@@ -102,7 +110,12 @@ void Application::Render(void)
 	//framebuffer.Fill(Color::BLACK);
 	framebuffer.Render();*/
 
-	Texture* t = new Texture();
+
+
+	ents[0].Render(&cam);
+
+
+	/*Texture* t = new Texture();
 	t = Texture::Get("./images/fruits.png");
 
 	shader->Enable();
@@ -112,7 +125,9 @@ void Application::Render(void)
 	shader->SetVector2("u_size", Vector2(window_height, window_width));
 
 	mesh->Render();
-	shader->Disable();
+	shader->Disable();*/
+
+
 }
 
 // Called after render
@@ -133,7 +148,7 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 {
 	// KEY CODES: https://wiki.libsdl.org/SDL2/SDL_Keycode
 	switch(event.keysym.sym) {
-		/*
+		
 		//“Z”Toggle between OCCLUSIONS and NO OCCLUSIONS
 		case SDLK_t:
 			for(int i = 0; i<3; i++){
@@ -214,7 +229,7 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 		case SDLK_f: perspectiveChange = 2; break;
 
 		case SDLK_1: mode = 2; break;
-		case SDLK_2: mode = 3; break;*/
+		case SDLK_2: mode = 3; break;
 		
 	}
 }
@@ -248,7 +263,7 @@ void Application::OnMouseButtonUp( SDL_MouseButtonEvent event )
 
 void Application::OnMouseMove(SDL_MouseButtonEvent event)
 {	
-	/*if (mouseButton == 0) {
+	if (mouseButton == 0) {
 		Matrix44 m;
 		Matrix44 r;
 		m.SetIdentity();
@@ -279,7 +294,7 @@ void Application::OnMouseMove(SDL_MouseButtonEvent event)
 		cam.center = r*cam.center;
 		cam.center.y = cam.center.y+mouse_delta.y*0.001;
 	}
-	cam.UpdateViewMatrix();*/
+	cam.UpdateViewMatrix();
 }
 
 void Application::OnWheel(SDL_MouseWheelEvent event)

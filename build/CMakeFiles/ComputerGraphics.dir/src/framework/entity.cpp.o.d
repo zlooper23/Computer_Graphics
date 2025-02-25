@@ -247,4 +247,12 @@ CMakeFiles/ComputerGraphics.dir/src/framework/entity.cpp.o: \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_opengl.h \
  /usr/include/GL/glu.h /usr/include/GL/gl.h /usr/include/c++/13/cassert \
  /usr/include/assert.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/entity.h
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/entity.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.h \
+ /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
+ /usr/include/c++/13/ext/aligned_buffer.h \
+ /usr/include/c++/13/bits/stl_map.h /usr/include/c++/13/tuple \
+ /usr/include/c++/13/bits/uses_allocator.h \
+ /usr/include/c++/13/bits/stl_multimap.h \
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/cstring
