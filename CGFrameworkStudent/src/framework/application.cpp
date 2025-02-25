@@ -109,7 +109,6 @@ void Application::Render(void)
 
 	shader->SetTexture("u_texture", t);
 	shader->SetFloat("u_time", time);
-	shader->SetMatrix44("u_projviewmatrix", cam.GetViewProjectionMatrix());
 	shader->SetVector2("u_size", Vector2(window_height, window_width));
 
 	mesh->Render();
