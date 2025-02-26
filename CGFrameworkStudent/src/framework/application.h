@@ -30,6 +30,7 @@ public:
 
 	int commonWidth;
 	int mode;
+	int submode;
 	Color backgroundColor;
 	Color primaryColor;
 	Color borderColor;
@@ -43,8 +44,9 @@ public:
 	Entity ents[3];
 	int mouseButton;
 	int perspectiveChange;
-	Shader* shader;
+	Shader* shader[14];
 	Mesh* mesh;
+	Texture* texture;
 
 
 	float time;
@@ -75,6 +77,7 @@ public:
 
 	void initToolbar();
 	void DrawToolbar();
+	void LoadShaders();
 
 	// Other methods to control the app
 	void SetWindowSize(int width, int height)

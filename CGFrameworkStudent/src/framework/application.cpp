@@ -25,7 +25,8 @@ Application::Application(const char* caption, int width, int height)
 	this->framebuffer.Resize(w, h);
 
 	this->commonWidth=1;
-	this->mode=1;
+	this->mode=0;
+	this->submode=0;
 	this->backgroundColor = Color::BLACK;
 	this->primaryColor = Color::WHITE;
 	this->borderColor = Color::RED;
@@ -73,9 +74,11 @@ void Application::Init(void)
 
 	cam.LookAt(Vector3(0, 0, 3), Vector3(0, 0, 0), Vector3(0, 1, 0));
 	cam.SetPerspective(45, framebuffer.width/framebuffer.height, 0.01, 100);
-	
-	shader = new Shader();
-	shader = Shader::Get("./shaders/Tr2.vs","./shaders/Tr2.fs");
+
+	texture = new Texture();
+	texture = Texture::Get("./images/fruits.png");
+
+	LoadShaders();
 	
 	mesh = new Mesh();
 	mesh->CreateQuad();
@@ -112,20 +115,20 @@ void Application::Render(void)
 
 
 
-	ents[0].Render(&cam);
+	if(mode == 14){
+		ents[0].Render(&cam);
+	}else{
+		int i = mode+submode;
+		shader[i]->Enable();
+		shader[i]->SetTexture("u_texture", texture);
+		shader[i]->SetFloat("u_time", time);
+		shader[i]->SetVector2("u_size", Vector2(window_height, window_width));
+		mesh->Render();
+		shader[i]->Disable();
+	}
 
 
-	/*Texture* t = new Texture();
-	t = Texture::Get("./images/fruits.png");
-
-	shader->Enable();
-
-	shader->SetTexture("u_texture", t);
-	shader->SetFloat("u_time", time);
-	shader->SetVector2("u_size", Vector2(window_height, window_width));
-
-	mesh->Render();
-	shader->Disable();*/
+	
 
 
 }
@@ -150,7 +153,7 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 	switch(event.keysym.sym) {
 		
 		//“Z”Toggle between OCCLUSIONS and NO OCCLUSIONS
-		case SDLK_t:
+		/*case SDLK_t:
 			for(int i = 0; i<3; i++){
 				if(ents[i].GetMode()!=3){
 					ents[i].ChangeMode(3);
@@ -229,8 +232,19 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 		case SDLK_f: perspectiveChange = 2; break;
 
 		case SDLK_1: mode = 2; break;
-		case SDLK_2: mode = 3; break;
-		
+		case SDLK_2: mode = 3; break;*/
+
+		case SDLK_1: mode = 0; submode = 0;break;
+		case SDLK_2: mode = 6; submode = 0;break;
+		case SDLK_3: mode = 12; submode = 0;break;
+		case SDLK_4: mode = 14; submode = 0;break;
+
+		case SDLK_a: submode = 0;break;
+		case SDLK_b: if(mode<13){submode = 1;}break;
+		case SDLK_c: if(mode<7){submode = 2;}break;
+		case SDLK_d: if(mode<7){submode = 3;}break;
+		case SDLK_e: if(mode<7){submode = 4;}break;
+		case SDLK_f: if(mode<7){submode = 5;}break;
 	}
 }
 
@@ -336,4 +350,22 @@ void Application::DrawToolbar(){
 	for(int i = 0; i<17; i++){
 		toolBar[i].Render(framebuffer);
 	}
+}
+
+void Application::LoadShaders(){
+	shader[0] = Shader::Get("./shaders/Sh1.vs","./shaders/Sh1.fs");
+	shader[1] = Shader::Get("./shaders/Sh2.vs","./shaders/Sh2.fs");
+	shader[2] = Shader::Get("./shaders/Sh3.vs","./shaders/Sh3.fs");
+	shader[3] = Shader::Get("./shaders/Sh4.vs","./shaders/Sh4.fs");
+	shader[4] = Shader::Get("./shaders/Sh5.vs","./shaders/Sh5.fs");
+	shader[5] = Shader::Get("./shaders/Sh6.vs","./shaders/Sh6.fs");
+	shader[6] = Shader::Get("./shaders/Tx1.vs","./shaders/Tx1.fs");
+	shader[7] = Shader::Get("./shaders/Tx2.vs","./shaders/Tx2.fs");
+	shader[8] = Shader::Get("./shaders/Tx3.vs","./shaders/Tx3.fs");
+	shader[9] = Shader::Get("./shaders/Tx4.vs","./shaders/Tx4.fs");
+	shader[10] = Shader::Get("./shaders/Tx5.vs","./shaders/Tx5.fs");
+	shader[11] = Shader::Get("./shaders/Tx6.vs","./shaders/Tx6.fs");
+	shader[12] = Shader::Get("./shaders/Tr1.vs","./shaders/Tr1.fs");
+	shader[13] = Shader::Get("./shaders/Tr2.vs","./shaders/Tr2.fs");
+
 }
