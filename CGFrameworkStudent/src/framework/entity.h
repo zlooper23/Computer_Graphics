@@ -7,6 +7,7 @@
 #include "framework.h"
 #include "image.h"
 #include "shader.h"
+#include "material.h"
 
 
 
@@ -32,6 +33,7 @@ class Entity{
         Matrix44 modelMatrix;
         Image *myTexture;
         Shader *shader;
+        Material *material;
         float totalTime = 0.0f;
         bool oclussions;
 
@@ -40,6 +42,7 @@ class Entity{
         Entity(Mesh &mesh, Image *texture);
         Entity(Mesh &mesh, Matrix44 modelMatrix);
         Entity(Mesh &mesh, Image *texture, Shader* shader);
+        Entity(Mesh &mesh, Material* mat);
 
 
         void ChangeMode(int n);

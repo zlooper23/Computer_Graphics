@@ -6,6 +6,7 @@
 #include "button.h"
 #include "entity.h"
 #include "camera.h"
+#include "material.h"
 
 
 Application::Application(const char* caption, int width, int height)
@@ -25,7 +26,7 @@ Application::Application(const char* caption, int width, int height)
 	this->framebuffer.Resize(w, h);
 
 	this->commonWidth=1;
-	this->mode=0;
+	this->mode=14;
 	this->submode=0;
 	this->backgroundColor = Color::BLACK;
 	this->primaryColor = Color::WHITE;
@@ -85,11 +86,15 @@ void Application::Init(void)
 
 	Mesh m1;
 	m1.LoadOBJ("./meshes/cleo.obj");
-	Image *texture0 = new Image();
+	Texture *texture0 = new Texture();
 	Shader *sh = new Shader();
 	sh = Shader::Get("./shaders/raster.vs","./shaders/raster.fs");
-	texture0->LoadTGA("./textures/cleo_color_specular.tga", true);
-	ents[0] = Entity(m1, texture0, sh);
+	texture0 = Texture::Get("./textures/cleo_color_specular.tga");
+
+	Material* mat = new Material(texture0, sh);
+
+	ents[0] = Entity(m1, mat);
+	//ents[0] = Entity(m1, texture0, sh);
 }
 
 // Render one frame

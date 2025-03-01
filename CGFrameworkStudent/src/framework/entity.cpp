@@ -45,6 +45,15 @@ Entity::Entity(Mesh &mesh, Image *texture, Shader* shader) {
     this->mode = eRenderMode::TEXTURES;
     this->oclussions = true;
 }
+
+Entity::Entity(Mesh &mesh, Material* mat){
+    this->mesh = mesh;
+    this->material = mat; 
+    this->modelMatrix = Matrix44();
+    this->mode = eRenderMode::TEXTURES;
+    this->oclussions = true;
+}
+
 void Entity::ChangeMode(int n){
     switch(n){
         case 0: mode = eRenderMode::POINTCLOUD; break;
@@ -141,21 +150,15 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
 void Entity::Render(Camera *camera){
     if(!shader) return;
 
-    shader->Enable();
-    shader->SetMatrix44("u_model", modelMatrix);
-    shader->SetMatrix44("u_viewprojection", camera->GetViewProjectionMatrix());
+    material->Enable();
+    material->myShader->SetMatrix44("u_model", modelMatrix);
+    material->myShader->SetMatrix44("u_viewprojection", camera->GetViewProjectionMatrix());
+    material->myShader->SetTexture("u_texture", material->myTexture);
 
-    if(myTexture){
-        Texture *texture = new Texture();
-        texture->Create(myTexture->width, myTexture->height, GL_RGB, GL_UNSIGNED_BYTE, true, (Uint8*)myTexture->pixels);
-
-        shader->SetTexture("u_texture", texture);
-    }
-    
     glEnable(GL_DEPTH_TEST);
     mesh.Render();
 
-    shader->Disable();
+    material->Disable();
 }
 
 void Entity::Update(float seconds_elapsed, int animationMode) {

@@ -1,5 +1,5 @@
-CMakeFiles/ComputerGraphics.dir/src/framework/entity.cpp.o: \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/entity.cpp \
+CMakeFiles/ComputerGraphics.dir/src/framework/material.cpp.o: \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/material.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/13/string \
  /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
@@ -247,7 +247,7 @@ CMakeFiles/ComputerGraphics.dir/src/framework/entity.cpp.o: \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/libraries/sdl2/include/SDL_opengl.h \
  /usr/include/GL/glu.h /usr/include/GL/gl.h /usr/include/c++/13/cassert \
  /usr/include/assert.h \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/entity.h \
+ /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/material.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/shader.h \
  /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/texture.h \
  /usr/include/c++/13/map /usr/include/c++/13/bits/stl_tree.h \
@@ -255,5 +255,4 @@ CMakeFiles/ComputerGraphics.dir/src/framework/entity.cpp.o: \
  /usr/include/c++/13/bits/stl_map.h /usr/include/c++/13/tuple \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/stl_multimap.h \
- /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/cstring \
- /home/zlooper23/Desktop/GithubRep/Computer_Graphics/CGFrameworkStudent/src/framework/material.h
+ /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/cstring
