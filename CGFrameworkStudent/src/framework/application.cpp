@@ -38,6 +38,7 @@ Application::Application(const char* caption, int width, int height)
 	this->zBuffer.Fill(__FLT_MAX__);
 	this->mouseButton = -1;
 	this->cam.type = 0;
+	this->uData.cam = &this->cam;
 }
 
 Application::~Application()
@@ -121,7 +122,8 @@ void Application::Render(void)
 
 
 	if(mode == 14){
-		ents[0].Render(&cam);
+		//ents[0].Render(&cam);
+		ents[0].Render(uData);
 	}else{
 		int i = mode+submode;
 		shader[i]->Enable();

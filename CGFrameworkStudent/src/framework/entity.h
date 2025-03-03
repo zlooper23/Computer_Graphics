@@ -51,5 +51,6 @@ class Entity{
 
         void Render(Image* framebuffer, Camera* camera, const Color& c, FloatImage* zBuffer);
         void Render(Camera* camera);
+        void Render(sUniformData uniformData);
         void Update(float seconds_elapsed, int animationMode);
 };

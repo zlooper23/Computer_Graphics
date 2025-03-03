@@ -47,6 +47,7 @@ public:
 	Shader* shader[14];
 	Mesh* mesh;
 	Texture* texture;
+	sUniformData uData;
 
 
 	float time;

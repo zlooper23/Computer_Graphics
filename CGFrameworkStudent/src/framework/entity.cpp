@@ -161,6 +161,20 @@ void Entity::Render(Camera *camera){
     material->Disable();
 }
 
+void Entity::Render(sUniformData uniformData){
+    if(!shader) return;
+
+    material->Enable();
+    material->myShader->SetMatrix44("u_model", modelMatrix);
+    material->myShader->SetMatrix44("u_viewprojection", uniformData.cam->GetViewProjectionMatrix());
+    material->myShader->SetTexture("u_texture", material->myTexture);
+
+    glEnable(GL_DEPTH_TEST);
+    mesh.Render();
+
+    material->Disable();
+}
+
 void Entity::Update(float seconds_elapsed, int animationMode) {
     totalTime += seconds_elapsed;
     switch (animationMode) {
