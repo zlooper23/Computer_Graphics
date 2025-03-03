@@ -7,7 +7,9 @@ uniform vec3 u_Ia;
 uniform vec3 u_ka;
 uniform vec3 u_kd;
 uniform vec3 u_ks;
-uniform vec3 u_s;
+uniform float u_s;
+uniform vec3 u_I;
+
 
 // Variables to pass to the fragment shader
 varying vec2 v_uv;

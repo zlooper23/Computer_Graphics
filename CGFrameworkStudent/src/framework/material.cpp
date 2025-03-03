@@ -20,8 +20,8 @@ Material::Material(Texture *texture, Shader *shader){
 
     Ka = Vector3(1.0, 1.0, 1.0);
     Kd = Vector3(0.8, 0.8, 0.8);
-    Ks = Vector3(0.5, 0.5, 0.5);
-    Shininess = 50.0;
+    Ks = Vector3(0.8, 0.8, 0.8);
+    Shininess = 500.0;
 }
 
 void Material::Enable(const sUniformData& uniformData){
@@ -36,6 +36,7 @@ void Material::Enable(const sUniformData& uniformData){
     myShader->SetVector3("u_kd", Kd);
     myShader->SetVector3("u_ks", Ks);
     myShader->SetFloat("u_s", Shininess);
+    myShader->SetVector3("u_I", uniformData.light.intensity);
 }
 
 void Material::Disable(){

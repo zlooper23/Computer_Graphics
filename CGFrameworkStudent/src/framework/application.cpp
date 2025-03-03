@@ -125,6 +125,10 @@ void Application::Render(void)
 
 
 	if(mode == 14){
+		float angle = sin(time)*0.1;
+		Matrix44 rotation;
+		rotation.SetRotation(angle, Vector3(0, 1, 0));
+		ents[0].modelMatrix = ents[0].modelMatrix * rotation;
 		ents[0].Render(uData);
 	}else{
 		int i = mode+submode;
