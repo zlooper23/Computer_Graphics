@@ -39,6 +39,9 @@ Application::Application(const char* caption, int width, int height)
 	this->mouseButton = -1;
 	this->cam.type = 0;
 	this->uData.cam = &this->cam;
+	this->light = {Vector3(1.0, 1.0, 1.0), Vector3(1.0, 1.0, 1.0)};
+	this->uData.light = this->light;
+	this->uData.Ia = Vector3(0.2, 0.2, 0.2);
 }
 
 Application::~Application()
@@ -122,7 +125,6 @@ void Application::Render(void)
 
 
 	if(mode == 14){
-		//ents[0].Render(&cam);
 		ents[0].Render(uData);
 	}else{
 		int i = mode+submode;

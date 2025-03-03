@@ -34,7 +34,7 @@ class Material{
 
         Material();
         Material(Texture *texture, Shader *shader);
-        void Enable();
+        void Enable(const sUniformData& uniformData);
         void Disable();
 
 };

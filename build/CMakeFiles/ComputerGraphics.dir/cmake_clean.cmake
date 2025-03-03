@@ -13,8 +13,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ComputerGraphics.dir/src/framework/framework.cpp.o.d"
   "CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o"
   "CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.o.d"
-  "CMakeFiles/ComputerGraphics.dir/src/framework/light.cpp.o"
-  "CMakeFiles/ComputerGraphics.dir/src/framework/light.cpp.o.d"
   "CMakeFiles/ComputerGraphics.dir/src/framework/material.cpp.o"
   "CMakeFiles/ComputerGraphics.dir/src/framework/material.cpp.o.d"
   "CMakeFiles/ComputerGraphics.dir/src/framework/mesh.cpp.o"

@@ -48,6 +48,7 @@ public:
 	Mesh* mesh;
 	Texture* texture;
 	sUniformData uData;
+	sLight light;
 
 
 	float time;

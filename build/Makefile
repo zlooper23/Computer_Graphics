@@ -447,30 +447,6 @@ src/framework/image.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/image.cpp.s
 .PHONY : src/framework/image.cpp.s
 
-src/framework/light.o: src/framework/light.cpp.o
-.PHONY : src/framework/light.o
-
-# target to build an object file
-src/framework/light.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/light.cpp.o
-.PHONY : src/framework/light.cpp.o
-
-src/framework/light.i: src/framework/light.cpp.i
-.PHONY : src/framework/light.i
-
-# target to preprocess a source file
-src/framework/light.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/light.cpp.i
-.PHONY : src/framework/light.cpp.i
-
-src/framework/light.s: src/framework/light.cpp.s
-.PHONY : src/framework/light.s
-
-# target to generate assembly for a file
-src/framework/light.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ComputerGraphics.dir/build.make CMakeFiles/ComputerGraphics.dir/src/framework/light.cpp.s
-.PHONY : src/framework/light.cpp.s
-
 src/framework/material.o: src/framework/material.cpp.o
 .PHONY : src/framework/material.o
 
@@ -681,9 +657,6 @@ help:
 	@echo "... src/framework/image.o"
 	@echo "... src/framework/image.i"
 	@echo "... src/framework/image.s"
-	@echo "... src/framework/light.o"
-	@echo "... src/framework/light.i"
-	@echo "... src/framework/light.s"
 	@echo "... src/framework/material.o"
 	@echo "... src/framework/material.i"
 	@echo "... src/framework/material.s"

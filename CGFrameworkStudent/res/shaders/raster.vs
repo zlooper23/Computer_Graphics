@@ -1,6 +1,13 @@
 // Global variables from the CPU
 uniform mat4 u_model;
 uniform mat4 u_viewprojection;
+uniform vec3 u_eye;
+uniform vec3 u_lightPos;
+uniform vec3 u_Ia;
+uniform vec3 u_ka;
+uniform vec3 u_kd;
+uniform vec3 u_ks;
+uniform vec3 u_s;
 
 // Variables to pass to the fragment shader
 varying vec2 v_uv;
