@@ -39,7 +39,7 @@ Application::Application(const char* caption, int width, int height)
 	this->mouseButton = -1;
 	this->cam.type = 0;
 	this->uData.cam = &this->cam;
-	this->light = {Vector3(1.0, 1.0, 1.0), Vector3(1.0, 1.0, 1.0)};
+	this->light = {Vector3(0.0, 0.0, 1.0), Vector3(1.0, 1.0, 1.0)};
 	this->uData.light = this->light;
 	this->uData.Ia = Vector3(0.2, 0.2, 0.2);
 }
@@ -92,7 +92,7 @@ void Application::Init(void)
 	m1.LoadOBJ("./meshes/cleo.obj");
 	Texture *texture0 = new Texture();
 	Shader *sh = new Shader();
-	sh = Shader::Get("./shaders/raster.vs","./shaders/raster.fs");
+	sh = Shader::Get("./shaders/phong.vs","./shaders/phong.fs");
 	texture0 = Texture::Get("./textures/cleo_color_specular.tga");
 
 	Material* mat = new Material(texture0, sh);

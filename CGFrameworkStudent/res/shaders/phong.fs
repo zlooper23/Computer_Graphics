@@ -24,5 +24,15 @@ void main()
 	//vec3 color = normalize(v_world_normal);
 	vec4 color = texture2D(u_texture, v_uv);
 
-	gl_FragColor = vec4(color);
+	vec3 V = normalize(u_eye - v_world_position);
+	vec3 L = normalize(u_lightPos - v_world_position);
+	vec3 N = normalize(v_world_normal);
+	vec3 R = normalize(reflect(-V, N));
+	float d = distance(u_lightPos, v_world_position);
+
+	vec3 It = u_ka*u_Ia + (u_I/pow(d, 2.0))*(u_kd*clamp(dot(L, N), 0.0, 1.0) + u_ks * pow(clamp(dot(R, V), 0.0, 1.0), u_s));
+
+	//gl_FragColor = vec4(It*color.xyz, 1.0);
+    gl_FragColor = vec4(It*vec3(0.8, 0.651, 0.118), 1.0);
+
 }
