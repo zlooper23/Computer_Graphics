@@ -17,6 +17,7 @@ varying vec3 v_world_position;
 varying vec3 v_world_normal;
 
 uniform sampler2D u_texture; 
+uniform sampler2D u_normal; 
 
 //here create uniforms for all the data we need here
 

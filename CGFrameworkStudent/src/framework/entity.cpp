@@ -154,6 +154,7 @@ void Entity::Render(Camera *camera){
     material->myShader->SetMatrix44("u_model", modelMatrix);
     material->myShader->SetMatrix44("u_viewprojection", camera->GetViewProjectionMatrix());
     material->myShader->SetTexture("u_texture", material->myTexture);
+    material->myShader->SetTexture("u_normal", material->myNormals);
 
     glEnable(GL_DEPTH_TEST);
     mesh.Render();

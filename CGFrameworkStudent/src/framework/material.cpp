@@ -14,9 +14,10 @@ Material::Material(){
 
 }
 
-Material::Material(Texture *texture, Shader *shader){
+Material::Material(Texture *texture, Shader *shader, Texture* normals){
     myTexture = texture;
     myShader = shader;
+    myNormals = normals;
 
     Ka = Vector3(1.0, 1.0, 1.0);
     Kd = Vector3(0.8, 0.8, 0.8);
@@ -29,6 +30,7 @@ void Material::Enable(const sUniformData& uniformData){
     myShader->SetMatrix44("u_model", uniformData.model);
     myShader->SetMatrix44("u_viewprojection", uniformData.cam->GetViewProjectionMatrix());
     myShader->SetTexture("u_texture", myTexture);
+    myShader->SetTexture("u_normal", myNormals);
     myShader->SetVector3("u_eye", uniformData.cam->eye);
     myShader->SetVector3("u_lightPos", uniformData.light.position);
     myShader->SetVector3("u_Ia", uniformData.Ia);

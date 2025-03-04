@@ -46,7 +46,7 @@ public:
 	int perspectiveChange;
 	Shader* shader[14];
 	Mesh* mesh;
-	Texture* texture;
+	Texture* texture[5];
 	sUniformData uData;
 	sLight light;
 

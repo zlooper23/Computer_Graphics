@@ -26,6 +26,7 @@ class Material{
 
     public:
         Texture *myTexture;
+        Texture *myNormals;
         Shader *myShader;
         Vector3 Ka;
         Vector3 Kd;
@@ -33,7 +34,7 @@ class Material{
         float Shininess;
 
         Material();
-        Material(Texture *texture, Shader *shader);
+        Material(Texture *texture, Shader *shader, Texture* normals);
         void Enable(const sUniformData& uniformData);
         void Disable();
 

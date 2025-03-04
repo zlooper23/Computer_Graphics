@@ -80,8 +80,8 @@ void Application::Init(void)
 	cam.LookAt(Vector3(0, 0, 3), Vector3(0, 0, 0), Vector3(0, 1, 0));
 	cam.SetPerspective(45, framebuffer.width/framebuffer.height, 0.01, 100);
 
-	texture = new Texture();
-	texture = Texture::Get("./images/fruits.png");
+	texture[0] = new Texture();
+	texture[0] = Texture::Get("./images/fruits.png");
 
 	LoadShaders();
 	
@@ -89,13 +89,17 @@ void Application::Init(void)
 	mesh->CreateQuad();
 
 	Mesh m1;
-	m1.LoadOBJ("./meshes/cleo.obj");
-	Texture *texture0 = new Texture();
+	m1.LoadOBJ("./meshes/lee.obj");
+
 	Shader *sh = new Shader();
 	sh = Shader::Get("./shaders/phong.vs","./shaders/phong.fs");
-	texture0 = Texture::Get("./textures/cleo_color_specular.tga");
 
-	Material* mat = new Material(texture0, sh);
+	texture[1]= new Texture();
+	texture[1] = Texture::Get("./textures/lee_color_specular.tga");
+	texture[2]= new Texture();
+	texture[2] = Texture::Get("./textures/lee_normal.tga");
+
+	Material* mat = new Material(texture[1], sh, texture[2]);
 
 	ents[0] = Entity(m1, mat);
 	//ents[0] = Entity(m1, texture0, sh);
@@ -133,7 +137,7 @@ void Application::Render(void)
 	}else{
 		int i = mode+submode;
 		shader[i]->Enable();
-		shader[i]->SetTexture("u_texture", texture);
+		shader[i]->SetTexture("u_texture", texture[0]);
 		shader[i]->SetFloat("u_time", time);
 		shader[i]->SetVector2("u_size", Vector2(window_height, window_width));
 		mesh->Render();

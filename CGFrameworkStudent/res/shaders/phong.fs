@@ -5,6 +5,7 @@ varying vec3 v_world_position;
 varying vec3 v_world_normal;
 
 uniform sampler2D u_texture; 
+uniform sampler2D u_normal; 
 
 uniform mat4 u_model;
 uniform mat4 u_viewprojection;
@@ -23,10 +24,15 @@ void main()
 	// Set the ouput color per pixel
 	//vec3 color = normalize(v_world_normal);
 	vec4 color = texture2D(u_texture, v_uv);
+	vec4 normal = texture2D(u_normal, v_uv);
+	normal = (normal*2.0) - 1.0;
 
 	vec3 V = normalize(u_eye - v_world_position);
 	vec3 L = normalize(u_lightPos - v_world_position);
-	vec3 N = normalize(v_world_normal);
+
+	//vec3 N = normalize(v_world_normal);
+	vec3 N = normalize((u_model * vec4( normal.xyz, 0.0)).xyz);
+
 	vec3 R = normalize(reflect(-L, N));
 	float d = distance(u_lightPos, v_world_position);
 
