@@ -21,7 +21,7 @@ Material::Material(Texture *texture, Shader *shader){
     Ka = Vector3(1.0, 1.0, 1.0);
     Kd = Vector3(0.8, 0.8, 0.8);
     Ks = Vector3(0.8, 0.8, 0.8);
-    Shininess = 500.0;
+    Shininess = 10.0;
 }
 
 void Material::Enable(const sUniformData& uniformData){
