@@ -18,6 +18,8 @@ uniform vec3 u_ks;
 uniform float u_s;
 uniform vec3 u_I;
 
+uniform vec3 u_flag;
+
 
 void main()
 {
@@ -26,22 +28,38 @@ void main()
 	vec4 color = texture2D(u_texture, v_uv);
 	vec4 normal = texture2D(u_normal, v_uv);
 	normal = (normal*2.0) - 1.0;
+	
+	vec3 ka;
+	vec3 kd;
+	vec3 ks;
+	vec3 N;
+
+	if(u_flag.x==1.0){
+		ka = color.xyz*u_ka;
+		kd = color.xyz*u_kd;
+	}else{
+		ka = u_ka*vec3(0.8, 0.651, 0.118);
+		kd = u_kd*vec3(0.8, 0.651, 0.118);
+	}
+	if(u_flag.y==1.0){
+		ks = vec3(color.w);
+	}else{
+		ks = u_ks;
+	}
+	if(u_flag.z==1.0){
+		N = normalize((u_model * vec4( normal.xyz, 0.0)).xyz);
+	}else{
+		N = normalize(v_world_normal);
+	}
 
 	vec3 V = normalize(u_eye - v_world_position);
 	vec3 L = normalize(u_lightPos - v_world_position);
 
-	//vec3 N = normalize(v_world_normal);
-	vec3 N = normalize((u_model * vec4( normal.xyz, 0.0)).xyz);
-
 	vec3 R = normalize(reflect(-L, N));
 	float d = distance(u_lightPos, v_world_position);
 
-	//vec3 It = u_ka*u_Ia + (u_I/pow(d, 2.0))*(u_kd*clamp(dot(L, N), 0.0, 1.0) + u_ks * pow(clamp(dot(R, V), 0.0, 1.0), u_s));
-	vec3 It = color.xyz*u_Ia + (u_I/pow(d, 2.0))*(color.xyz*clamp(dot(L, N), 0.0, 1.0) + vec3(color.w) * pow(clamp(dot(R, V), 0.0, 1.0), u_s));
+	vec3 It = ka*u_Ia + (u_I/pow(d, 2.0))*(kd*clamp(dot(L, N), 0.0, 1.0) + ks * pow(clamp(dot(R, V), 0.0, 1.0), u_s));
 
-
-	//gl_FragColor = vec4(It*color.xyz, 1.0);
-    //gl_FragColor = vec4(It*vec3(0.8, 0.651, 0.118), 1.0);
 	gl_FragColor = vec4(It, 1.0);
 
 }

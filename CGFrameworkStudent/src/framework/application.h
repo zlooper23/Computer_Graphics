@@ -13,9 +13,6 @@
 #include "entity.h"
 #include "shader.h"
 
-
-
-
 class Application
 {
 public:
@@ -44,12 +41,11 @@ public:
 	Entity ents[3];
 	int mouseButton;
 	int perspectiveChange;
-	Shader* shader[14];
+	Shader* shader[17];
 	Mesh* mesh;
-	Texture* texture[5];
+	Texture* texture[3];
 	sUniformData uData;
 	sLight light;
-
 
 	float time;
 

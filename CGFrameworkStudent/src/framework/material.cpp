@@ -27,6 +27,7 @@ Material::Material(Texture *texture, Shader *shader, Texture* normals){
 
 void Material::Enable(const sUniformData& uniformData){
     myShader->Enable();
+    myShader->SetVector3("u_flag", uniformData.flag);
     myShader->SetMatrix44("u_model", uniformData.model);
     myShader->SetMatrix44("u_viewprojection", uniformData.cam->GetViewProjectionMatrix());
     myShader->SetTexture("u_texture", myTexture);

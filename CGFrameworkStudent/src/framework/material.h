@@ -19,7 +19,7 @@ typedef struct sUniformData{
     Vector3 Ia;
     sLight light;
     Camera* cam;
-
+    Vector3 flag;
 }sUniformData;
 
 class Material{

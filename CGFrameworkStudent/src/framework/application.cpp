@@ -42,6 +42,7 @@ Application::Application(const char* caption, int width, int height)
 	this->light = {Vector3(0.0, 0.0, 1.0), Vector3(1.0, 1.0, 1.0)};
 	this->uData.light = this->light;
 	this->uData.Ia = Vector3(0.2, 0.2, 0.2);
+	this->uData.flag = Vector3(0.0, 0.0, 0.0);
 }
 
 Application::~Application()
@@ -89,17 +90,21 @@ void Application::Init(void)
 	mesh->CreateQuad();
 
 	Mesh m1;
-	m1.LoadOBJ("./meshes/lee.obj");
+	m1.LoadOBJ("./meshes/anna.obj");
 
-	Shader *sh = new Shader();
-	sh = Shader::Get("./shaders/phong.vs","./shaders/phong.fs");
+	shader[14] = new Shader();
+	shader[14] = Shader::Get("./shaders/raster.vs","./shaders/raster.fs");
+	shader[15] = new Shader();
+	shader[15] = Shader::Get("./shaders/gouraud.vs","./shaders/gouraud.fs");
+	shader[16] = new Shader();
+	shader[16] = Shader::Get("./shaders/phong.vs","./shaders/phong.fs");
 
 	texture[1]= new Texture();
-	texture[1] = Texture::Get("./textures/lee_color_specular.tga");
+	texture[1] = Texture::Get("./textures/anna_color_specular.tga");
 	texture[2]= new Texture();
-	texture[2] = Texture::Get("./textures/lee_normal.tga");
+	texture[2] = Texture::Get("./textures/anna_normal.tga");
 
-	Material* mat = new Material(texture[1], sh, texture[2]);
+	Material* mat = new Material(texture[1], shader[14], texture[2]);
 
 	ents[0] = Entity(m1, mat);
 	//ents[0] = Entity(m1, texture0, sh);
@@ -128,11 +133,14 @@ void Application::Render(void)
 
 
 
-	if(mode == 14){
+	if(mode > 13){
 		float angle = sin(time)*0.1;
 		Matrix44 rotation;
 		rotation.SetRotation(angle, Vector3(0, 1, 0));
-		ents[0].modelMatrix = ents[0].modelMatrix * rotation;
+
+		//ents[0].modelMatrix = ents[0].modelMatrix * rotation;
+
+		ents[0].material->myShader = shader[mode];
 		ents[0].Render(uData);
 	}else{
 		int i = mode+submode;
@@ -251,17 +259,31 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 		case SDLK_1: mode = 2; break;
 		case SDLK_2: mode = 3; break;*/
 
-		case SDLK_1: mode = 0; submode = 0;break;
-		case SDLK_2: mode = 6; submode = 0;break;
-		case SDLK_3: mode = 12; submode = 0;break;
-		case SDLK_4: mode = 14; submode = 0;break;
+		case SDLK_l: if(mode<15){mode = 15;}else{mode = 0;submode = 0;}break;
 
-		case SDLK_a: submode = 0;break;
+		case SDLK_1: if(mode<15){mode = 0; submode = 0;}break;
+		case SDLK_2: if(mode<15){mode = 6; submode = 0;}break;
+		case SDLK_3: if(mode<15){mode = 12; submode = 0;}break;
+		case SDLK_4: if(mode<15){mode = 14; submode = 0;}break;
+		case SDLK_a: if(mode<15){submode = 0;}break;
 		case SDLK_b: if(mode<13){submode = 1;}break;
-		case SDLK_c: if(mode<7){submode = 2;}break;
 		case SDLK_d: if(mode<7){submode = 3;}break;
 		case SDLK_e: if(mode<7){submode = 4;}break;
 		case SDLK_f: if(mode<7){submode = 5;}break;
+		case SDLK_g: if(mode>14){mode = 15;}break;
+		case SDLK_p: if(mode>14){mode = 16;}break;
+
+		case SDLK_c: 
+			if(mode<15){
+				if(mode<7){submode = 2;}break;
+			}else{
+				uData.flag.x = !((int)uData.flag.x);break;
+			}
+		case SDLK_s: uData.flag.y = !((int)uData.flag.y);break;
+		case SDLK_n: uData.flag.z = !((int)uData.flag.z);break;
+
+
+		
 	}
 }
 
