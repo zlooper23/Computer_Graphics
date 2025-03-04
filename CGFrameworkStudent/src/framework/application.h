@@ -44,8 +44,9 @@ public:
 	Shader* shader[17];
 	Mesh* mesh;
 	Texture* texture[3];
+	int numL;
 	sUniformData uData;
-	sLight light;
+	sLight light[10];
 
 	float time;
 

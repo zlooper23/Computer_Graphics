@@ -150,7 +150,7 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
 void Entity::Render(Camera *camera){
     if(!shader) return;
 
-    //material->Enable();
+    material->Enable();
     material->myShader->SetMatrix44("u_model", modelMatrix);
     material->myShader->SetMatrix44("u_viewprojection", camera->GetViewProjectionMatrix());
     material->myShader->SetTexture("u_texture", material->myTexture);
@@ -166,11 +166,24 @@ void Entity::Render(sUniformData uniformData){
     if(!shader) return;
 
     uniformData.model = modelMatrix;
+    glDepthFunc(GL_LEQUAL);
+    glEnable(GL_DEPTH_TEST);
 
-    material->Enable(uniformData);
+    glDisable(GL_BLEND);
+    material->Enable(uniformData, 0);
+	mesh.Render();
+
+    for(int i = 1; i<3; i++){
+        glEnable(GL_BLEND);
+		glBlendFunc(GL_ONE, GL_ONE);
+        material->Enable(uniformData, i);
+        mesh.Render();
+    }
+        
+    /*material->Enable(uniformData);
 
     glEnable(GL_DEPTH_TEST);
-    mesh.Render();
+    mesh.Render();*/
 
     material->Disable();
 }

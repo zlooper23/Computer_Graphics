@@ -38,8 +38,8 @@ void main()
 		ka = color.xyz*u_ka;
 		kd = color.xyz*u_kd;
 	}else{
-		ka = u_ka*vec3(0.8, 0.651, 0.118);
-		kd = u_kd*vec3(0.8, 0.651, 0.118);
+		ka = u_ka*vec3(0.8, 0.6, 0.2);
+		kd = u_kd*vec3(0.8, 0.6, 0.2);
 	}
 	if(u_flag.y==1.0){
 		ks = vec3(color.w);

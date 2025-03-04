@@ -25,7 +25,11 @@ Material::Material(Texture *texture, Shader *shader, Texture* normals){
     Shininess = 10.0;
 }
 
-void Material::Enable(const sUniformData& uniformData){
+void Material::Enable(){
+    myShader->Enable();
+}
+
+void Material::Enable(const sUniformData& uniformData, int index){
     myShader->Enable();
     myShader->SetVector3("u_flag", uniformData.flag);
     myShader->SetMatrix44("u_model", uniformData.model);
@@ -33,13 +37,13 @@ void Material::Enable(const sUniformData& uniformData){
     myShader->SetTexture("u_texture", myTexture);
     myShader->SetTexture("u_normal", myNormals);
     myShader->SetVector3("u_eye", uniformData.cam->eye);
-    myShader->SetVector3("u_lightPos", uniformData.light.position);
+    myShader->SetVector3("u_lightPos", uniformData.light[index].position);
     myShader->SetVector3("u_Ia", uniformData.Ia);
     myShader->SetVector3("u_ka", Ka);
     myShader->SetVector3("u_kd", Kd);
     myShader->SetVector3("u_ks", Ks);
     myShader->SetFloat("u_s", Shininess);
-    myShader->SetVector3("u_I", uniformData.light.intensity);
+    myShader->SetVector3("u_I", uniformData.light[index].intensity);
 }
 
 void Material::Disable(){

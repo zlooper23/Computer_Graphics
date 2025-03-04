@@ -17,7 +17,7 @@ typedef struct sLight{
 typedef struct sUniformData{
     Matrix44 model;
     Vector3 Ia;
-    sLight light;
+    sLight light[10];
     Camera* cam;
     Vector3 flag;
 }sUniformData;
@@ -35,7 +35,8 @@ class Material{
 
         Material();
         Material(Texture *texture, Shader *shader, Texture* normals);
-        void Enable(const sUniformData& uniformData);
+        void Enable();
+        void Enable(const sUniformData& uniformData, int index);
         void Disable();
 
 };
