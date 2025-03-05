@@ -149,6 +149,9 @@ void Entity::Render(Image* framebuffer, Camera* camera, const Color& c, FloatIma
 
 void Entity::Render(Camera *camera){
     if(!shader) return;
+    
+    glDepthFunc(GL_LESS);
+    glEnable(GL_DEPTH_TEST);
 
     material->Enable();
     material->myShader->SetMatrix44("u_model", modelMatrix);
@@ -156,7 +159,7 @@ void Entity::Render(Camera *camera){
     material->myShader->SetTexture("u_texture", material->myTexture);
     material->myShader->SetTexture("u_normal", material->myNormals);
 
-    glEnable(GL_DEPTH_TEST);
+    
     mesh.Render();
 
     material->Disable();
@@ -173,18 +176,17 @@ void Entity::Render(sUniformData uniformData){
     material->Enable(uniformData, 0);
 	mesh.Render();
 
-    for(int i = 1; i<3; i++){
-        glEnable(GL_BLEND);
-		glBlendFunc(GL_ONE, GL_ONE);
+    glEnable(GL_BLEND);
+	glBlendFunc(GL_ONE, GL_ONE);
+    for(int i = 0; i<uniformData.numL; i++){
         material->Enable(uniformData, i);
         mesh.Render();
     }
         
     /*material->Enable(uniformData);
-
-    glEnable(GL_DEPTH_TEST);
     mesh.Render();*/
 
+    glDisable(GL_BLEND);
     material->Disable();
 }
 

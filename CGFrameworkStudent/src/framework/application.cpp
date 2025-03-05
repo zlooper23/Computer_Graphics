@@ -26,7 +26,7 @@ Application::Application(const char* caption, int width, int height)
 	this->framebuffer.Resize(w, h);
 
 	this->commonWidth=1;
-	this->mode=14;
+	this->mode=0;
 	this->submode=0;
 	this->backgroundColor = Color::BLACK;
 	this->primaryColor = Color::WHITE;
@@ -40,15 +40,15 @@ Application::Application(const char* caption, int width, int height)
 	this->cam.type = 0;
 	this->uData.cam = &this->cam;
 
-	this->numL = 3;
-	this->light[0] = {Vector3(0.0, 0.0, 1.0), Vector3(1.0, 1.0, 1.0)};
-	this->light[1] = {Vector3(-1.0, 0.0, 0.0), Vector3(0.0, 1.0, 1.0)};
-	this->light[2] = {Vector3(1.0, 0.0, 0.0), Vector3(0.0, 1.0, 0.0)};
-	for(int i = 0; i<numL; i++){
-		this->uData.light[0] = this->light[0];
-		this->uData.light[1] = this->light[1];
-		this->uData.light[2] = this->light[2];
-	}
+	this->numL = 1;
+	this->light[0] = {Vector3(0.0, 0.0, 2.0), Vector3(1.0, 1.0, 1.0)};
+	this->light[1] = {Vector3(-2.0, 0.0, 0.0), Vector3(0.0, 1.0, 1.0)};
+	this->light[2] = {Vector3(2.0, 0.0, 0.0), Vector3(0.0, 1.0, 0.0)};
+	this->light[3] = {Vector3(0.0, 2.0, 0.0), Vector3(1.0, 0.0, 1.0)};
+	this->uData.light[0] = this->light[0];
+	this->uData.light[1] = this->light[1];
+	this->uData.light[2] = this->light[2];
+	this->uData.light[3] = this->light[3];
 	this->uData.Ia = Vector3(0.2, 0.2, 0.2);
 	this->uData.flag = Vector3(0.0, 0.0, 0.0);
 }
@@ -142,7 +142,7 @@ void Application::Render(void)
 
 
 	if(mode > 13){
-		float angle = sin(time)*0.1;
+		float angle = sin(time)*6.28*0.01;
 		Matrix44 rotation;
 		rotation.SetRotation(angle, Vector3(0, 1, 0));
 
@@ -152,6 +152,7 @@ void Application::Render(void)
 		if(mode ==14){
 			ents[0].Render(&cam);
 		}else{
+			uData.numL = numL;
 			ents[0].Render(uData);
 		}
 		
@@ -273,12 +274,12 @@ void Application::OnKeyPressed( SDL_KeyboardEvent event )
 		case SDLK_1: mode = 2; break;
 		case SDLK_2: mode = 3; break;*/
 
-		case SDLK_l: if(mode<15){mode = 15;}else{mode = 0;submode = 0;}break;
+		case SDLK_l: if(mode<15){mode = 15;}else{mode = 0;submode = 0;}numL = 1;break;
 
-		case SDLK_1: if(mode<15){mode = 0; submode = 0;}break;
-		case SDLK_2: if(mode<15){mode = 6; submode = 0;}break;
-		case SDLK_3: if(mode<15){mode = 12; submode = 0;}break;
-		case SDLK_4: if(mode<15){mode = 14; submode = 0;}break;
+		case SDLK_1: if(mode<15){mode = 0; submode = 0;}numL = 1;break;
+		case SDLK_2: if(mode<15){mode = 6; submode = 0;}numL = 2;break;
+		case SDLK_3: if(mode<15){mode = 12; submode = 0;}numL = 3;break;
+		case SDLK_4: if(mode<15){mode = 14; submode = 0;}numL = 4;break;
 		case SDLK_a: if(mode<15){submode = 0;}break;
 		case SDLK_b: if(mode<13){submode = 1;}break;
 		case SDLK_d: if(mode<7){submode = 3;}break;

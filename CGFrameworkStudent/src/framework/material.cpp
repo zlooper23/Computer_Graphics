@@ -38,7 +38,12 @@ void Material::Enable(const sUniformData& uniformData, int index){
     myShader->SetTexture("u_normal", myNormals);
     myShader->SetVector3("u_eye", uniformData.cam->eye);
     myShader->SetVector3("u_lightPos", uniformData.light[index].position);
-    myShader->SetVector3("u_Ia", uniformData.Ia);
+    if(index == 0){
+        myShader->SetVector3("u_Ia", uniformData.Ia);
+    }else{
+        myShader->SetVector3("u_Ia", Vector3(0.0, 0.0, 0.0));
+    }
+    
     myShader->SetVector3("u_ka", Ka);
     myShader->SetVector3("u_kd", Kd);
     myShader->SetVector3("u_ks", Ks);
